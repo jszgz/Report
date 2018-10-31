@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>测试</title>
+
+
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+
+    </script>
+    <script src="js\jquery.cookie.js"></script>
+
+</head>
+
+
+    <body>
+        <h2>Hello World!显示中文没有问题</h2>
+        <input type="text" id="username">
+        <input type="text" id="password">
+        <button id="testbutton">test</button>
+        <div id="cook"></div>
+        <div id="content"></div>
+    </body>
+
+
+    <script>
+        $(document).ready(function () {
+
+            $("#testbutton").click(function () {
+                //发送请求
+                $.ajax({
+                    type : "POST",
+                    url : "../login/login.action",
+                    dataType : "json",
+                    contentType: "application/json",
+                    data : JSON.stringify({
+                        username: $("#username").val(),
+                        password: $("#password").val(),
+                        type: 1
+                    })
+                }).done(function (response) {
+                    if(undefined === response.code){
+                        $("#content").text(JSON.stringify(response))
+                        localStorage.setItem("name",response.name)
+                    }
+                    else{
+                        //失败，给出提示信息
+                        alert(response.message)
+                    }
+                }).fail(function () {
+                    //无
+                }).always(function () {
+                    //隐藏加载中遮罩
+                })
+            })
+        })
+
+    </script>
+</html>
