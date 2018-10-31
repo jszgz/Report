@@ -15,8 +15,8 @@ import java.util.Map;
 @Aspect
 public class RepairAspect
 {
-/*    @AfterThrowing(throwing="ex"
-            , pointcut="execution(* com.mayousheng.www.controller.TeacherController.add(..))")
+    @AfterThrowing(throwing="ex"
+            , pointcut="execution(* com.mayousheng.www.controller.TeacherController.addTeacher(..))")
     public void doRecoveryActions(Throwable ex)
     {
         System.out.println("目标方法中抛出的异常:" + ex);
@@ -25,6 +25,6 @@ public class RepairAspect
         if(ex instanceof com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException)
             throw new UsernameDuplicateException("");
         return;
-    }*/
+    }
 }
 

@@ -1,5 +1,6 @@
 package com.mayousheng.www.resolver;
 
+import com.mayousheng.www.Utils.ConstVar;
 import com.mayousheng.www.exception.UsernameDuplicateException;
 import org.apache.log4j.Logger;
 import org.springframework.web.multipart.MaxUploadSizeExceededException;
@@ -25,12 +26,12 @@ public class MyExceptionHandler implements HandlerExceptionResolver {
         }*/
         Map<String,Object> map = new HashMap<String,Object>();
         if(ex instanceof UsernameDuplicateException){
-            map.put("code", -1);
+            map.put("code", ConstVar._ERROR_DUPLICATE_);
             map.put("message", "学号/工号已经注册");
             return new ModelAndView(new MappingJackson2JsonView(),map);
         }
 
-        map.put("code", -1);
+        map.put("code", ConstVar._ERROR_COMMON_);
         map.put("message", "服务器错误，请稍后再试");
         return new ModelAndView(new MappingJackson2JsonView(),map);
     }

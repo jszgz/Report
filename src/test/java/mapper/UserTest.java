@@ -1,5 +1,6 @@
 package mapper;
 
+import com.mayousheng.www.mapper.LaboratoryMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,9 @@ import java.util.Date;
 public class UserTest {
 /*    @Autowired
     private UserMapper usermapper;*/
+
+    @Autowired
+    private LaboratoryMapper labMapper;
 
     //test want will return if the insetion was not success
     @Test
@@ -43,6 +47,15 @@ public class UserTest {
         System.out.println(usermapper.selectByPrimaryKey(11));
         System.out.println("1313123123");
         System.out.println("1313123123");*/
+    }
+
+    @Test
+    @Transactional
+    public void testdeletenotfound(){
+
+
+        int rows = labMapper.deleteByPrimaryKey(100);
+        System.out.println(rows);
     }
 
 }

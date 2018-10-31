@@ -7,19 +7,31 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="791c34d1-eeb6-4af9-9993-3d36ab6baa38" name="Default" comment="管理员登录完成">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstantVariable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.cookie.js" afterDir="false" />
+    <list default="true" id="791c34d1-eeb6-4af9-9993-3d36ab6baa38" name="Default" comment="管理员登录完成，请使用json，求你了">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddLabRequestParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddTeacherRequestParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AdminUpdatePasswordRequestParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/DeleteLabRequestParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/DeleteTeacherRequestParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/LogoutRequestParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/ResetPasswordRequestParam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/ssm.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ssm.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstantVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstVar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LaboratoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LaboratoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/MyExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/MyExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/RepairAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/RepairAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/TeacherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/AdminServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/service/impl/LoginServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Report/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SSMByMaven.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMByMaven.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mayousheng/www/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mayousheng/www/service/impl/LoginServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generator/generator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generator/generator.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapper/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapper/UserTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,117 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/LoginService.java">
+      <file leaf-file-name="TeacherController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="29" column="30" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LaboratoryController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LaboratoryController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="75" column="56" selection-start-line="75" selection-start-column="56" selection-end-line="75" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConstantVariable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstantVariable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.cookie.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.cookie.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="LoginRequestParam.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/LoginRequestParam.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="20" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="20" />
-              <folding>
-                <element signature="e#182#183#0" expanded="true" />
-                <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#261#262#0" expanded="true" />
-                <element signature="e#301#302#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#367#368#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#455#456#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#547#548#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LaboratoryServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LaboratoryServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" selection-start-line="11" selection-end-line="12" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="364">
+              <caret line="72" column="67" lean-forward="true" selection-start-line="72" selection-start-column="67" selection-end-line="72" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -211,24 +117,34 @@
         <option value="$PROJECT_DIR$/src/main/resources/properties/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/exception/PhoneDuplicateException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/MyExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/generator/generator.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/generator/generator-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LaboratoryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LaboratoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/TeacherServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/AdminServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/LoginRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/LoginService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/generator/generator.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/LogoutRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/ResetPasswordRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstantVariable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/TeacherService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/TeacherServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/AdminService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AdminUpdatePasswordRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddLabRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/DeleteLabRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddTeacherRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstVar.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/MyExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/RepairAspect.java" />
         <option value="$PROJECT_DIR$/src/test/java/mapper/UserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstantVariable.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LaboratoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/DeleteTeacherRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java" />
       </list>
     </option>
   </component>
@@ -336,7 +252,34 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="param" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="resolver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Report" type="b2602c69:ProjectViewProjectNode" />
@@ -378,6 +321,31 @@
               <item name="Report" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="generator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -387,6 +355,27 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Report" type="b2602c69:ProjectViewProjectNode" />
@@ -436,7 +425,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.ssm">
+  <component name="RunManager" selected="JUnit.UserTest.testdeletenotfound">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -476,6 +465,29 @@
       <option name="PACKAGE_NAME" value="mapper" />
       <option name="MAIN_CLASS_NAME" value="mapper.UserTest" />
       <option name="METHOD_NAME" value="testSelectUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="UserTest.testdeletenotfound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Report" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mapper" />
+      <option name="MAIN_CLASS_NAME" value="mapper.UserTest" />
+      <option name="METHOD_NAME" value="testdeletenotfound" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -600,9 +612,11 @@
       <item itemvalue="Tomcat Server.ssm" />
       <item itemvalue="JUnit.UserTest.testSelectUser" />
       <item itemvalue="JUnit.UserTest.testInsertUser" />
+      <item itemvalue="JUnit.UserTest.testdeletenotfound" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.testdeletenotfound" />
         <item itemvalue="JUnit.UserTest.testInsertUser" />
         <item itemvalue="JUnit.UserTest.testSelectUser" />
       </list>
@@ -636,7 +650,7 @@
       <workItem from="1540952556727" duration="104000" />
       <workItem from="1540952707019" duration="558000" />
       <workItem from="1540953424097" duration="935000" />
-      <workItem from="1540956470825" duration="12543000" />
+      <workItem from="1540956470825" duration="25366000" />
     </task>
     <task id="LOCAL-00001" summary="。。。。">
       <created>1540894628937</created>
@@ -659,16 +673,24 @@
       <option name="project" value="LOCAL" />
       <updated>1540954098027</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="管理员登录完成，请使用json，求你了">
+      <created>1540974958541</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540974958541</updated>
+    </task>
+    <task id="LOCAL-00005" summary="管理员登录完成，请使用json，求你了">
+      <created>1540976098413</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1540976098413</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_testInsertUser - 2018.09.11 at 23h 24m 11s.xml">
-      <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testInsertUser - 2018.09.12 at 19h 38m 12s.xml">
-      <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserTest_testInsertUser - 2018.09.12 at 19h 38m 41s.xml">
       <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
     </history-entry>
@@ -693,9 +715,15 @@
     <history-entry file="UserTest_testInsertUser - 2018.09.12 at 22h 52m 17s.xml">
       <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserTest_testdeletenotfound - 2018.10.31 at 21h 33m 18s.xml">
+      <configuration name="UserTest.testdeletenotfound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testdeletenotfound - 2018.10.31 at 21h 37m 15s.xml">
+      <configuration name="UserTest.testdeletenotfound" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134606000" />
+    <option name="totallyTimeSpent" value="147429000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -711,9 +739,9 @@
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.34826666" side_tool="true" visible="true" weight="0.2561629" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50453335" side_tool="true" visible="true" weight="0.39871383" />
       <window_info anchor="bottom" id="Application Servers" order="12" sideWeight="0.48533332" weight="0.20364416" />
-      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.2736" />
+      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.49910873" visible="true" weight="0.2736" />
       <window_info anchor="right" id="CDI" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="Designer" order="2" />
@@ -722,16 +750,17 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49653333" weight="0.3993576" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49546668" visible="true" weight="0.39871383" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49706668" weight="0.32976446" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4944" weight="0.32583067" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49386665" weight="0.32583067" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.496" weight="0.32976446" />
+      <window_info anchor="right" x="0" y="0" width="433" height="863" id="Documentation" sideWeight="0.50089127" side_tool="true" visible="true" weight="0.2736" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.65173334" visible="true" weight="0.2561629" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.65173334" weight="0.2561629" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.496" weight="0.32976446" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49546668" weight="0.32976446" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49832776" side_tool="true" visible="true" weight="0.21706666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" side_tool="true" visible="true" weight="0.21706666" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="5" sideWeight="0.50167227" side_tool="true" weight="0.20426667" />
       <window_info id="Favorites" order="4" side_tool="true" />
@@ -757,59 +786,17 @@
     <MESSAGE value="。。。。" />
     <MESSAGE value="。。。。0" />
     <MESSAGE value="听我的" />
-    <option name="LAST_COMMIT_MESSAGE" value="听我的" />
+    <MESSAGE value="管理员登录完成，请使用json，求你了" />
+    <option name="LAST_COMMIT_MESSAGE" value="管理员登录完成，请使用json，求你了" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/plugins/bower_components/sweetalert/sweetalert.min.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/plugins/bower_components/sweetalert/jquery.sweet-alert.custom.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/demo/logo/logo-dark.png" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/style.css" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/avision/js/post.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/xfzldcustom.js" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/portal.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/UserMapper.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/UserController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/RegistRequestParam.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/exception/UsernameDuplicateException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/User.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/UserExample.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/MyExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/UserServiceImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/UserService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generator.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="41" selection-start-column="41" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generator-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="46" column="73" lean-forward="true" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/SqlMapConfig.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -820,35 +807,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/LaboratoryMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/TeacherMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/TeacherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Laboratory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -880,13 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/properties/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -901,23 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/TeacherServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" selection-start-line="11" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1168">
@@ -925,20 +860,155 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.cookie.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+        <state relative-caret-position="640">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/RepairAspect.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generator-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="591">
+          <caret line="46" column="73" lean-forward="true" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/Report/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generator.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/LogoutRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/TeacherMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="26" column="35" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/TeacherMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3792">
+          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/ResetPasswordRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="28" />
+          <folding>
+            <element signature="e#153#154#0" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AdminUpdatePasswordRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="44" />
+          <folding>
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/AdminServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" column="69" selection-start-line="31" selection-start-column="69" selection-end-line="31" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/TeacherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddLabRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="31" />
+          <folding>
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#612#613#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#748#749#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/LaboratoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -951,18 +1021,165 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/LoginService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="49" />
+        <state relative-caret-position="144">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LaboratoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="40" column="45" lean-forward="true" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="87" column="35" lean-forward="true" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddTeacherRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="67" column="29" lean-forward="true" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+          <folding>
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#716#717#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+            <element signature="e#820#821#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1002#1003#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="e#1172#1173#0" expanded="true" />
+            <element signature="e#1204#1205#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1266#1267#0" expanded="true" />
+            <element signature="e#1310#1311#0" expanded="true" />
+            <element signature="e#1346#1347#0" expanded="true" />
+            <element signature="e#1381#1382#0" expanded="true" />
+            <element signature="e#1412#1413#0" expanded="true" />
+            <element signature="e#1460#1461#0" expanded="true" />
+            <element signature="e#1500#1501#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="true" />
+            <element signature="e#1566#1567#0" expanded="true" />
+            <element signature="e#1614#1615#0" expanded="true" />
+            <element signature="e#1654#1655#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+            <element signature="e#1720#1721#0" expanded="true" />
+            <element signature="e#1768#1769#0" expanded="true" />
+            <element signature="e#1808#1809#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstVar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="64" lean-forward="true" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/TeacherServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="44" column="44" lean-forward="true" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LaboratoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="60" column="29" selection-start-line="50" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/MyExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/DeleteLabRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="21" selection-start-line="3" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="e#116#117#0" expanded="true" />
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/DeleteTeacherRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="38" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="38" />
+          <folding>
+            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#149#150#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="56" column="53" lean-forward="true" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/exception/UsernameDuplicateException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/LoginRequestParam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="20" />
+        <state relative-caret-position="80">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
           <folding>
             <element signature="e#182#183#0" expanded="true" />
             <element signature="e#213#214#0" expanded="true" />
@@ -980,67 +1197,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.cookie.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstantVariable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/RepairAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LaboratoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" selection-start-line="11" selection-end-line="12" selection-end-column="46" />
+        <state relative-caret-position="432">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="29" column="30" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LaboratoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="75" column="56" selection-start-line="75" selection-start-column="56" selection-end-line="75" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="364">
+          <caret line="72" column="67" lean-forward="true" selection-start-line="72" selection-start-column="67" selection-end-line="72" selection-end-column="67" />
         </state>
       </provider>
     </entry>
