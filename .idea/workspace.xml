@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Report:war" />
+      <artifact name="Report:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="791c34d1-eeb6-4af9-9993-3d36ab6baa38" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Report_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Report_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/com/mayousheng/www/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/com/mayousheng/www/exception/PhoneDuplicateException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/com/mayousheng/www/mapper/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/com/mayousheng/www/param/RegistRequestParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/com/mayousheng/www/pojo/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/com/mayousheng/www/pojo/UserExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/com/mayousheng/www/pojo/UserExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/com/mayousheng/www/pojo/UserExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/com/mayousheng/www/pojo/UserExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/com/mayousheng/www/resolver/MyExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/com/mayousheng/www/resolver/RepairAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/com/mayousheng/www/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/com/mayousheng/www/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/generator/generator-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/generator/generator.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/mybatis/SqlMapConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/mybatis/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/properties/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/spring/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/spring/spring-mybatis.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/classes/sql/test.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/ant-1.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/ant-launcher-1.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/asm-5.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/aspectjrt-1.8.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/aspectjweaver-1.8.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/cglib-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/commons-codec-1.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/commons-dbcp-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/commons-logging-1.1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/commons-pool-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/cors-filter-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/fastjson-1.1.41.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/gson-2.6.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/jackson-annotations-2.7.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/jackson-core-2.7.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/jackson-core-asl-1.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/jackson-databind-2.7.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/jackson-mapper-asl-1.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/java-property-utils-1.9.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/javaee-api-7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/javax.mail-1.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/mybatis-3.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/mybatis-spring-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/mysql-connector-java-5.1.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/servlet-api-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/slf4j-api-1.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/slf4j-log4j12-1.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/spring-aop-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/spring-beans-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/spring-context-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/spring-context-support-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/spring-core-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/spring-expression-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/spring-jdbc-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/spring-oxm-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/spring-test-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/spring-tx-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/spring-web-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/lib/spring-webmvc-4.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/css/vendor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/fonts/icomoon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/images/demo/agreement.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/images/demo/image-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/images/demo/image-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/images/demo/logo/logo-dark-title.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/images/demo/logo/logo-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/images/demo/logo/logo-light-title.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/images/demo/logo/logo-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/images/demo/logo/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/js/vendor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/js/xfzldcustom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/plugins/bower_components/sweetalert/jquery.sweet-alert.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/plugins/bower_components/sweetalert/sweetalert-dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/plugins/bower_components/sweetalert/sweetalert.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/assets/plugins/bower_components/sweetalert/sweetalert.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/category.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/arrow_d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/arrow_l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/arrow_r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/arrow_r.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/author.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/category.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/cloud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/comment_author_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/comment_author_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/contact.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/home_slider.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/home_slider_next.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/next_arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/next_arrow_2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_body.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/post_nosidebar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/prev_arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/prev_arrow_2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/regular.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/search_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/sub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/top_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/top_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/top_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/top_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/vid_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/vid_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/vid_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/vid_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/video_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/video_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/video_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/images/video_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/js/category.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/js/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/js/post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/js/post_nosidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/js/regular.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/OwlCarousel2-2.2.1/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/OwlCarousel2-2.2.1/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/OwlCarousel2-2.2.1/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/OwlCarousel2-2.2.1/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/OwlCarousel2-2.2.1/owl.theme.default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/OwlCarousel2-2.2.1/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/easing/easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/HELP-US-OUT.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/less/screen-reader.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/scss/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/font-awesome-4.7.0/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/jquery.mb.YTPlayer-3.1.12/jquery.mb.YTPlayer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/jquery.mb.YTPlayer-3.1.12/jquery.mb.YTPlayer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/masonry/images_loaded.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/masonry/masonry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/plugins/parallax-js-master/parallax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/post_nosidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/regular.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/bootstrap4/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/bootstrap4/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/bootstrap4/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/category.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/category_responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/contact.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/contact_responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/main_styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/post.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/post_nosidebar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/post_nosidebar_responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/post_responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/regular.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/regular_responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/avision/styles/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven/jsp/portal.html" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="LoginService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/LoginService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/AdminServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LaboratoryController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LaboratoryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepairAspect.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/RepairAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1168">
+              <caret line="73" column="44" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginRequestParam.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/LoginRequestParam.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#182#183#0" expanded="true" />
+                <element signature="e#213#214#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
+                <element signature="e#301#302#0" expanded="true" />
+                <element signature="e#336#337#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+                <element signature="e#547#548#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LaboratoryServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LaboratoryServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="11" selection-start-line="11" selection-end-line="12" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>showuser.jsp</find>
+      <find>jackson</find>
+      <find>json</find>
+      <find>generator</find>
+      <find>marking</find>
+      <find>insertSelective</find>
+      <find>deleteByPrimaryKey</find>
+      <find>BaseResultMap</find>
+      <find>tomcat</find>
+      <find>spring-mybatis</find>
+      <find>component-scan</find>
+      <find>cglib</find>
+      <find>image-2</find>
+      <find>youtube</find>
+      <find>bootstrap</find>
+      <find>purple</find>
+      <find>chwangteng</find>
+      <find>regist</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\Users\chwangteng\Downloads\SSMByMaven</dir>
+      <dir>C:\Users\Administrator\Desktop\SSMByMaven</dir>
+      <dir>C:\Users\chwangteng\Documents\GitHub\SSMByMaven</dir>
+      <dir>C:\Users\chwangteng\Documents\GitHub\Report</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/sql/test.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/showUserAll.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Cross/SimpleCORSFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/RegistParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/RegistRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/CustomExceptionResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/showUser.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/js/xfzldcustom.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/portal.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/xfzldcustom.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/portal.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/properties/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/exception/PhoneDuplicateException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/MyExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/generator/generator.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/generator/generator-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LaboratoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LaboratoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/TeacherServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/LoginRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/RepairAspect.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mapper/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SSMByMaven Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="SSMByMaven Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp\assets" />
+      <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp" />
+      <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp\assets\js\plugins\bower_components\sweetalert" />
+      <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp\assets\images\demo\logo" />
+      <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp\WEB-INF\assets\images\demo" />
+      <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp\WEB-INF\assets\images\demo\logo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.ssm">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="UserTest.testInsertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Report" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mapper" />
+      <option name="MAIN_CLASS_NAME" value="mapper.UserTest" />
+      <option name="METHOD_NAME" value="testInsertUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="UserTest.testSelectUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Report" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mapper" />
+      <option name="MAIN_CLASS_NAME" value="mapper.UserTest" />
+      <option name="METHOD_NAME" value="testSelectUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="ssm" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.33" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Report:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_SSMByMaven" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="10608" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Report:war exploded" />
+          <artifact name="Report:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.ssm" />
+      <item itemvalue="JUnit.UserTest.testSelectUser" />
+      <item itemvalue="JUnit.UserTest.testInsertUser" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserTest.testInsertUser" />
+        <item itemvalue="JUnit.UserTest.testSelectUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="791c34d1-eeb6-4af9-9993-3d36ab6baa38" name="Default" comment="" />
+      <created>1536327808854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536327808854</updated>
+      <workItem from="1536327810295" duration="202000" />
+      <workItem from="1536328034072" duration="17750000" />
+      <workItem from="1536397897011" duration="3859000" />
+      <workItem from="1536461793626" duration="27016000" />
+      <workItem from="1536763866487" duration="7733000" />
+      <workItem from="1536852248191" duration="14872000" />
+      <workItem from="1537146728261" duration="33908000" />
+      <workItem from="1537373211714" duration="341000" />
+      <workItem from="1538037001016" duration="1206000" />
+      <workItem from="1538816014172" duration="2372000" />
+      <workItem from="1540822792435" duration="643000" />
+      <workItem from="1540886471056" duration="1747000" />
+      <workItem from="1540893678776" duration="608000" />
+      <workItem from="1540894489066" duration="522000" />
+      <workItem from="1540904769523" duration="4418000" />
+      <workItem from="1540952556727" duration="104000" />
+      <workItem from="1540952707019" duration="558000" />
+      <workItem from="1540953424097" duration="935000" />
+    </task>
+    <task id="LOCAL-00001" summary="。。。。">
+      <created>1540894628937</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540894628937</updated>
+    </task>
+    <task id="LOCAL-00002" summary="。。。。">
+      <created>1540894756135</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540894756135</updated>
+    </task>
+    <task id="LOCAL-00003" summary="听我的">
+      <created>1540954098027</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1540954098027</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="UserTest_testInsertUser - 2018.09.11 at 23h 24m 11s.xml">
+      <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testInsertUser - 2018.09.12 at 19h 38m 12s.xml">
+      <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testInsertUser - 2018.09.12 at 19h 38m 41s.xml">
+      <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testInsertUser - 2018.09.12 at 19h 40m 30s.xml">
+      <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testSelectUser - 2018.09.12 at 20h 01m 24s.xml">
+      <configuration name="UserTest.testSelectUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testSelectUser - 2018.09.12 at 20h 02m 03s.xml">
+      <configuration name="UserTest.testSelectUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testInsertUser - 2018.09.12 at 20h 05m 33s.xml">
+      <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testInsertUser - 2018.09.12 at 20h 11m 06s.xml">
+      <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testInsertUser - 2018.09.12 at 20h 12m 03s.xml">
+      <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testInsertUser - 2018.09.12 at 22h 52m 17s.xml">
+      <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="122063000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1933" height="1063" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.34773332" side_tool="true" visible="true" weight="0.2561629" />
+      <window_info anchor="bottom" id="Application Servers" order="12" sideWeight="0.48533332" weight="0.20364416" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.2736" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="right" id="CDI" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="JSF" order="4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49653333" weight="0.3993576" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49706668" weight="0.32976446" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4944" weight="0.32583067" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.496" weight="0.32976446" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6522667" weight="0.2561629" />
+      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.496" weight="0.32976446" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49546668" weight="0.32976446" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" side_tool="true" visible="true" weight="0.21706666" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info id="Web" order="5" sideWeight="0.50167227" side_tool="true" weight="0.20426667" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49973333" weight="0.32976446" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="。。。。" />
+    <MESSAGE value="。。。。0" />
+    <MESSAGE value="听我的" />
+    <option name="LAST_COMMIT_MESSAGE" value="听我的" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/demo/logo/logo-dark-title.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/demo/logo/logo-light.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/plugins/bower_components/sweetalert/sweetalert.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/plugins/bower_components/sweetalert/sweetalert.min.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/plugins/bower_components/sweetalert/jquery.sweet-alert.custom.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/images/demo/logo/logo-dark.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/avision/js/post.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/js/xfzldcustom.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/portal.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserMapper.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/UserMapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/UserController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/RegistRequestParam.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/exception/UsernameDuplicateException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/User.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/UserExample.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/MyExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/UserServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/UserService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generator.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="41" selection-start-column="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generator-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="46" column="73" lean-forward="true" selection-start-line="46" selection-start-column="73" selection-end-line="46" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/SqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="50" column="54" lean-forward="true" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/LaboratoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/TeacherMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/TeacherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Laboratory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/dumpDatabase.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/test.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/LaboratoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/AdminMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/TeacherServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" selection-start-line="11" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LaboratoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="11" selection-start-line="11" selection-end-line="12" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/AdminServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/LoginRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#415#416#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1168">
+          <caret line="73" column="44" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LaboratoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="28" column="61" selection-start-line="28" selection-start-column="61" selection-end-line="28" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/RepairAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>Report:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Report</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: mysql:mysql-connector-java:5.1.30</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
