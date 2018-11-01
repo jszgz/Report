@@ -2,11 +2,9 @@ package com.mayousheng.www.controller;
 
 
 import com.mayousheng.www.Utils.ConstVar;
+import com.mayousheng.www.mapper.LaboratoryMapper;
 import com.mayousheng.www.mapper.TeacherMapper;
-import com.mayousheng.www.param.AddLabRequestParam;
-import com.mayousheng.www.param.AddTeacherRequestParam;
-import com.mayousheng.www.param.DeleteLabRequestParam;
-import com.mayousheng.www.param.DeleteTeacherRequestParam;
+import com.mayousheng.www.param.*;
 import com.mayousheng.www.pojo.Laboratory;
 import com.mayousheng.www.pojo.Teacher;
 import com.mayousheng.www.service.TeacherService;
@@ -18,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -26,6 +25,8 @@ public class TeacherController {
 
     @Autowired
     private TeacherMapper teacherMapper;
+    @Autowired
+    private LaboratoryMapper laboratoryMapper;
 
     //新增老师
     @RequestMapping("/addTeacher.action")
@@ -42,34 +43,90 @@ public class TeacherController {
         teacher.setUsername(addTeacherRequestParam.getUsername());
         teacher.setPassword(addTeacherRequestParam.getPassword());
         int rows = teacherMapper.insertSelective(teacher);
-        if(rows==1){
-            Map<String,Object> map = new HashMap<String,Object>();
-            map.put("message", "新增老师成功");
-            return new ModelAndView(new MappingJackson2JsonView(),map);
+        if(rows==1) {
+            //如果是主管老师,去更新实验室表
+            if(teacher.getIsSupervisor()==ConstVar._SUPER_YES_){
+                //再去更新实验室表
+                Laboratory lab= laboratoryMapper.selectByPrimaryKey(addTeacherRequestParam.getLab_id());
+                if(lab!=null){
+                    lab.setTeacherId(teacher.getId());
+                    int labrows = laboratoryMapper.updateByPrimaryKeySelective(lab);
+                    if(labrows==1){
+                        Map<String,Object> map = new HashMap<String,Object>();
+                        map.put(ConstVar._KEY_MESSAGE_, "新增老师成功");
+                        return new ModelAndView(new MappingJackson2JsonView(),map);
+                    }else{
+                        Map<String,Object> map = new HashMap<String,Object>();
+                        map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+                        map.put(ConstVar._KEY_MESSAGE_, "更新该老师主管的实验室失败");
+                        return new ModelAndView(new MappingJackson2JsonView(),map);
+                    }
+                }else{
+                    Map<String,Object> map = new HashMap<String,Object>();
+                    map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_NOTFOUND);
+                    map.put(ConstVar._KEY_MESSAGE_, "没有找到该老师主管的实验室");
+                    return new ModelAndView(new MappingJackson2JsonView(),map);
+                }
+            }else{//不需要更新实验室表，直接成功
+                Map<String,Object> map = new HashMap<String,Object>();
+                map.put(ConstVar._KEY_MESSAGE_, "新增老师成功");
+                return new ModelAndView(new MappingJackson2JsonView(),map);
+            }
         }else{
             Map<String,Object> map = new HashMap<String,Object>();
-            map.put("code", ConstVar._ERROR_COMMON_);
-            map.put("message", "未知错误，新增老师失败");
+            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+            map.put(ConstVar._KEY_MESSAGE_, "未知错误，新增老师失败");
             return new ModelAndView(new MappingJackson2JsonView(),map);
         }
         //如果老师的username重复，会直接抛出异常，已经用切片处理了该异常
     }
 
     //删除老师
-    @RequestMapping("/deleteLab.action")
-    public ModelAndView deleteLab(@RequestBody DeleteTeacherRequestParam deleteTeacherRequestParam)   {
+    @RequestMapping("/deleteTeacher.action")
+    public ModelAndView deleteTeacher(@RequestBody DeleteTeacherRequestParam deleteTeacherRequestParam)   {
 
         int rows = teacherMapper.deleteByPrimaryKey(deleteTeacherRequestParam.getId());
         Map<String,Object> map = new HashMap<String,Object>();
         if(rows==1){
-            map.put("message", "删除老师成功");
+            map.put(ConstVar._KEY_MESSAGE_, "删除老师成功");
         }else if(rows==0) {
-            map.put("code", ConstVar._ERROR_NOTFOUND);
-            map.put("message", "不存在该老师");
+            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_NOTFOUND);
+            map.put(ConstVar._KEY_MESSAGE_, "不存在该老师");
         }else {
-            map.put("code", ConstVar._ERROR_COMMON_);
-            map.put("message", "未知错误，删除老师失败");
+            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+            map.put(ConstVar._KEY_MESSAGE_, "未知错误，删除老师失败");
         }
         return new ModelAndView(new MappingJackson2JsonView(),map);
     }
+
+    //更新老师信息//还需要更新实验室表中的内容！！！！！！！！！！
+    @RequestMapping("/updateTeacher.action")
+    public ModelAndView updateTeacher(@RequestBody UpdateTeacherRequestParam updateTeacherRequestParam){
+
+        Teacher teacher = new Teacher();
+        teacher.setIsSupervisor(updateTeacherRequestParam.getIs_supervisor());
+        teacher.setAbout(updateTeacherRequestParam.getAbout());
+        teacher.setSex(updateTeacherRequestParam.getSex());
+        teacher.setTelephone(updateTeacherRequestParam.getTelephone());
+        teacher.setMail(updateTeacherRequestParam.getMail());
+        teacher.setName(updateTeacherRequestParam.getName());
+        teacher.setLabId(updateTeacherRequestParam.getLab_id());//还需要更新实验室表中的内容！！！！！！！！！！
+        teacher.setDeadline(updateTeacherRequestParam.getDeadline());
+        teacher.setUsername(updateTeacherRequestParam.getUsername());
+        teacher.setPassword(updateTeacherRequestParam.getPassword());
+        int rows = teacherMapper.updateByPrimaryKeySelective(teacher);
+        Map<String,Object> map = new HashMap<String,Object>();
+        if(rows==1){
+            map.put(ConstVar._KEY_MESSAGE_, "更新成功");
+        }else if(rows==0) {
+            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_NOTFOUND);
+            map.put(ConstVar._KEY_MESSAGE_, "不存在该老师");
+        }else {
+            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+            map.put(ConstVar._KEY_MESSAGE_, "未知错误，更新老师失败");
+        }
+        return new ModelAndView(new MappingJackson2JsonView(),map);
+    }
+
+    //查找老师信息
 }

@@ -1,6 +1,7 @@
 package mapper;
 
 import com.mayousheng.www.mapper.LaboratoryMapper;
+import com.mayousheng.www.pojo.Laboratory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,6 +57,15 @@ public class UserTest {
 
         int rows = labMapper.deleteByPrimaryKey(100);
         System.out.println(rows);
+    }
+
+
+    @Test
+    @Transactional
+    public  void testselectbyprimarykey(){
+
+        Laboratory lab= labMapper.selectByPrimaryKey(2);
+        System.out.println(lab==null);
     }
 
 }

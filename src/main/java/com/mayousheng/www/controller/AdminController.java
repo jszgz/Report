@@ -30,22 +30,22 @@ public class AdminController {
         if(rows==1){
             Map<String,Object> map = new HashMap<String,Object>();
             if(resetPasswordRequestParam.getType()==ConstVar._TEACHER_)
-                map.put("message", "密码已重置为工号后6位");
+                map.put(ConstVar._KEY_MESSAGE_, "密码已重置为工号后6位");
             if(resetPasswordRequestParam.getType()==ConstVar._STUDENT_)
-                map.put("message", "密码已重置为学号后6位");
+                map.put(ConstVar._KEY_MESSAGE_, "密码已重置为学号后6位");
             return new ModelAndView(new MappingJackson2JsonView(),map);
         }else if(rows==ConstVar._ERROR_NOTFOUND){
             Map<String,Object> map = new HashMap<String,Object>();
-            map.put("code", ConstVar._ERROR_NOTFOUND);
+            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_NOTFOUND);
             if(resetPasswordRequestParam.getType()==ConstVar._TEACHER_)
-                map.put("message", "不存在该老师");
+                map.put(ConstVar._KEY_MESSAGE_, "不存在该老师");
             if(resetPasswordRequestParam.getType()==ConstVar._STUDENT_)
-                map.put("message", "不存在该学生");
+                map.put(ConstVar._KEY_MESSAGE_, "不存在该学生");
             return new ModelAndView(new MappingJackson2JsonView(),map);
         }else{
             Map<String,Object> map = new HashMap<String,Object>();
-            map.put("code", ConstVar._ERROR_COMMON_);
-            map.put("message", "未知错误，重置失败");
+            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+            map.put(ConstVar._KEY_MESSAGE_, "未知错误，重置失败");
             return new ModelAndView(new MappingJackson2JsonView(),map);
         }
     }
@@ -58,20 +58,20 @@ public class AdminController {
                 adminUpdatePasswordRequestParam.getPassword());
         if(rows==1){
             Map<String,Object> map = new HashMap<String,Object>();
-            map.put("message", "密码已修改");
+            map.put(ConstVar._KEY_MESSAGE_, "密码已修改");
             return new ModelAndView(new MappingJackson2JsonView(),map);
         }else if(rows==ConstVar._ERROR_NOTFOUND){
             Map<String,Object> map = new HashMap<String,Object>();
-            map.put("code", ConstVar._ERROR_NOTFOUND);
+            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_NOTFOUND);
             if(adminUpdatePasswordRequestParam.getType()==ConstVar._TEACHER_)
-                map.put("message", "不存在该老师");
+                map.put(ConstVar._KEY_MESSAGE_, "不存在该老师");
             if(adminUpdatePasswordRequestParam.getType()==ConstVar._STUDENT_)
-                map.put("message", "不存在该学生");
+                map.put(ConstVar._KEY_MESSAGE_, "不存在该学生");
             return new ModelAndView(new MappingJackson2JsonView(),map);
         }else{
             Map<String,Object> map = new HashMap<String,Object>();
-            map.put("code", ConstVar._ERROR_COMMON_);
-            map.put("message", "未知错误，修改失败");
+            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+            map.put(ConstVar._KEY_MESSAGE_, "未知错误，修改失败");
             return new ModelAndView(new MappingJackson2JsonView(),map);
         }
     }

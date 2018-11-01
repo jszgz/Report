@@ -66,8 +66,8 @@ public class LoginController {
 
         //如果还没有return
         Map<String,Object> map = new HashMap<String,Object>();
-        map.put("code", ConstVar._ERROR_COMMON_);
-        map.put("message", "账号或密码错误");
+        map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+        map.put(ConstVar._KEY_MESSAGE_, "账号或密码错误");
         //清空session中的记录值
         session.removeAttribute("tableId");
         session.removeAttribute("tabletype");
@@ -85,7 +85,7 @@ public class LoginController {
         sessionStatus.setComplete();
 
         Map<String,Object> map = new HashMap<String,Object>();
-        map.put("message", "注销成功");
+        map.put(ConstVar._KEY_MESSAGE_, "注销成功");
         return new ModelAndView(new MappingJackson2JsonView(),map);
     }
 
