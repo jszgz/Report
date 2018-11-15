@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>Ample Admin Template - The Ultimate Multipurpose admin template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../plugins/bower_components/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <link rel="stylesheet" href="../plugins/bower_components/html5-editor/bootstrap-wysihtml5.css" />
+    <!-- Wizard CSS -->
+    <link href="../plugins/bower_components/jquery-wizard-master/css/wizard.css" rel="stylesheet">
+</head>
+<style>
+    .col-lg-2 col-sm-4 col-xs-12{
+
+    }
+</style>
+<body class="fix-header">
+
+<div id="wrapper">
+
+
+    <div class="navbar-default sidebar" role="navigation">
+        <div class="sidebar-nav slimscrollsidebar">
+            <div class="sidebar-head">
+                <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">导航</span></h3> </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="user-profile">
+                <div class="dropdown user-pro-body">
+                    <div><img src="../plugins/images/users/user.png" alt="user-img" class="img-circle"></div>
+                    <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">student <span class="caret"></span></a>
+                    <ul class="dropdown-menu animated flipInY">
+                        <li><a href="login2.html"><i class="fa fa-power-off"></i> 登出</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="nav" id="side-menu">
+                <li> <a href="index.html" class="waves-effect"><i class="mdi mdi-av-timer fa-fw" data-icon="v"></i> <span class="hide-menu">周报管理 <span class="fa arrow"></span> </span></a>
+                    <ul class="nav nav-second-level">
+                        <li> <a href="#"><i data-icon="&#xe026;" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu">新增/编辑周报</span></a> </li>
+                        <li> <a href="all_report.html"><i data-icon="&#xe025;" class="linea-icon linea-basic fa-fw"></i><span class="hide-menu">历史查询</span></a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Page Content -->
+    <!-- ============================================================== -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel-group wiz-aco" id="accordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        本周总结
+                                    </a>
+                                </h4> </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="white-box">
+                                            <form method="post">
+                                                <div class="form-group">
+                                                    <textarea id="edit1" class="textarea_editor form-control" rows="15" placeholder="Enter text ..."></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        困难总结
+                                    </a>
+                                </h4> </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="white-box">
+                                            <form method="post">
+                                                <div class="form-group">
+                                                    <textarea id="edit2" class="textarea_editor form-control" rows="15" placeholder="Enter text ..."></textarea>                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        下周计划
+                                    </a>
+                                </h4> </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="white-box">
+                                            <form method="post">
+                                                <div class="form-group">
+                                                    <textarea id="edit3" class="textarea_editor form-control" rows="15" placeholder="Enter text ..."></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container-fluid -->
+        <footer class="footer text-center"> 2018 &copy; 软件项目管理第三组荣誉出品 </footer>
+    </div>
+</div>
+    <!-- /#page-wrapper -->
+<!-- /#wrapper -->
+<!-- jQuery -->
+<script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Menu Plugin JavaScript -->
+<script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+<!--slimscroll JavaScript -->
+<script src="js/jquery.slimscroll.js"></script>
+<!--Wave Effects -->
+<script src="js/waves.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.min.js"></script>
+<!-- Form Wizard JavaScript -->
+<script src="../plugins/bower_components/jquery-wizard-master/dist/jquery-wizard.min.js"></script>
+<!-- FormValidation -->
+<link rel="stylesheet" href="../plugins/bower_components/jquery-wizard-master/libs/formvalidation/formValidation.min.css">
+<!-- FormValidation plugin and the class supports validating Bootstrap form -->
+<script src="../plugins/bower_components/jquery-wizard-master/libs/formvalidation/formValidation.min.js"></script>
+<script src="../plugins/bower_components/jquery-wizard-master/libs/formvalidation/bootstrap.min.js"></script>
+<!-- Editable -->
+<script src="../plugins/bower_components/jsgrid/db-3.js"></script>
+<script type="text/javascript" src="../plugins/bower_components/jsgrid/dist/jsgrid.min.js"></script>
+<script src="js/jsgrid-init-3.js"></script>
+<!--Style Switcher -->
+<script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+<!-- wysuhtml5 Plugin JavaScript -->
+<script src="../plugins/bower_components/html5-editor/wysihtml5-0.3.0.js"></script>
+<script src="../plugins/bower_components/html5-editor/bootstrap-wysihtml5.js"></script>
+<!-- Sweet-Alert  -->
+<script src="../plugins/bower_components/sweetalert/sweetalert.min.js"></script>
+<script type="text/javascript">
+    (function () {
+    $('#accordion').wizard({
+        step: '[data-toggle="collapse"]',
+        buttonsAppendTo: '.panel-collapse',
+        templates: {
+            buttons: function() {
+                var options = this.options;
+                return '<div class="panel-footer"><ul class="pager">' + '<li class="previous">' + '<a href="#' + this.id + '" data-wizard="back" role="button">' + options.buttonLabels.back + '</a>' + '</li>' + '<li class="next">' + '<a href="#' + this.id + '" data-wizard="next" role="button">' + options.buttonLabels.next + '</a>' + '<a href="#' + this.id + '" data-wizard="finish" role="button">' + options.buttonLabels.finish + '</a>' + '</li>' + '</ul></div>';
+            }
+        },
+        onBeforeShow: function(step) {
+            step.$pane.collapse('show');
+        },
+        onBeforeHide: function(step) {
+            step.$pane.collapse('hide');
+        },
+        onFinish: function() {
+            swal("提交成功", "你本周的周报已提交！");
+        }
+    });
+    })();
+</script>
+    <script>
+        $(document).ready(function() {
+            $('#edit1').wysihtml5();
+            $('#edit2').wysihtml5();
+            $('#edit3').wysihtml5();
+        });
+    </script>
+</body>
+
+</html>

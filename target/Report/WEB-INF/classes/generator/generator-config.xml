@@ -46,6 +46,12 @@
         <table tableName="teacher" domainObjectName="Teacher">
             <generatedKey column="id" sqlStatement="JDBC"></generatedKey>
         </table>
+        <table tableName="student" domainObjectName="Student">
+            <generatedKey column="id" sqlStatement="JDBC"></generatedKey>
+        </table>
+        <table tableName="report" domainObjectName="Report">
+            <generatedKey column="id" sqlStatement="JDBC"></generatedKey>
+        </table>
 
     </context>
 </generatorConfiguration>

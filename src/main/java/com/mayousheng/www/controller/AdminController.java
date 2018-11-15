@@ -50,7 +50,7 @@ public class AdminController {
         }
     }
 
-    //管理员修改学生和老师的密码，学生的还没做
+    //管理员修改学生和老师的密码
     @RequestMapping("/updatePassword.action")
     public ModelAndView updatePassword(@RequestBody AdminUpdatePasswordRequestParam adminUpdatePasswordRequestParam)   {
         int rows = adminService.updatePassword(adminUpdatePasswordRequestParam.getUsername(),

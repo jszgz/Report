@@ -27,6 +27,8 @@ public class TeacherController {
     private TeacherMapper teacherMapper;
     @Autowired
     private LaboratoryMapper laboratoryMapper;
+    @Autowired
+    private TeacherService teacherService;
 
     //新增老师
     @RequestMapping("/addTeacher.action")
@@ -44,6 +46,10 @@ public class TeacherController {
         teacher.setPassword(addTeacherRequestParam.getPassword());
         int rows = teacherMapper.insertSelective(teacher);
         if(rows==1) {
+            //如果没有设置密码，就重置老师的密码，密码是后六位
+            if (addTeacherRequestParam.getPassword()==""||addTeacherRequestParam.getPassword()==null){
+                teacherService.resetPassword(teacher.getUsername());
+            }
             //如果是主管老师,去更新实验室表
             if(teacher.getIsSupervisor()==ConstVar._SUPER_YES_){
                 //再去更新实验室表
@@ -127,6 +133,14 @@ public class TeacherController {
         }
         return new ModelAndView(new MappingJackson2JsonView(),map);
     }
+
+
+    //
+
+
+
+
+
 
     //查找老师信息
 }
