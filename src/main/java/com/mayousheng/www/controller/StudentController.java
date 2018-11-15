@@ -26,7 +26,7 @@ public class StudentController {
 
     //新增学生
     @RequestMapping("/addStudent.action")
-    public ModelAndView addTeacher(@RequestBody AddStudentRequestParam addStudentRequestParam)   {
+    public ModelAndView addStudent(@RequestBody AddStudentRequestParam addStudentRequestParam)   {
         Student student = new Student();
         student.setSex(addStudentRequestParam.getSex());
         student.setTelephone(addStudentRequestParam.getTelephone());

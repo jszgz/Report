@@ -27,7 +27,7 @@ public class ReportController {
 
     //新增周报
     @RequestMapping("/addReport.action")
-    public ModelAndView addTeacher(@RequestBody AddReportRequestParam addReportRequestParam)   {
+    public ModelAndView addReport(@RequestBody AddReportRequestParam addReportRequestParam)   {
         Report report = new ReportWithBLOBs();
         report.setStudentId(addReportRequestParam.getStudentId());
         report.setSubmitTime(new Date());
@@ -46,5 +46,17 @@ public class ReportController {
             return new ModelAndView(new MappingJackson2JsonView(),map);
         }
 
+    }
+
+    //查看某个周报
+    @RequestMapping("/viewReport.action")
+    public ModelAndView viewReport(@RequestBody int id){
+        Report report = new ReportWithBLOBs();
+        report.setId(id);
+        Report record = reportMapper.selectByPrimaryKey(id);
+        ModelAndView mv = new ModelAndView();
+        mv.addObject("report",record);
+        mv.setView(new MappingJackson2JsonView());
+        return mv;
     }
 }
