@@ -22,7 +22,7 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!-- 实体类生成的位置 -->
-        <javaModelGenerator targetPackage="com.mayousheng.www.pojo" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.chwangteng.www.pojo" targetProject="src/main/java">
             <!-- 是否对model添加 构造函数 -->
             <property name="constructorBased" value="true"/>
             <!-- 是否允许子包，即targetPackage.schemaName.tableName -->
@@ -33,7 +33,7 @@
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
         <!-- Mapper 接口文件的位置 -->
-        <javaClientGenerator targetPackage="com.mayousheng.www.mapper" targetProject="src/main/java" type="XMLMAPPER">
+        <javaClientGenerator targetPackage="com.chwangteng.www.mapper" targetProject="src/main/java" type="XMLMAPPER">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
         <!-- 要生成的表: tableName是数据库中的表名或视图名 domainObjectName是实体类名-->

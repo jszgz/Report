@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.mayousheng.www.mapper.StudentMapper" >
-  <resultMap id="BaseResultMap" type="com.mayousheng.www.pojo.Student" >
+<mapper namespace="com.chwangteng.www.mapper.StudentMapper" >
+  <resultMap id="BaseResultMap" type="com.chwangteng.www.pojo.Student" >
     <constructor >
       <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="sex" jdbcType="VARCHAR" javaType="java.lang.String" />
@@ -75,7 +75,7 @@
   <sql id="Base_Column_List" >
     id, sex, telephone, mail, token, name, teacher_id, username, password
   </sql>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.mayousheng.www.pojo.StudentExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.chwangteng.www.pojo.StudentExample" >
     select
     <if test="distinct" >
       distinct
@@ -99,13 +99,13 @@
     delete from student
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.mayousheng.www.pojo.StudentExample" >
+  <delete id="deleteByExample" parameterType="com.chwangteng.www.pojo.StudentExample" >
     delete from student
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.mayousheng.www.pojo.Student" useGeneratedKeys="true" keyProperty="id" >
+  <insert id="insert" parameterType="com.chwangteng.www.pojo.Student" useGeneratedKeys="true" keyProperty="id" >
     insert into student (sex, telephone, mail, 
       token, name, teacher_id, 
       username, password)
@@ -113,7 +113,7 @@
       #{token,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{teacherId,jdbcType=INTEGER}, 
       #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.mayousheng.www.pojo.Student" useGeneratedKeys="true" keyProperty="id" >
+  <insert id="insertSelective" parameterType="com.chwangteng.www.pojo.Student" useGeneratedKeys="true" keyProperty="id" >
     insert into student
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="sex != null" >
@@ -168,7 +168,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.mayousheng.www.pojo.StudentExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="com.chwangteng.www.pojo.StudentExample" resultType="java.lang.Integer" >
     select count(*) from student
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
@@ -224,7 +224,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.mayousheng.www.pojo.Student" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.chwangteng.www.pojo.Student" >
     update student
     <set >
       <if test="sex != null" >
@@ -254,7 +254,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.mayousheng.www.pojo.Student" >
+  <update id="updateByPrimaryKey" parameterType="com.chwangteng.www.pojo.Student" >
     update student
     set sex = #{sex,jdbcType=VARCHAR},
       telephone = #{telephone,jdbcType=VARCHAR},

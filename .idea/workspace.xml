@@ -2,72 +2,180 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Report:war" />
       <artifact name="Report:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="791c34d1-eeb6-4af9-9993-3d36ab6baa38" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/ReportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddReportRequestParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddStudentRequestParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/ReportSubmitRequestParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/StudentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/bootstrap-datepicker/bootstrap-datepicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/bootstrap-datepicker/bootstrap-datepicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/clockpicker/dist/jquery-clockpicker.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/clockpicker/dist/jquery-clockpicker.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/html5-editor/bootstrap-wysihtml5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/html5-editor/bootstrap-wysihtml5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/html5-editor/wysihtml5-0.3.0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/css/wizard.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/dist/jquery-wizard.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/libs/formvalidation/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/libs/formvalidation/formValidation.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/libs/formvalidation/formValidation.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jsgrid/db-3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sweetalert/jquery.sweet-alert.custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sweetalert/sweetalert-dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sweetalert/sweetalert.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sweetalert/sweetalert.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/add_student.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/all_report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/core_report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/linea-icons/linea.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/js/jsgrid-init-3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/css/simple-line-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/fonts/Simple-Line-Icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/fonts/Simple-Line-Icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/fonts/Simple-Line-Icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/fonts/Simple-Line-Icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/fonts/Simple-Line-Icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/less/simple-line-icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/scss/simple-line-icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/teacher_zbxt.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/time_set.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/user_teacher_pwd.html" afterDir="false" />
+    <list default="true" id="791c34d1-eeb6-4af9-9993-3d36ab6baa38" name="Default" comment="二期">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/Utils/DeadlineConvertor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/Utils/SendMsgUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/interceptor/CustomInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ReplyStudentsReportParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SelectStudentRequestParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SelectTeacherRequestParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SetReadFlagParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ShareToPersonParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/StudentUpdateMyPasswordParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/TeacherUpdateMyPasswordParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateDeadlineParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateReportParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewPeersReportParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewSharedReports.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewStudentsReportParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/AuthorityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/ReportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/AuthorityServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/NotificationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/ReportServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/ssm.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ssm.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstVar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/Utils/ConstVar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LaboratoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/LaboratoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/ReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/StudentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/TeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/exception/UsernameDuplicateException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/exception/UsernameDuplicateException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/mapper/AdminMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/LaboratoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/mapper/LaboratoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/ReportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/mapper/ReportMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/mapper/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/TeacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/mapper/TeacherMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddLabRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddLabRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddReportRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddReportRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddStudentRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddStudentRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddTeacherRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddTeacherRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AdminUpdatePasswordRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AdminUpdatePasswordRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/DeleteLabRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/DeleteLabRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/DeleteTeacherRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/DeleteTeacherRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/LoginRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/LoginRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/LogoutRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/LogoutRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/ReportSubmitRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ReportSubmitRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/ResetPasswordRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ResetPasswordRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/SelectLabRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SelectLabRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/UpdateLabRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateLabRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/UpdateTeacherRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateTeacherRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/AdminExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/AdminExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Laboratory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Laboratory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/LaboratoryExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/LaboratoryExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/ReportExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/ReportExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/ReportWithBLOBs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/ReportWithBLOBs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/StudentExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/StudentExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/TeacherExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/TeacherExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/MyExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/resolver/MyExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/RepairAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/resolver/RepairAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/LaboratoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/LaboratoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/TeacherService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/AdminServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LaboratoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/LaboratoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/TeacherServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/generator/generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generator/generator-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AdminMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/LaboratoryMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/TeacherMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/LaboratoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/LaboratoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ReportMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ReportMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/TeacherMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/dumpDatabase.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/BackupDatabase.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/add_lab.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/add_lab.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/add_teacher.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/add_teacher.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/admin_zbxt.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/admin_zbxt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/login2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/login2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/user_pwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/weeklyreport/user_pwd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapper/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapper/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/controller/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/controller/LaboratoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/controller/TeacherController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/exception/UsernameDuplicateException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/mapper/AdminMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/mapper/LaboratoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/mapper/TeacherMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/param/LoginRequestParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/AdminExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/AdminExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/AdminExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/AdminExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/Laboratory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/LaboratoryExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/LaboratoryExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/LaboratoryExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/LaboratoryExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/TeacherExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/TeacherExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/TeacherExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/pojo/TeacherExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/resolver/MyExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/resolver/RepairAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/service/AdminService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/service/LaboratoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/service/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/service/TeacherService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/service/impl/AdminServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/service/impl/LaboratoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/service/impl/LoginServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/com/mayousheng/www/service/impl/TeacherServiceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/generator/generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Report/WEB-INF/classes/generator/generator-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Report/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/mybatis/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Report/WEB-INF/classes/mybatis/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/mybatis/mapper/LaboratoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Report/WEB-INF/classes/mybatis/mapper/LaboratoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/mybatis/mapper/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Report/WEB-INF/classes/mybatis/mapper/TeacherMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Report/WEB-INF/classes/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/spring/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Report/WEB-INF/classes/spring/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/sql/dumpDatabase.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SSMByMaven.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/SSMByMaven.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/controller/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/controller/LaboratoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/controller/TeacherController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/exception/UsernameDuplicateException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/mapper/AdminMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/mapper/LaboratoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/mapper/TeacherMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/param/LoginRequestParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/AdminExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/AdminExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/AdminExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/AdminExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/Laboratory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/LaboratoryExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/LaboratoryExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/LaboratoryExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/LaboratoryExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/Teacher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/TeacherExample$Criteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/TeacherExample$Criterion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/TeacherExample$GeneratedCriteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/pojo/TeacherExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/resolver/MyExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/resolver/RepairAspect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/service/AdminService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/service/LaboratoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/service/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/service/TeacherService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/service/impl/AdminServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/service/impl/LaboratoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/service/impl/LoginServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mayousheng/www/service/impl/TeacherServiceImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/generator/generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generator/generator-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/LaboratoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/LaboratoryMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis/mapper/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis/mapper/TeacherMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/sql/dumpDatabase.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mapper/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mapper/UserTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,22 +218,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="TeacherController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/TeacherController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="98" />
-              <folding>
-                <element signature="e#3005#3020#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/StudentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="43" column="18" selection-start-line="42" selection-end-line="45" selection-end-column="71" />
+            <state relative-caret-position="290">
+              <caret line="205" selection-start-line="205" selection-end-line="226" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,61 +229,72 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddReportRequestParam.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddReportRequestParam.java">
+      <file leaf-file-name="UserTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state relative-caret-position="423">
+              <caret line="63" column="6" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="18" />
               <folding>
-                <element signature="e#441#442#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#554#555#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-                <element signature="e#709#710#0" expanded="true" />
-                <element signature="e#734#735#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
-                <element signature="e#832#833#0" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
-                <element signature="e#903#904#0" expanded="true" />
-                <element signature="e#937#938#0" expanded="true" />
-                <element signature="e#972#973#0" expanded="true" />
-                <element signature="e#1005#1006#0" expanded="true" />
-                <element signature="e#1055#1056#0" expanded="true" />
-                <element signature="e#1099#1100#0" expanded="true" />
-                <element signature="e#1133#1134#0" expanded="true" />
-                <element signature="e#1165#1166#0" expanded="true" />
-                <element signature="e#1213#1214#0" expanded="true" />
-                <element signature="e#1255#1256#0" expanded="true" />
-                <element signature="e#1290#1291#0" expanded="true" />
-                <element signature="e#1321#1322#0" expanded="true" />
-                <element signature="e#1369#1370#0" expanded="true" />
-                <element signature="e#1409#1410#0" expanded="true" />
-                <element signature="e#1443#1444#0" expanded="true" />
-                <element signature="e#1473#1474#0" expanded="true" />
-                <element signature="e#1519#1520#0" expanded="true" />
-                <element signature="e#1557#1558#0" expanded="true" />
-                <element signature="e#1592#1593#0" expanded="true" />
-                <element signature="e#1623#1624#0" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
-                <element signature="e#1711#1712#0" expanded="true" />
-                <element signature="e#1743#1744#0" expanded="true" />
-                <element signature="e#1771#1772#0" expanded="true" />
-                <element signature="e#1813#1814#0" expanded="true" />
-                <element signature="e#1847#1848#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="ReportController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/ReportController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/ReportController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="45" column="71" lean-forward="true" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
+            <state relative-caret-position="448">
+              <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#14950#14959#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewSharedReports.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewSharedReports.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/test.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="ShareToPersonParam.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ShareToPersonParam.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+              <folding>
+                <element signature="e#192#193#0" expanded="true" />
+                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#281#282#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
+                <element signature="e#385#386#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#456#457#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#535#536#0" expanded="true" />
+                <element signature="e#577#578#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/StudentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="78" selection-start-line="78" selection-end-line="79" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,106 +302,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Teacher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Teacher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
-              <folding>
-                <element signature="e#1967#1968#0" expanded="true" />
-                <element signature="e#2001#2002#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReportWithBLOBs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/ReportWithBLOBs.java">
+      <file leaf-file-name="SetReadFlagParam.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SetReadFlagParam.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="25" />
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
               <folding>
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#282#283#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#370#371#0" expanded="true" />
-                <element signature="e#404#405#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#128#129#0" expanded="true" />
+                <element signature="e#161#162#0" expanded="true" />
+                <element signature="e#189#190#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReportExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/ReportExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Admin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Admin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-              <folding>
-                <element signature="e#1008#1009#0" expanded="true" />
-                <element signature="e#1042#1043#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Report.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Report.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddStudentRequestParam.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddStudentRequestParam.java">
+      <file leaf-file-name="Notification.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Notification.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-              <folding>
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#391#392#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#489#490#0" expanded="true" />
-                <element signature="e#539#540#0" expanded="true" />
-                <element signature="e#581#582#0" expanded="true" />
-                <element signature="e#612#613#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#813#814#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#878#879#0" expanded="true" />
-                <element signature="e#905#906#0" expanded="true" />
-                <element signature="e#945#946#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1014#1015#0" expanded="true" />
-                <element signature="e#1046#1047#0" expanded="true" />
-                <element signature="e#1097#1098#0" expanded="true" />
-                <element signature="e#1139#1140#0" expanded="true" />
-                <element signature="e#1174#1175#0" expanded="true" />
-                <element signature="e#1205#1206#0" expanded="true" />
-                <element signature="e#1253#1254#0" expanded="true" />
-                <element signature="e#1293#1294#0" expanded="true" />
-                <element signature="e#1328#1329#0" expanded="true" />
-                <element signature="e#1359#1360#0" expanded="true" />
-                <element signature="e#1407#1408#0" expanded="true" />
-                <element signature="e#1447#1448#0" expanded="true" />
-              </folding>
+              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotificationServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/NotificationServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -338,6 +373,9 @@
       <find>TeacherExampleTeacher</find>
       <find>Teacher</find>
       <find>setToken</find>
+      <find>row</find>
+      <find>mayousheng</find>
+      <find>找到</find>
     </findStrings>
     <replaceStrings>
       <replace>ConstVar.</replace>
@@ -352,6 +390,7 @@
       <dir>C:\Users\chwangteng\Documents\GitHub\SSMByMaven</dir>
       <dir>C:\Users\chwangteng\Documents\GitHub\Report\src\main\webapp</dir>
       <dir>C:\Users\chwangteng\Documents\GitHub\Report</dir>
+      <dir>C:\Users\chwangteng\Documents\GitHub\Report\src\main\java\com\chwangteng\www\controller</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -360,57 +399,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/showUser.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/assets/js/xfzldcustom.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/portal.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/assets/js/xfzldcustom.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/portal.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/properties/jdbc.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/exception/PhoneDuplicateException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LaboratoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/LoginRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/generator/generator.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/LogoutRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/ResetPasswordRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstantVariable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/TeacherService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/TeacherServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/LoginService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/AdminService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AdminUpdatePasswordRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddLabRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/DeleteLabRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddTeacherRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/MyExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/RepairAspect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/DeleteTeacherRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/UpdateLabRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/test/java/mapper/UserTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/UpdateTeacherRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/SelectLabRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstVar.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LaboratoryController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/ReportSubmitRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/generator/generator-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/StudentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/StudentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/AdminServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddStudentRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/StudentController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/ReportWithBLOBs.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddReportRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/ResetPasswordRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/TeacherService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/TeacherServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/TeacherUpdateMyPassword.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/StudentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/StudentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/StudentUpdateMyPasswordParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/DeadlineConvertor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/UpdateDeadlineParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/UpdateReportParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/RepairAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/MyExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/SendMsgUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstVar.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/interceptor/CustomInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/ReportService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/ReportServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/ReportController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/sql/BackupDatabase.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewPeersReportParam.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mapper/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/LaboratoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SelectTeacherRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/TeacherController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SelectStudentRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewStudentsReportParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/ReportService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/ReportServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ReplyStudentsReportParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/Utils/ConstVar.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/generator/generator-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/AuthorityService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/AuthorityServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/NotificationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/NotificationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SetReadFlagParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ShareToPersonParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewSharedReports.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/ReportController.java" />
       </list>
     </option>
   </component>
@@ -474,7 +513,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -533,6 +571,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -552,15 +599,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Report" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="resolver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Report" type="b2602c69:ProjectViewProjectNode" />
@@ -612,6 +650,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Report" type="b2602c69:ProjectViewProjectNode" />
@@ -681,15 +728,11 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Report" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -697,7 +740,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/smzdm" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -706,16 +749,16 @@
     <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp\assets" />
-      <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chwangteng\Documents\GitHub\Report\src\main\webapp" />
       <recent name="C:\Users\chwangteng\Documents\GitHub\Report\src\main\webapp\js" />
       <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp" />
       <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp\assets\js\plugins\bower_components\sweetalert" />
       <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp\assets\images\demo\logo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp\assets" />
+      <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -730,7 +773,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.ssm">
+  <component name="RunManager" selected="JUnit.UserTest.testselectbyprimarykey">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -770,6 +813,29 @@
       <option name="PACKAGE_NAME" value="mapper" />
       <option name="MAIN_CLASS_NAME" value="mapper.UserTest" />
       <option name="METHOD_NAME" value="testSelectUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="UserTest.testceratecriteria" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Report" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mapper" />
+      <option name="MAIN_CLASS_NAME" value="mapper.UserTest" />
+      <option name="METHOD_NAME" value="testceratecriteria" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -867,7 +933,7 @@
     <configuration name="ssm" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.33" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="Report:war">
+        <artifact name="Report:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -932,7 +998,6 @@
       <method>
         <option name="BuildArtifacts" enabled="true">
           <artifact name="Report:war exploded" />
-          <artifact name="Report:war" />
         </option>
       </method>
     </configuration>
@@ -942,10 +1007,12 @@
       <item itemvalue="JUnit.UserTest.testInsertUser" />
       <item itemvalue="JUnit.UserTest.testdeletenotfound" />
       <item itemvalue="JUnit.UserTest.testselectbyprimarykey" />
+      <item itemvalue="JUnit.UserTest.testceratecriteria" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserTest.testselectbyprimarykey" />
+        <item itemvalue="JUnit.UserTest.testceratecriteria" />
         <item itemvalue="JUnit.UserTest.testdeletenotfound" />
         <item itemvalue="JUnit.UserTest.testInsertUser" />
         <item itemvalue="JUnit.UserTest.testSelectUser" />
@@ -989,7 +1056,11 @@
       <workItem from="1542250360794" duration="1235000" />
       <workItem from="1542251724366" duration="1945000" />
       <workItem from="1542258586368" duration="3152000" />
-      <workItem from="1542268980698" duration="4747000" />
+      <workItem from="1542268980698" duration="8581000" />
+      <workItem from="1543411137596" duration="1373000" />
+      <workItem from="1543743496783" duration="13979000" />
+      <workItem from="1543805293055" duration="4341000" />
+      <workItem from="1543811643412" duration="17939000" />
     </task>
     <task id="LOCAL-00001" summary="。。。。">
       <created>1540894628937</created>
@@ -1047,43 +1118,57 @@
       <option name="project" value="LOCAL" />
       <updated>1542123459534</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="二期">
+      <created>1542276489839</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1542276489840</updated>
+    </task>
+    <task id="LOCAL-00010" summary="二期">
+      <created>1542278741957</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1542278741957</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_testSelectUser - 2018.09.12 at 20h 02m 03s.xml">
-      <configuration name="UserTest.testSelectUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testInsertUser - 2018.09.12 at 20h 05m 33s.xml">
-      <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testInsertUser - 2018.09.12 at 20h 11m 06s.xml">
-      <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testInsertUser - 2018.09.12 at 20h 12m 03s.xml">
-      <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testInsertUser - 2018.09.12 at 22h 52m 17s.xml">
-      <configuration name="UserTest.testInsertUser" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testdeletenotfound - 2018.10.31 at 21h 33m 18s.xml">
-      <configuration name="UserTest.testdeletenotfound" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testdeletenotfound - 2018.10.31 at 21h 37m 15s.xml">
-      <configuration name="UserTest.testdeletenotfound" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testselectbyprimarykey - 2018.11.01 at 14h 07m 43s.xml">
-      <configuration name="UserTest.testselectbyprimarykey" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_testselectbyprimarykey - 2018.11.01 at 14h 08m 17s.xml">
-      <configuration name="UserTest.testselectbyprimarykey" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserTest_testselectbyprimarykey - 2018.11.01 at 14h 08m 34s.xml">
+      <configuration name="UserTest.testselectbyprimarykey" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testceratecriteria - 2018.12.03 at 12h 29m 00s.xml">
+      <configuration name="UserTest.testceratecriteria" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testceratecriteria - 2018.12.03 at 12h 34m 23s.xml">
+      <configuration name="UserTest.testceratecriteria" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testselectbyprimarykey - 2018.12.03 at 12h 34m 47s.xml">
+      <configuration name="UserTest.testselectbyprimarykey" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testdeletenotfound - 2018.12.03 at 12h 38m 50s.xml">
+      <configuration name="UserTest.testdeletenotfound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testdeletenotfound - 2018.12.03 at 12h 41m 03s.xml">
+      <configuration name="UserTest.testdeletenotfound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testdeletenotfound - 2018.12.03 at 12h 41m 24s.xml">
+      <configuration name="UserTest.testdeletenotfound" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testceratecriteria - 2018.12.03 at 12h 48m 33s.xml">
+      <configuration name="UserTest.testceratecriteria" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testceratecriteria - 2018.12.03 at 12h 57m 32s.xml">
+      <configuration name="UserTest.testceratecriteria" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserTest_testselectbyprimarykey - 2018.12.03 at 13h 03m 41s.xml">
       <configuration name="UserTest.testselectbyprimarykey" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177976000" />
+    <option name="totallyTimeSpent" value="219442000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1096,12 +1181,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1933" height="1063" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.25386667" side_tool="true" visible="true" weight="0.33226153" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.118933335" side_tool="true" visible="true" weight="0.17256163" />
       <window_info anchor="bottom" id="Application Servers" order="12" sideWeight="0.48533332" weight="0.20364416" />
-      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.4985591" visible="true" weight="0.2736" />
+      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.4985591" weight="0.2736" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="CDI" order="7" />
       <window_info id="Designer" order="2" />
@@ -1110,16 +1194,16 @@
       <window_info anchor="right" id="JSF" order="4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49546668" weight="0.39871383" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49493334" weight="0.39871383" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49706668" weight="0.32976446" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4928" weight="0.32583067" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49173334" weight="0.32583067" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.496" weight="0.32976446" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7461333" weight="0.33226153" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8810667" visible="true" weight="0.17256163" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.496" weight="0.32976446" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49546668" weight="0.32976446" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" side_tool="true" visible="true" weight="0.2192" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" side_tool="true" visible="true" weight="0.22346666" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="5" sideWeight="0.50167227" side_tool="true" weight="0.20426667" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4992" weight="0.3290461" />
@@ -1149,421 +1233,556 @@
     <MESSAGE value="管理员登录完成，请使用json，求你了" />
     <MESSAGE value="自己看" />
     <MESSAGE value="1101" />
-    <option name="LAST_COMMIT_MESSAGE" value="1101" />
+    <MESSAGE value="二期" />
+    <option name="LAST_COMMIT_MESSAGE" value="二期" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java</url>
+          <line>64</line>
+          <properties class="mapper.UserTest" method="testselectbyprimarykey">
+            <option name="EMULATED" value="true" />
+          </properties>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/SelectLabRequestParam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="32" />
+        <state relative-caret-position="16">
+          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/UpdateTeacherRequestParam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        <state relative-caret-position="468">
+          <caret line="41" column="14" selection-start-line="40" selection-end-line="44" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstVar.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/LaboratoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        <state relative-caret-position="290">
+          <caret line="125" column="13" lean-forward="true" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="81" column="33" selection-start-line="81" selection-start-column="33" selection-end-line="81" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/weeklyreport/login2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/dist/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/weeklyreport/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="43" selection-start-column="43" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/SqlMapConfig.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/dumpDatabase.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/test.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/properties/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bd7659cf-3d48-49de-b4a8-20cce21d8ea9/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generator.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Teacher.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <caret line="3" selection-start-line="3" selection-end-line="25" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5e60e468-50b2-4622-96e3-2406edd5ff68/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/ReportSubmitRequestParam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SelectTeacherRequestParam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="640">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#906#907#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#973#974#0" expanded="true" />
+            <element signature="e#1022#1023#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1130#1131#0" expanded="true" />
+            <element signature="e#1180#1181#0" expanded="true" />
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1290#1291#0" expanded="true" />
+            <element signature="e#1340#1341#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1412#1413#0" expanded="true" />
+            <element signature="e#1437#1438#0" expanded="true" />
+            <element signature="e#1474#1475#0" expanded="true" />
+            <element signature="e#1502#1503#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1577#1578#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1682#1683#0" expanded="true" />
+            <element signature="e#1714#1715#0" expanded="true" />
+            <element signature="e#1742#1743#0" expanded="true" />
+            <element signature="e#1784#1785#0" expanded="true" />
+            <element signature="e#1818#1819#0" expanded="true" />
+            <element signature="e#1848#1849#0" expanded="true" />
+            <element signature="e#1874#1875#0" expanded="true" />
+            <element signature="e#1912#1913#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#1978#1979#0" expanded="true" />
+            <element signature="e#2010#2011#0" expanded="true" />
+            <element signature="e#2060#2061#0" expanded="true" />
+            <element signature="e#2102#2103#0" expanded="true" />
+            <element signature="e#2133#2134#0" expanded="true" />
+            <element signature="e#2160#2161#0" expanded="true" />
+            <element signature="e#2200#2201#0" expanded="true" />
+            <element signature="e#2232#2233#0" expanded="true" />
+            <element signature="e#2264#2265#0" expanded="true" />
+            <element signature="e#2292#2293#0" expanded="true" />
+            <element signature="e#2334#2335#0" expanded="true" />
+            <element signature="e#2368#2369#0" expanded="true" />
+            <element signature="e#2399#2400#0" expanded="true" />
+            <element signature="e#2426#2427#0" expanded="true" />
+            <element signature="e#2466#2467#0" expanded="true" />
+            <element signature="e#2498#2499#0" expanded="true" />
+            <element signature="e#2531#2532#0" expanded="true" />
+            <element signature="e#2559#2560#0" expanded="true" />
+            <element signature="e#2602#2603#0" expanded="true" />
+            <element signature="e#2636#2637#0" expanded="true" />
+            <element signature="e#2671#2672#0" expanded="true" />
+            <element signature="e#2702#2703#0" expanded="true" />
+            <element signature="e#2750#2751#0" expanded="true" />
+            <element signature="e#2790#2791#0" expanded="true" />
+            <element signature="e#2825#2826#0" expanded="true" />
+            <element signature="e#2856#2857#0" expanded="true" />
+            <element signature="e#2904#2905#0" expanded="true" />
+            <element signature="e#2944#2945#0" expanded="true" />
+            <element signature="e#2979#2980#0" expanded="true" />
+            <element signature="e#3010#3011#0" expanded="true" />
+            <element signature="e#3058#3059#0" expanded="true" />
+            <element signature="e#3098#3099#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SelectLabRequestParam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+        <state relative-caret-position="64">
+          <caret line="4" selection-start-line="4" selection-end-line="15" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+        <state relative-caret-position="48">
+          <caret line="3" selection-start-line="3" selection-end-line="19" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generator-config.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SelectStudentRequestParam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="52" column="73" selection-start-line="52" selection-start-column="73" selection-end-line="52" selection-end-column="73" />
+        <state relative-caret-position="544">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1042#1043#0" expanded="true" />
+            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1170#1171#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
+            <element signature="e#1252#1253#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+            <element signature="e#1324#1325#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1386#1387#0" expanded="true" />
+            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1444#1445#0" expanded="true" />
+            <element signature="e#1470#1471#0" expanded="true" />
+            <element signature="e#1508#1509#0" expanded="true" />
+            <element signature="e#1538#1539#0" expanded="true" />
+            <element signature="e#1574#1575#0" expanded="true" />
+            <element signature="e#1606#1607#0" expanded="true" />
+            <element signature="e#1656#1657#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+            <element signature="e#1729#1730#0" expanded="true" />
+            <element signature="e#1756#1757#0" expanded="true" />
+            <element signature="e#1796#1797#0" expanded="true" />
+            <element signature="e#1828#1829#0" expanded="true" />
+            <element signature="e#1860#1861#0" expanded="true" />
+            <element signature="e#1888#1889#0" expanded="true" />
+            <element signature="e#1930#1931#0" expanded="true" />
+            <element signature="e#1964#1965#0" expanded="true" />
+            <element signature="e#1995#1996#0" expanded="true" />
+            <element signature="e#2022#2023#0" expanded="true" />
+            <element signature="e#2062#2063#0" expanded="true" />
+            <element signature="e#2094#2095#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
+            <element signature="e#2163#2164#0" expanded="true" />
+            <element signature="e#2214#2215#0" expanded="true" />
+            <element signature="e#2256#2257#0" expanded="true" />
+            <element signature="e#2291#2292#0" expanded="true" />
+            <element signature="e#2322#2323#0" expanded="true" />
+            <element signature="e#2370#2371#0" expanded="true" />
+            <element signature="e#2410#2411#0" expanded="true" />
+            <element signature="e#2445#2446#0" expanded="true" />
+            <element signature="e#2476#2477#0" expanded="true" />
+            <element signature="e#2524#2525#0" expanded="true" />
+            <element signature="e#2564#2565#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/ReportMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/LaboratoryMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/ReportWithBLOBs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/ReportMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/StudentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/TeacherMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/TeacherMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AdminMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/LaboratoryMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3296">
-          <caret line="206" column="9" lean-forward="true" selection-start-line="206" selection-start-column="9" selection-end-line="206" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/StudentMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LaboratoryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1776">
-          <caret line="127" column="67" selection-start-line="127" selection-start-column="67" selection-end-line="127" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/StudentService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="6" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/TeacherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" selection-start-line="5" selection-end-line="8" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/TeacherServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="15" selection-start-line="15" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/StudentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddTeacherRequestParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" selection-start-line="11" selection-end-line="12" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="29" selection-start-line="5" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/mapper/AdminMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddStudentRequestParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="e#327#328#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1097#1098#0" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-            <element signature="e#1253#1254#0" expanded="true" />
-            <element signature="e#1293#1294#0" expanded="true" />
-            <element signature="e#1328#1329#0" expanded="true" />
-            <element signature="e#1359#1360#0" expanded="true" />
-            <element signature="e#1407#1408#0" expanded="true" />
-            <element signature="e#1447#1448#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Teacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
-          <folding>
-            <element signature="e#1967#1968#0" expanded="true" />
-            <element signature="e#2001#2002#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-          <folding>
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/ReportExample.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/ReportExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/Report.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/mapper/ReportMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" selection-start-line="7" selection-end-line="17" selection-end-column="27" />
+        <state relative-caret-position="64">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/ReportWithBLOBs.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewStudentsReportParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="36" />
+          <folding>
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewPeersReportParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="29" />
+          <folding>
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateTeacherRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateReportParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateLabRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateDeadlineParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/StudentUpdateMyPasswordParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ReplyStudentsReportParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="e#161#162#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#326#327#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#487#488#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/TeacherUpdateMyPasswordParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/Utils/ConstVar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generator.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generator-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="59" column="72" lean-forward="true" selection-start-line="59" selection-start-column="72" selection-end-line="59" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AdminMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AuthorityMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/NotificationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/TeacherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/ReportService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/LaboratoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/AuthorityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/NotificationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/AuthorityServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="5" selection-start-line="5" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#370#371#0" expanded="true" />
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-          </folding>
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddReportRequestParam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/LaboratoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding>
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1005#1006#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-            <element signature="e#1165#1166#0" expanded="true" />
-            <element signature="e#1213#1214#0" expanded="true" />
-            <element signature="e#1255#1256#0" expanded="true" />
-            <element signature="e#1290#1291#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
-            <element signature="e#1409#1410#0" expanded="true" />
-            <element signature="e#1443#1444#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
-            <element signature="e#1519#1520#0" expanded="true" />
-            <element signature="e#1557#1558#0" expanded="true" />
-            <element signature="e#1592#1593#0" expanded="true" />
-            <element signature="e#1623#1624#0" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1711#1712#0" expanded="true" />
-            <element signature="e#1743#1744#0" expanded="true" />
-            <element signature="e#1771#1772#0" expanded="true" />
-            <element signature="e#1813#1814#0" expanded="true" />
-            <element signature="e#1847#1848#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="80">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/LoginServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="98" />
-          <folding>
-            <element signature="e#3005#3020#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="64">
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/StudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="43" column="18" selection-start-line="42" selection-end-line="45" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/ReportController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/ReportServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
-          <caret line="45" column="71" lean-forward="true" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
+          <caret line="71" column="81" lean-forward="true" selection-start-line="71" selection-start-column="81" selection-end-line="71" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/AdminServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/NotificationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/TeacherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="205" selection-start-line="205" selection-end-line="226" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SetReadFlagParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+          <folding>
+            <element signature="e#128#129#0" expanded="true" />
+            <element signature="e#161#162#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ShareToPersonParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/test.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="63" column="6" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="78" selection-start-line="78" selection-end-line="79" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewSharedReports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/ReportController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#14950#14959#0" expanded="true" />
           </folding>
         </state>
       </provider>

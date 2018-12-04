@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.mayousheng.www.mapper.ReportMapper" >
-  <resultMap id="BaseResultMap" type="com.mayousheng.www.pojo.Report" >
+<mapper namespace="com.chwangteng.www.mapper.ReportMapper" >
+  <resultMap id="BaseResultMap" type="com.chwangteng.www.pojo.Report" >
     <constructor >
       <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="title" jdbcType="VARCHAR" javaType="java.lang.String" />
@@ -12,7 +12,7 @@
       <arg column="reply_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
     </constructor>
   </resultMap>
-  <resultMap id="ResultMapWithBLOBs" type="com.mayousheng.www.pojo.ReportWithBLOBs" >
+  <resultMap id="ResultMapWithBLOBs" type="com.chwangteng.www.pojo.ReportWithBLOBs" >
     <constructor >
       <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
       <arg column="title" jdbcType="VARCHAR" javaType="java.lang.String" />
@@ -91,7 +91,7 @@
   <sql id="Blob_Column_List" >
     this_week, bug_meet, next_week, reply
   </sql>
-  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.mayousheng.www.pojo.ReportExample" >
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.chwangteng.www.pojo.ReportExample" >
     select
     <if test="distinct" >
       distinct
@@ -107,7 +107,7 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.mayousheng.www.pojo.ReportExample" >
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.chwangteng.www.pojo.ReportExample" >
     select
     <if test="distinct" >
       distinct
@@ -133,13 +133,13 @@
     delete from report
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.mayousheng.www.pojo.ReportExample" >
+  <delete id="deleteByExample" parameterType="com.chwangteng.www.pojo.ReportExample" >
     delete from report
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.mayousheng.www.pojo.ReportWithBLOBs" useGeneratedKeys="true" keyProperty="id" >
+  <insert id="insert" parameterType="com.chwangteng.www.pojo.ReportWithBLOBs" useGeneratedKeys="true" keyProperty="id" >
     insert into report (title, student_id, pv, 
       score, submit_time, reply_time, 
       this_week, bug_meet, next_week, 
@@ -149,7 +149,7 @@
       #{thisWeek,jdbcType=LONGVARCHAR}, #{bugMeet,jdbcType=LONGVARCHAR}, #{nextWeek,jdbcType=LONGVARCHAR}, 
       #{reply,jdbcType=LONGVARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.mayousheng.www.pojo.ReportWithBLOBs" useGeneratedKeys="true" keyProperty="id" >
+  <insert id="insertSelective" parameterType="com.chwangteng.www.pojo.ReportWithBLOBs" useGeneratedKeys="true" keyProperty="id" >
     insert into report
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="title != null" >
@@ -216,7 +216,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.mayousheng.www.pojo.ReportExample" resultType="java.lang.Integer" >
+  <select id="countByExample" parameterType="com.chwangteng.www.pojo.ReportExample" resultType="java.lang.Integer" >
     select count(*) from report
     <if test="_parameter != null" >
       <include refid="Example_Where_Clause" />
@@ -293,7 +293,7 @@
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.mayousheng.www.pojo.ReportWithBLOBs" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.chwangteng.www.pojo.ReportWithBLOBs" >
     update report
     <set >
       <if test="title != null" >
@@ -329,7 +329,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.mayousheng.www.pojo.ReportWithBLOBs" >
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.chwangteng.www.pojo.ReportWithBLOBs" >
     update report
     set title = #{title,jdbcType=VARCHAR},
       student_id = #{studentId,jdbcType=INTEGER},
@@ -343,7 +343,7 @@
       reply = #{reply,jdbcType=LONGVARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.mayousheng.www.pojo.Report" >
+  <update id="updateByPrimaryKey" parameterType="com.chwangteng.www.pojo.Report" >
     update report
     set title = #{title,jdbcType=VARCHAR},
       student_id = #{studentId,jdbcType=INTEGER},

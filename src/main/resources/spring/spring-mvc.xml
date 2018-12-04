@@ -15,9 +15,9 @@
     <!-- 开启mvc的注解驱动 -->
     <mvc:annotation-driven/>
     <!-- 自动扫描controller包下的所有类，使其认为spring mvc的控制器 -->
-    <context:component-scan base-package="com.mayousheng.www.controller"/>
+    <context:component-scan base-package="com.chwangteng.www.controller"/>
 
-    <context:component-scan base-package="com.mayousheng.www.resolver"/>
+    <context:component-scan base-package="com.chwangteng.www.resolver"/>
     <aop:aspectj-autoproxy/>
     <!-- 对模型视图名称的解析，即在模型视图名称添加前后缀 -->
 <!--    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/WEB-INF/jsp/"
@@ -32,7 +32,19 @@
         </property>
     </bean>
     <!-- 全局异常处理-->
-    <bean id="exceptionHandler" class="com.mayousheng.www.resolver.MyExceptionHandler"/>
+    <bean id="exceptionHandler" class="com.chwangteng.www.resolver.MyExceptionHandler"/>
 
+    <!-- 注册拦截器 -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/admin/*"/>
+            <mvc:mapping path="/lab/*"/>
+            <mvc:mapping path="/report/*"/>
+            <mvc:mapping path="/student/*"/>
+            <mvc:mapping path="/teacher/*"/>
+            <mvc:mapping path="/login/*"/>
+            <bean class="com.chwangteng.www.interceptor.CustomInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
 </beans>

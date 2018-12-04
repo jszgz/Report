@@ -1,7 +1,8 @@
 package mapper;
 
-import com.mayousheng.www.mapper.LaboratoryMapper;
-import com.mayousheng.www.pojo.Laboratory;
+import com.chwangteng.www.mapper.*;
+import com.chwangteng.www.pojo.Laboratory;
+import com.chwangteng.www.pojo.LaboratoryExample;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,14 +10,12 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Date;
-
 // 加载spring配置文件
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({"classpath:spring/spring-mybatis.xml"})
 public class UserTest {
-/*    @Autowired
-    private UserMapper usermapper;*/
+    @Autowired
+    private StudentMapper studentMapper;
 
     @Autowired
     private LaboratoryMapper labMapper;
@@ -53,19 +52,26 @@ public class UserTest {
     @Test
     @Transactional
     public void testdeletenotfound(){
+//        int rows = labMapper.deleteByPrimaryKey(100);
+//        System.out.println(rows);
 
 
-        int rows = labMapper.deleteByPrimaryKey(100);
-        System.out.println(rows);
+        studentMapper.selectByPrimaryKey(1);
     }
 
 
     @Test
     @Transactional
     public  void testselectbyprimarykey(){
-
         Laboratory lab= labMapper.selectByPrimaryKey(2);
         System.out.println(lab==null);
     }
 
+    @Test
+    @Transactional
+    public  void testceratecriteria(){
+        LaboratoryExample laboratoryExample = new LaboratoryExample();
+        laboratoryExample.createCriteria();
+        System.out.println(labMapper.selectByExample(laboratoryExample));
+    }
 }

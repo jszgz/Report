@@ -18,9 +18,14 @@
 
     <body>
         <a href="weeklyreport/login2.html" >前往登录</a>
-        <h2>测试页面21</h2>
+        <h2>测试页面21-登录</h2>
         <input type="text" id="username">
         <input type="text" id="password">
+        <select name="type" id="type">
+            <option value = 1>管理员</option>
+            <option value = 2>老师</option>
+            <option value = 3>学生</option>
+        </select>
         <button id="testbutton">test</button>
         <div id="cook"></div>
         <div id="content"></div>
@@ -30,6 +35,7 @@
     <script>
         $(document).ready(function () {
 
+            //ajax请求样例，data部分改成你要提交的data，key名和comparam
             $("#testbutton").click(function () {
                 //发送请求
                 $.ajax({
@@ -40,7 +46,7 @@
                     data : JSON.stringify({
                         username: $("#username").val(),
                         password: $("#password").val(),
-                        type: 1
+                        type: $("#type").val()
                     })
                 }).done(function (response) {
                     if(undefined === response.code){

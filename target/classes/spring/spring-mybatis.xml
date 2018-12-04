@@ -10,7 +10,7 @@
                         http://www.springframework.org/schema/mvc
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
     <!--Spring 自动扫描 自动注入-->
-    <context:component-scan base-package="com.mayousheng.www"/>
+    <context:component-scan base-package="com.chwangteng.www"/>
 
     <!-- 引入配置文件 -->
     <bean id="propertyConfigurer"
@@ -42,7 +42,7 @@
     </bean>
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.mayousheng.www.mapper"/>
+        <property name="basePackage" value="com.chwangteng.www.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
     <!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->
