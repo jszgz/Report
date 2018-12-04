@@ -38,9 +38,12 @@ public class ReportController {
 
     //新增周报
     @RequestMapping("/addReport.action")
-    public ModelAndView addReport(@RequestBody AddReportRequestParam addReportRequestParam)   {
+    public ModelAndView addReport(@RequestBody AddReportRequestParam addReportRequestParam, HttpSession session)   {
+
         Report report = new ReportWithBLOBs();
-        report.setStudentId(addReportRequestParam.getStudentId());
+        int currentstudent = Integer.parseInt(session.getAttribute(ConstVar._SESSION_USER_ID_).toString());
+        report.setTitle("周报");
+        report.setStudentId(currentstudent);
         report.setSubmitTime(new Date());
         ((ReportWithBLOBs) report).setThisWeek(addReportRequestParam.getThisWeek());
         ((ReportWithBLOBs) report).setBugMeet(addReportRequestParam.getBugMeet());
