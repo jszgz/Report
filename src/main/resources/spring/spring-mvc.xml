@@ -42,7 +42,6 @@
             <mvc:mapping path="/report/*"/>
             <mvc:mapping path="/student/*"/>
             <mvc:mapping path="/teacher/*"/>
-            <mvc:mapping path="/login/*"/>
             <bean class="com.chwangteng.www.interceptor.CustomInterceptor"></bean>
         </mvc:interceptor>
     </mvc:interceptors>
