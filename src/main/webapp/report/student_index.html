@@ -28,6 +28,8 @@
 </head>
 
 <body class="fix-header">
+
+
 <!-- ============================================================== -->
 <!-- Preloader -->
 <!-- ============================================================== -->
@@ -53,22 +55,57 @@
     <!-- End Left Sidebar -->
     <!-- ============================================================== -->
 
-
     <!-- ============================================================== -->
     <!-- Page Content -->
     <!-- ============================================================== -->
-    <div id="page-wrapper">
-        <div class="container-fluid">
+    <div id="page-wrapper" style="padding-bottom: 0">
+        <div class="container-fluid" style="padding: 0">
             <div class="row bg-title">
                 <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
                     <button class="right-side-toggle waves-effect waves-light btn-info btn-circle pull-right m-l-20"><i class="ti-settings text-white"></i></button>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="white-box">
-                        <h3 class="box-title">欢迎</h3> </div>
+            <div>
+                <div style="background: url('paroller/student.jpg') center no-repeat;background-size: cover; height: 700px;position:relative;" data-paroller-factor="0.5">
+                    <div style="   width:600px;  height:100px;  position:absolute;  left:50%;  top:50%;  margin:-150px 0 0 -200px;color:#ffffff;font-size: 4em;font-weight: bold">
+                        从这里书写周报
+                    </div>
+                    <div style="   width:600px;  height:100px;  position:absolute;  left:50%;  top:50%;  margin:-50px 0 0 -200px;color:#ffffff;font-size: 2em;font-weight: lighter">
+                        激扬文字
+                    </div>
+                </div>
+                <div style="background: url('paroller/desk.jpg') center no-repeat;background-size: cover; height: 700px;position:relative;" data-paroller-factor="0.5">
+                    <div style="   width:600px;  height:100px;  position:absolute;  left:50%;  top:50%;  margin:-150px 0 0 -300px;color:#111111;font-size: 4em;font-weight: bold">
+                        翻阅同门周报
+                    </div>
+                    <div style="   width:600px;  height:100px;  position:absolute;  left:50%;  top:50%;  margin:-50px 0 0 -300px;color:#111111;font-size: 2em;font-weight: lighter">
+                        谁主沉浮？
+                    </div>
+                </div>
+                <div style="background: url('paroller/tools.jpg') center no-repeat;background-size: cover; height: 700px;position:relative;" data-paroller-factor="0.5">
+                    <div style="   width:600px;  height:100px;  position:absolute;  left:50%;  top:50%;  margin:50px 0 0 -200px;color:#ffffff;font-size: 4em;font-weight: bold">
+                        随时，随处
+                    </div>
+                    <div style="   width:600px;  height:100px;  position:absolute;  left:50%;  top:50%;  margin:150px 0 0 -200px;color:#ffffff;font-size: 2em;font-weight: lighter">
+                        时时处处
+                    </div>
+                </div>
+                <div style="background: url('paroller/boy.jpg') center no-repeat;background-size: cover; height: 700px;position:relative;" data-paroller-factor="0.5">
+                    <div style="   width:600px;  height:100px;  position:absolute;  left:50%;  top:50%;  margin:-150px 0 0 -100px;color:#444444;font-size: 4em;font-weight: bold">
+                        确认过眼神
+                    </div>
+                    <div style="   width:600px;  height:100px;  position:absolute;  left:50%;  top:50%;  margin:-50px 0 0 -100px;color:#444444;font-size: 2em;font-weight: lighter">
+                        是最优秀的你
+                    </div>
+                </div>
+                <div style="background: url('paroller/sun.jpg') center no-repeat;background-size: cover; height: 700px;position:relative;" data-paroller-factor="0.5">
+                    <div style="   width:200px;  height:100px;  position:absolute;  left:50%;  top:50%;  margin:-150px 0 0 -100px;color:#222222;font-size: 4em;font-weight: bold">
+                        走起
+                    </div>
+                    <div style="   width:200px;  height:100px;  position:absolute;  left:50%;  top:50%;  margin:-50px 0 0 -100px;color:#222222;font-size: 2em;font-weight: lighter">
+                        去记录
+                    </div>
                 </div>
             </div>
 
@@ -117,6 +154,10 @@
 <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
+
+        $(window).paroller();
+
+
         $("#LeftSlidebar").load("LeftSlidebarStudent.html", function () {
             <!-- Menu Plugin JavaScript -->
             $.getScript("../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js",function () {
@@ -124,21 +165,21 @@
                 $.getScript("js/custom.min.js");
 
                 //获取各个项目的数量
-/*                $.ajax({
-                    type : "POST",
-                    url : "/admin/getNeedCheck",
-                    data : "",
-                    dataType : "json",
-                    contentType: "application/json",
-                }).done(function (res) {
-                    //左侧菜单栏数量
-                    $("#totalneedcheckspan").text(res.data.mlxysspneedcheck.itemsCounts+res.data.wgxwjsgneedcheck.itemsCounts+res.data.wwgdtjyneedcheck.itemsCounts+res.data.zyqcneedcheck.itemsCounts);
-                    $("#mlxysspneedcheckspan").text(res.data.mlxysspneedcheck.itemsCounts);
-                    $("#wgxwjsgneedcheckspan").text(res.data.wgxwjsgneedcheck.itemsCounts);
-                    $("#wwgdtjyneedcheckspan").text(res.data.wwgdtjyneedcheck.itemsCounts);
-                    $("#zyqcneedcheckspan").text(res.data.zyqcneedcheck.itemsCounts);
-                }).fail(function () {
-                });*/
+                /*                $.ajax({
+                                    type : "POST",
+                                    url : "/admin/getNeedCheck",
+                                    data : "",
+                                    dataType : "json",
+                                    contentType: "application/json",
+                                }).done(function (res) {
+                                    //左侧菜单栏数量
+                                    $("#totalneedcheckspan").text(res.data.mlxysspneedcheck.itemsCounts+res.data.wgxwjsgneedcheck.itemsCounts+res.data.wwgdtjyneedcheck.itemsCounts+res.data.zyqcneedcheck.itemsCounts);
+                                    $("#mlxysspneedcheckspan").text(res.data.mlxysspneedcheck.itemsCounts);
+                                    $("#wgxwjsgneedcheckspan").text(res.data.wgxwjsgneedcheck.itemsCounts);
+                                    $("#wwgdtjyneedcheckspan").text(res.data.wwgdtjyneedcheck.itemsCounts);
+                                    $("#zyqcneedcheckspan").text(res.data.zyqcneedcheck.itemsCounts);
+                                }).fail(function () {
+                                });*/
 
 
             });//<!-- Menu Plugin JavaScript -->
@@ -174,6 +215,9 @@
 <script src="js/waves.js"></script>
 <!--Style Switcher -->
 <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+
+
+<script src="paroller/jquery.paroller.min.js"></script>
 </body>
 
 </html>

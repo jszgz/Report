@@ -824,64 +824,84 @@
 
         //从实验室删除老师
         $("#delete_teacher_button").click(function () {
-            var teachidtodelete = $("#teacherhiddenlabidforteacherupdate").val()
 
-            var tomaskdivid = "divwrapper_" + $("#hiddenlabindextorefreshforteacherupdate").val()
 
-            $("#updateteachermodal").modal("hide")
 
-            // 显示加载中遮罩
-            $("#"+tomaskdivid).busyLoad("show", {
-                text: "删除老师中 ...",
-                animation: "fade",
-                background: "rgba(0, 0, 0, 0.86)",
-                spinner: "cube-grid"
-            });
-            //发送请求
-            $.ajax({
-                type: "POST",
-                url: "/teacher/deleteTeacher.action",
-                dataType: "json",
-                contentType: "application/json",
-                data: JSON.stringify({
-                    id:teachidtodelete
-                })
-            }).always(function () {
-                //隐藏加载中遮罩
-                $("#"+tomaskdivid).busyLoad("hide");
+            swal({
+                title: "确定删除老师吗?",
+                text: "删除后无法恢复!",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "删除",
+                cancelButtonText:"取消",
+                closeOnConfirm: false
+            }, function(){
 
-            }).done(function (response) {
+                var teachidtodelete = $("#teacherhiddenlabidforteacherupdate").val()
 
-                if (undefined === response.code) {
-                    swal({
-                        title: "删除老师成功",
-                        text: response.message,
-                        type: "success",
-                        timer: 1000,
+                var tomaskdivid = "divwrapper_" + $("#hiddenlabindextorefreshforteacherupdate").val()
+
+                $("#updateteachermodal").modal("hide")
+
+                // 显示加载中遮罩
+                $("#"+tomaskdivid).busyLoad("show", {
+                    text: "删除老师中 ...",
+                    animation: "fade",
+                    background: "rgba(0, 0, 0, 0.86)",
+                    spinner: "cube-grid"
+                });
+                //发送请求
+                $.ajax({
+                    type: "POST",
+                    url: "/teacher/deleteTeacher.action",
+                    dataType: "json",
+                    contentType: "application/json",
+                    data: JSON.stringify({
+                        id:teachidtodelete
                     })
+                }).always(function () {
+                    //隐藏加载中遮罩
+                    $("#"+tomaskdivid).busyLoad("hide");
 
-                    //重新加载这个实验室的老师
-                    $("#"+"laba_"+$("#hiddenlabindextorefreshforteacherupdate").val()).click()
+                }).done(function (response) {
 
-                }else {
+                    if (undefined === response.code) {
+                        swal({
+                            title: "删除老师成功",
+                            text: response.message,
+                            type: "success",
+                            timer: 1000,
+                        })
+
+                        //重新加载这个实验室的老师
+                        $("#"+"laba_"+$("#hiddenlabindextorefreshforteacherupdate").val()).click()
+
+                    }else {
+                        swal({
+                            title: "删除老师失败",
+                            text: response.message,
+                            type: "error",
+                            timer: 1000,
+                            showConfirmButton: false
+                        })
+                    }
+
+                }).fail(function () {
                     swal({
-                        title: "删除老师失败",
-                        text: response.message,
+                        title: "通信失败",
+                        text: "请检查网络",
                         type: "error",
-                        timer: 1000,
-                        showConfirmButton: false
+                        showConfirmButton: true,
+                        confirmButtonText: "确定",
                     })
-                }
-
-            }).fail(function () {
-                swal({
-                    title: "通信失败",
-                    text: "请检查网络",
-                    type: "error",
-                    showConfirmButton: true,
-                    confirmButtonText: "确定",
                 })
             })
+
+
+
+
+
 
         })
 
