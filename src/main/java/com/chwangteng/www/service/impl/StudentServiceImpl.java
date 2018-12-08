@@ -24,7 +24,7 @@ public class StudentServiceImpl implements StudentService {
         List<Student> aimstudents = studentMapper.selectByExample(StudentExample);
         if(aimstudents.size()==1){
             Student aim = aimstudents.get(0);
-            aim.setPassword(aim.getPassword().substring(aim.getPassword().length()-6));//后六位
+            aim.setPassword(aim.getUsername().substring(aim.getUsername().length()-6));//后六位
             return studentMapper.updateByPrimaryKeySelective(aim);//will only update non-null fields in the parameter class
         }else if(aimstudents.size()==0){
             return ConstVar._ERROR_NOTFOUND;

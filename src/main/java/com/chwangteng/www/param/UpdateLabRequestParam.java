@@ -2,7 +2,7 @@ package com.chwangteng.www.param;
 
 public class UpdateLabRequestParam {
     private int id;
-    private int teacher_id;
+    private String username;
     private String name;
     private String address;
     private String about;
@@ -13,14 +13,6 @@ public class UpdateLabRequestParam {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getTeacher_id() {
-        return teacher_id;
-    }
-
-    public void setTeacher_id(int teacher_id) {
-        this.teacher_id = teacher_id;
     }
 
     public String getName() {
@@ -45,5 +37,13 @@ public class UpdateLabRequestParam {
 
     public void setAbout(String about) {
         this.about = about;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }

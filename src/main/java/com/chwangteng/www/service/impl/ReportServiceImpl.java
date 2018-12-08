@@ -29,9 +29,10 @@ public class ReportServiceImpl implements ReportService {
     private TeacherMapper teacherMapper;
 
     public List getPeersReport(int id, ViewPeersReportParam viewPeersReportParam) {
-        int pageIndex = viewPeersReportParam.getPageIndex();
+
+/*        int pageIndex = viewPeersReportParam.getPageIndex();
         int pageSize = viewPeersReportParam.getPageSize();
-        int student_id = id;
+        int student_id = id;*/
 
         Student student = studentMapper.selectByPrimaryKey(id);
         int teacher_id = student.getTeacherId();
@@ -61,15 +62,22 @@ public class ReportServiceImpl implements ReportService {
         studentExample.createCriteria().andTeacherIdEqualTo(teacher_id);
 
         ArrayList<Student> students = (ArrayList<Student>) studentMapper.selectByExample(studentExample);
+
+        if(students.size()==0||students==null)
+            return new ArrayList();
+
         ArrayList<Integer> studentids = new ArrayList<Integer>();
         for (int i=0;i<students.size();i++){
             studentids.add(students.get(i).getId());
         }
 
-
         ReportExample reportExample = new ReportExample();
         reportExample.createCriteria().andStudentIdIn(studentids);
         List peersReport =  reportMapper.selectByExampleWithBLOBs(reportExample);
+
+        if(peersReport.size()==0||peersReport==null)
+            return new ArrayList();
+
 
         return peersReport;
     }

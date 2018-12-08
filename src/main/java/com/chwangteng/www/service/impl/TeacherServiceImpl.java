@@ -23,7 +23,7 @@ public class TeacherServiceImpl implements TeacherService {
         List<Teacher> aimteachers = teacherMapper.selectByExample(teacherExample);
         if(aimteachers.size()==1){
             Teacher aim = aimteachers.get(0);
-            aim.setPassword(aim.getPassword().substring(aim.getPassword().length()-6));//后六位
+            aim.setPassword(aim.getUsername().substring(aim.getUsername().length()-6));//后六位
             return teacherMapper.updateByPrimaryKeySelective(aim);//will only update non-null fields in the parameter class
         }else if(aimteachers.size()==0){
             return ConstVar._ERROR_NOTFOUND;

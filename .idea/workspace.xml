@@ -2,18 +2,683 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Report:war exploded" />
+      <artifact name="Report:war archive" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="791c34d1-eeb6-4af9-9993-3d36ab6baa38" name="Default" comment="">
+    <list default="true" id="791c34d1-eeb6-4af9-9993-3d36ab6baa38" name="Default" comment="后台接口全部完成&#10;融合一包糖的前端">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Report_war_archive.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/DeleteReportParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/DeleteStudentParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/GetthislabteacherParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateStudentRequestParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/clockpicker/dist/bootstrap-clockpicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/clockpicker/dist/bootstrap-clockpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/clockpicker/dist/bootstrap-clockpicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/clockpicker/dist/bootstrap-clockpicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/clockpicker/dist/jquery-clockpicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/clockpicker/dist/jquery-clockpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/.csscomb.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/.jscsrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/LICENSE-GPL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/demo/ajax/1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/demo/ajax/2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/demo/ajax/3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/demo/collapse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/demo/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/demo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/demo/tabs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/dist/jquery-wizard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/less/wizard.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/libs/bootstrap/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/libs/bootstrap/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/libs/jquery-loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/libs/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/src/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/src/bind.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/src/defaults.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/src/intro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/src/outro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/src/public.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/src/setup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/src/step.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/src/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/src/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/.bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/dist/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/dist/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/ajax/jsonp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/ajax/load.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/ajax/parseJSON.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/ajax/parseXML.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/ajax/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/ajax/var/nonce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/ajax/var/rquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/ajax/xhr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/attributes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/attributes/attr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/attributes/classes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/attributes/prop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/attributes/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/attributes/val.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/callbacks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/core/access.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/core/init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/core/parseHTML.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/core/ready.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/core/var/rsingleTag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/css/addGetHookIf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/css/curCSS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/css/defaultDisplay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/css/hiddenVisibleSelectors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/css/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/css/swap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/css/var/cssExpand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/css/var/getStyles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/css/var/isHidden.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/css/var/rmargin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/css/var/rnumnonpx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/data/Data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/data/accepts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/data/var/data_priv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/data/var/data_user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/deferred.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/deprecated.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/dimensions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/effects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/effects/Tween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/effects/animatedSelector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/event.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/event/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/event/alias.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/event/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/exports/amd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/exports/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/intro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/manipulation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/manipulation/_evalUrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/manipulation/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/manipulation/var/rcheckableType.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/offset.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/outro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/queue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/queue/delay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/selector-native.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/selector-sizzle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/selector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/serialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/sizzle/dist/sizzle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/sizzle/dist/sizzle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/sizzle/dist/sizzle.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/traversing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/traversing/findFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/traversing/var/rneedsContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/var/arr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/var/class2type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/var/concat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/var/hasOwn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/var/indexOf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/var/pnum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/var/push.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/var/rnotwhite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/var/slice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/var/strundefined.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/var/support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/var/toString.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery/src/wrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sidebar-nav/.bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sidebar-nav/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sidebar-nav/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sidebar-nav/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sidebar-nav/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sidebar-nav/dist/sidebar-nav.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sidebar-nav/dist/sidebar-nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sidebar-nav/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sidebar-nav/src/metisMenu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sidebar-nav/src/metisMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/switchery/dist/switchery.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/switchery/dist/switchery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/switchery/dist/switchery.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/switchery/dist/switchery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/switchery/meteor/export.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/switchery/meteor/tests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/switchery/switchery.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/switchery/switchery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/admin-logo-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/admin-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/admin-text-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/admin-text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/agent.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/agent2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/arijit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/d1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/d2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/d3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/d4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/d5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/genu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/govinda.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/hritik.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/john.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/pawandeep.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/ritesh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/salman.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/sonu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/varun.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/LeftSlidebarAdmin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/LeftSlidebarStudent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/LeftSlidebarTeacher.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/RightSidebar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/TopNavigationStudent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/admin_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/admin_manage_lab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/admin_reset_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/avatar/female.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/avatar/male.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/grunt/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/grunt/bs-commonjs-generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/grunt/bs-glyphicons-data-generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/grunt/bs-lessdoc-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/grunt/bs-raw-files-generator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/grunt/configBridge.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/grunt/sauce_browsers.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/js/affix.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/js/alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/js/button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/js/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/js/collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/js/dropdown.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/js/modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/js/popover.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/js/scrollspy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/js/tab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/js/tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/js/transition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/alerts.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/badges.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/bootstrap.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/breadcrumbs.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/button-groups.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/buttons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/carousel.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/close.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/code.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/component-animations.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/dropdowns.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/forms.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/grid.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/input-groups.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/jumbotron.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/labels.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/list-group.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/media.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/alerts.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/background-variant.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/border-radius.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/buttons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/center-block.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/clearfix.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/forms.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/gradients.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/grid-framework.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/grid.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/hide-text.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/image.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/labels.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/list-group.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/nav-divider.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/nav-vertical-align.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/opacity.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/pagination.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/panels.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/progress-bar.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/reset-filter.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/reset-text.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/resize.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/responsive-visibility.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/size.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/tab-focus.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/table-row.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/text-emphasis.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/text-overflow.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/mixins/vendor-prefixes.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/modals.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/navbar.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/navs.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/normalize.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/pager.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/pagination.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/panels.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/popovers.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/print.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/progress-bars.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/responsive-embed.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/responsive-utilities.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/scaffolding.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/tables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/theme.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/thumbnails.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/tooltip.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/type.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/utilities.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/wells.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/busy-load/dist/app.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/colors/blue-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/colors/blue.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/colors/default-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/colors/gray-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/colors/gray.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/colors/green-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/colors/green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/colors/megna-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/colors/megna.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/colors/purple-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/colors/purple.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/colors/red-dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/prepros.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/documentation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/documentationAdmin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/documentationTeacher.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/fontsgoogle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7EyjmmT8WDm7Q.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7EyjmmZ8WDm7Q.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7Eyjmmd8WA.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7Eyjmmf8WDm7Q.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7F6iGmT8WDm7Q.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7F6iGmZ8WDm7Q.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7F6iGmd8WA.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7F6iGmf8WDm7Q.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7FCimmT8WDm7Q.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7FCimmZ8WDm7Q.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7FCimmd8WA.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7FCimmf8WDm7Q.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7Fqj2mT8WDm7Q.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7Fqj2mZ8WDm7Q.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7Fqj2md8WA.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWHBXyIfDnIV7Fqj2mf8WDm7Q.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWKBXyIfDnIV7nBrXw.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWKBXyIfDnIV7nDrXyi0A.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWKBXyIfDnIV7nFrXyi0A.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/extra/iJWKBXyIfDnIV7nPrXyi0A.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/bootstrap-test.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/busy-load/dist/app.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/canvas-particle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/cbpFWTabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/dashboard1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/dashboard2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/dashboard3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/dashboard4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/flot-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/footable-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/jasny-bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/jquery.PrintArea.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/jsgrid-init.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/mask.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/morris-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/real-estate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/toastr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/validator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/js/widget-ext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/colors/blue-dark.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/colors/blue.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/colors/default-dark.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/colors/default.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/colors/gray-dark.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/colors/gray.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/colors/green-dark.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/colors/green.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/colors/megna-dark.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/colors/megna.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/colors/purple-dark.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/colors/purple.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/colors/red-dark.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/common.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/css/weather-icons-core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/css/weather-icons-variables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/css/weather-icons-wind.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/css/weather-icons-wind.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/css/weather-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/css/weather-icons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/font/weathericons-regular-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/font/weathericons-regular-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/font/weathericons-regular-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/font/weathericons-regular-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/font/weathericons-regular-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/css/variables-beaufort.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/css/variables-day.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/css/variables-direction.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/css/variables-misc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/css/variables-moon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/css/variables-neutral.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/css/variables-night.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/css/variables-time.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/css/variables-wind-names.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-classes/classes-beaufort.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-classes/classes-day.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-classes/classes-direction.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-classes/classes-misc.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-classes/classes-moon-aliases.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-classes/classes-moon.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-classes/classes-neutral.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-classes/classes-night.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-classes/classes-time.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-classes/classes-wind-aliases.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-classes/classes-wind-degrees.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-classes/classes-wind.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-variables/variables-beaufort.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-variables/variables-day.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-variables/variables-direction.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-variables/variables-misc.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-variables/variables-moon.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-variables/variables-neutral.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-variables/variables-night.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-variables/variables-time.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/icon-variables/variables-wind-names.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/mappings/wi-forecast-io.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/mappings/wi-owm.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/mappings/wi-wmo4680.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/mappings/wi-yahoo.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/weather-icons-classes.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/weather-icons-core.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/weather-icons-variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/weather-icons-wind.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/weather-icons-wind.min.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/weather-icons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/less/weather-icons.min.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-classes/classes-beaufort.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-classes/classes-day.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-classes/classes-direction.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-classes/classes-misc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-classes/classes-moon-aliases.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-classes/classes-moon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-classes/classes-neutral.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-classes/classes-night.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-classes/classes-time.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-classes/classes-wind-aliases.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-classes/classes-wind-degrees.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-classes/classes-wind.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-variables/variables-beaufort.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-variables/variables-day.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-variables/variables-direction.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-variables/variables-misc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-variables/variables-moon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-variables/variables-neutral.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-variables/variables-night.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-variables/variables-time.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/icon-variables/variables-wind-names.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/mappings/wi-forecast-io.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/mappings/wi-owm.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/mappings/wi-wmo4680.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/mappings/wi-yahoo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/weather-icons-classes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/weather-icons-core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/weather-icons-variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/weather-icons-wind.min.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/weather-icons-wind.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/weather-icons.min.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/weather-icons/sass/weather-icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/pages.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/prepros.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/responsive.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/sidebar-nav.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/spinners.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/style.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/variables.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/less/widgets.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/lib/css/wysiwyg-color.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/my_student_report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/particleground/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/particleground/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/particleground/jquery.particleground.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/particleground/jquery.particleground.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/particleground/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/particleground/js/jquery-1.11.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/share_tome_report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/student_excellent_report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/student_history_report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/student_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/student_new_report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/student_peers_report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/student_update_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/teacher_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/teacher_manage_deadline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/teacher_manage_student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/teacher_update_password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/report/video/bgm.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/ssm.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/ssm.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/LaboratoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/LaboratoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/ReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/TeacherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/TeacherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/mapper/NotificationMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddLabRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddLabRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddTeacherRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddTeacherRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ShareToPersonParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ShareToPersonParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateLabRequestParam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateLabRequestParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Notification.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/NotificationExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/ReportWithBLOBs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/ReportWithBLOBs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/NotificationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/NotificationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/ReportServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/ReportServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/TeacherServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generator/generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generator/generator-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/NotificationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/properties/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/properties/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/bootstrap-datepicker/bootstrap-datepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/bootstrap-datepicker/bootstrap-datepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jsgrid/db-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jsgrid/db-3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jsgrid/db.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jsgrid/dist/jsgrid-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jsgrid/dist/jsgrid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jsgrid/dist/jsgrid.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/plugins/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/plugins/images/login-register.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/plugins/images/login-register.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/plugins/images/login-register_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/plugins/images/users/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/add_lab.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/add_student.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/add_teacher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/admin_zbxt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/all_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/bootstrap/less/glyphicons.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/bootstrap/less/glyphicons.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/core_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/colors/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/colors/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/linea-icons/linea.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/icons/linea-icons/linea.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/material-design-iconic-font/css/material-design-iconic-font.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/icons/material-design-iconic-font/css/material-design-iconic-font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/material-design-iconic-font/css/material-design-iconic-font.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/icons/material-design-iconic-font/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/material-design-iconic-font/css/materialdesignicons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/icons/material-design-iconic-font/css/materialdesignicons.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/spinners.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/css/spinners.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/js/custom.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/js/custom.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/js/jquery.slimscroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/js/jquery.slimscroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/js/jsgrid-init-2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/js/jsgrid-init-3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/js/jsgrid-init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/js/waves.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/js/waves.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/.bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/.npmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/HELP-US-OUT.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/HELP-US-OUT.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/fonts/fontawesome-webfont-old.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/fonts/fontawesome-webfont-old.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/animated.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/animated.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/core.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/extras.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/extras.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/fixed-width.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/fixed-width.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/icons.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/larger.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/larger.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/list.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/list.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/mixins.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/path.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/path.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/rotated-flipped.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/rotated-flipped.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/spinning.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/spinning.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/stacked.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/stacked.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/less/variables.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/_animated.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/_animated.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/_core.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/_extras.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/_extras.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/_fixed-width.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/_fixed-width.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/_larger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/_larger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/_list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/_path.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/_path.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/_spinning.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/_spinning.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/_stacked.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/_stacked.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/font-awesome/scss/font-awesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-arrows-10.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-arrows-10.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-arrows-10.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-arrows-10.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-arrows-10.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-arrows-10.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-arrows-10.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-arrows-10.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-basic-10.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-basic-10.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-basic-10.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-basic-10.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-basic-10.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-basic-10.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-basic-10.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-basic-10.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-basic-elaboration-10.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-basic-elaboration-10.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-basic-elaboration-10.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-basic-elaboration-10.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-basic-elaboration-10.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-basic-elaboration-10.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-basic-elaboration-10.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-basic-elaboration-10.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-ecommerce-10.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-ecommerce-10.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-ecommerce-10.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-ecommerce-10.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-ecommerce-10.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-ecommerce-10.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-ecommerce-10.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-ecommerce-10.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-music-10.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-music-10.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-music-10.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-music-10.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-music-10.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-music-10.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-music-10.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-music-10.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-software-10.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-software-10.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-software-10.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-software-10.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-software-10.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-software-10.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-software-10.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-software-10.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-weather-10.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-weather-10.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-weather-10.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-weather-10.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-weather-10.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-weather-10.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/fonts/linea-weather-10.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/fonts/linea-weather-10.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/linea.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/linea.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/linea-icons/linea.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/linea-icons/linea.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/material-design-iconic-font2/css/material-design-iconic-font.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/material-design-iconic-font2/css/material-design-iconic-font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/material-design-iconic-font2/css/material-design-iconic-font.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/material-design-iconic-font2/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/material-design-iconic-font2/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/css/simple-line-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/simple-line-icons/css/simple-line-icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/fonts/Simple-Line-Icons.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/simple-line-icons/fonts/Simple-Line-Icons.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/fonts/Simple-Line-Icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/simple-line-icons/fonts/Simple-Line-Icons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/fonts/Simple-Line-Icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/simple-line-icons/fonts/Simple-Line-Icons.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/fonts/Simple-Line-Icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/simple-line-icons/fonts/Simple-Line-Icons.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/fonts/Simple-Line-Icons.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/simple-line-icons/fonts/Simple-Line-Icons.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/less/simple-line-icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/simple-line-icons/less/simple-line-icons.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/simple-line-icons/scss/simple-line-icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/simple-line-icons/scss/simple-line-icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/themify-icons/fonts/themify.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/themify-icons/fonts/themify.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/themify-icons/fonts/themify.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/themify-icons/fonts/themify.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/themify-icons/fonts/themify.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/themify-icons/fonts/themify.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/themify-icons/fonts/themify.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/themify-icons/fonts/themify.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/themify-icons/ie7/ie7.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/themify-icons/ie7/ie7.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/themify-icons/ie7/ie7.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/themify-icons/ie7/ie7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/themify-icons/themify-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/themify-icons/themify-icons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/less/icons/themify-icons/themify-icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/report/less/icons/themify-icons/themify-icons.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/login2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/teacher_zbxt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/time_set.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/user_pwd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/weeklyreport/user_teacher_pwd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mapper/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mapper/UserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/generator/generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Report/WEB-INF/classes/generator/generator-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Report/WEB-INF/classes/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/classes/properties/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/Report/WEB-INF/classes/properties/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Report/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Report/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SSMByMaven.war" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/generator/generator-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/generator/generator-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/properties/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/properties/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/mapper/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/mapper/UserTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,103 +720,84 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="admin_manage_lab.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/report/admin_manage_lab.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="16">
+              <caret line="543" selection-start-line="543" selection-end-line="547" selection-end-column="67" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/report/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="87" column="28" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TeacherController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/TeacherController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3120">
-              <caret line="216" column="49" selection-start-line="216" selection-start-column="49" selection-end-line="216" selection-end-column="49" />
+            <state relative-caret-position="468">
+              <caret line="203" column="33" lean-forward="true" selection-start-line="203" selection-start-column="33" selection-end-line="203" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#4050#4065#0" expanded="true" />
+                <element signature="e#9603#9618#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java">
+      <file leaf-file-name="UpdateTeacherRequestParam.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateTeacherRequestParam.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="63" column="6" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="144">
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReportController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/ReportController.java">
+      <file leaf-file-name="DeleteTeacherRequestParam.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/DeleteTeacherRequestParam.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4656">
-              <caret line="291" selection-start-line="291" selection-end-line="291" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="32">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewSharedReports.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewSharedReports.java">
+      <file leaf-file-name="StudentServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/StudentServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="48">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <caret line="26" column="73" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/sql/test.sql">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="ShareToPersonParam.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ShareToPersonParam.java">
+      <file leaf-file-name="TeacherServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/TeacherServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-              <folding>
-                <element signature="e#188#189#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/StudentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1552">
-              <caret line="117" column="49" selection-start-line="117" selection-start-column="49" selection-end-line="117" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spring-mvc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddReportRequestParam.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddReportRequestParam.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="352">
+              <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -163,41 +809,43 @@
       <list>
         <option value="JavaScript File" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>showuser.jsp</find>
-      <find>jackson</find>
-      <find>json</find>
-      <find>generator</find>
-      <find>marking</find>
-      <find>insertSelective</find>
-      <find>deleteByPrimaryKey</find>
-      <find>BaseResultMap</find>
-      <find>tomcat</find>
-      <find>spring-mybatis</find>
-      <find>component-scan</find>
-      <find>cglib</find>
-      <find>image-2</find>
-      <find>youtube</find>
-      <find>bootstrap</find>
-      <find>purple</find>
-      <find>chwangteng</find>
-      <find>regist</find>
-      <find>message</find>
-      <find>&quot;code&quot;</find>
-      <find>&quot;message&quot;</find>
-      <find>YES</find>
-      <find>googleapis</find>
-      <find>TeacherExampleTeacher</find>
-      <find>Teacher</find>
-      <find>setToken</find>
-      <find>row</find>
-      <find>mayousheng</find>
-      <find>找到</find>
+      <find>encoding</find>
+      <find>ResultMapWithBLOBs</find>
+      <find>notification</find>
+      <find>themedesigner</find>
+      <find>id=&quot;idnextWeek&quot;</find>
+      <find>id=&quot;idsubmitTime&quot;</find>
+      <find>delete</find>
+      <find>myLargeModalLabel</find>
+      <find>fa-refresh</find>
+      <find>update_lab_button</find>
+      <find>todeleteid</find>
+      <find>@RequestMapping</find>
+      <find>实验室老师</find>
+      <find>insert_lab_username</find>
+      <find>update_lab_username</find>
+      <find>删除实验室</find>
+      <find>divwrapper_</find>
+      <find>load</find>
+      <find>Load</find>
+      <find>loadTeachers</find>
+      <find>添加成功</find>
+      <find>renderteacher</find>
+      <find>ready</find>
+      <find>render</find>
+      <find>老师</find>
+      <find>实验室</find>
+      <find>增加老师</find>
+      <find>删除</find>
+      <find>更新</find>
+      <find>删除老师</find>
     </findStrings>
     <replaceStrings>
       <replace>ConstVar.</replace>
@@ -205,6 +853,7 @@
       <replace>ConstVar._KEY_MESSAGE_</replace>
       <replace>StudentExample</replace>
       <replace>Student</replace>
+      <replace>motification</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\chwangteng\Downloads\SSMByMaven</dir>
@@ -212,6 +861,7 @@
       <dir>C:\Users\chwangteng\Documents\GitHub\SSMByMaven</dir>
       <dir>C:\Users\chwangteng\Documents\GitHub\Report\src\main\webapp</dir>
       <dir>C:\Users\chwangteng\Documents\GitHub\Report</dir>
+      <dir>C:\Users\chwangteng\Documents\GitHub\Report\src\main\webapp\report</dir>
       <dir>C:\Users\chwangteng\Documents\GitHub\Report\src\main\java\com\chwangteng\www\controller</dir>
     </dirStrings>
   </component>
@@ -221,57 +871,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddStudentRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/pojo/ReportWithBLOBs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/AddReportRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/ResetPasswordRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/LoginServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/TeacherService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/TeacherServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/TeacherUpdateMyPassword.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/StudentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/StudentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/StudentUpdateMyPasswordParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/StudentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/DeadlineConvertor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/UpdateDeadlineParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/TeacherController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/param/UpdateReportParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/RepairAspect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/resolver/MyExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/SendMsgUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/Utils/ConstVar.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/interceptor/CustomInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/ReportService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/service/impl/ReportServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mayousheng/www/controller/ReportController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/sql/BackupDatabase.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewPeersReportParam.java" />
-        <option value="$PROJECT_DIR$/src/test/java/mapper/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/TopNavigation.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/LeftSlidebar.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/RightSidebar.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/properties/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mybatis.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/LaboratoryController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SelectTeacherRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/TeacherController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SelectStudentRequestParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/StudentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewStudentsReportParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/ReportService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/ReportServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ReplyStudentsReportParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/Utils/ConstVar.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/ReportWithBLOBs.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/student_index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/generator/generator-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/AuthorityService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/AuthorityServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/NotificationService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/NotificationServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SetReadFlagParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ShareToPersonParam.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewSharedReports.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/ReportController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mapper/UserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/TopNavigationStudent.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/ReportServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/teacher_index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/template.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/teacher_update_password.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateStudentRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/student_update_password.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/LeftSlidebarStudent.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/share_tome_report.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/student_excellent_report.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/student_peers_report.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/DeleteStudentParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/DeleteReportParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ShareToPersonParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/ReportController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/my_student_report.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/teacher_manage_deadline.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/LeftSlidebarTeacher.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/admin_index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/documentation.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/documentationTeacher.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/documentationAdmin.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/LeftSlidebarAdmin.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/admin_reset_password.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/StudentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/TeacherServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddLabRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/admin_manage_lab_copy_todelete.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateLabRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/GetthislabteacherParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/LaboratoryController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/student_history_report.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/teacher_manage_student.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/student_new_report.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddTeacherRequestParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/TeacherController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/admin_manage_lab.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/report/login.html" />
       </list>
     </option>
   </component>
@@ -318,7 +968,11 @@
     </treeState>
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/jquery-wizard-master/package.json" />
+      <path value="$PROJECT_DIR$/src/main/webapp/plugins/bower_components/sidebar-nav/package.json" />
+      <path value="$PROJECT_DIR$/src/main/webapp/report/bootstrap/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
@@ -334,13 +988,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Report" type="b2602c69:ProjectViewProjectNode" />
               <item name="Report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="Report_war_archive" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Report" type="b2602c69:ProjectViewProjectNode" />
@@ -503,14 +1174,6 @@
               <item name="Report" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Report" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -519,7 +1182,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="bower_components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Report" type="b2602c69:ProjectViewProjectNode" />
@@ -542,15 +1222,22 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
@@ -560,19 +1247,20 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\chwangteng\Documents\GitHub\Report\src\main\webapp" />
-      <recent name="C:\Users\chwangteng\Documents\GitHub\Report\src\main\webapp\js" />
-      <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp" />
-      <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp\assets\js\plugins\bower_components\sweetalert" />
-      <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp\assets\images\demo\logo" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chwangteng\Documents\GitHub\Report\src\main\webapp\report" />
       <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp\assets" />
       <recent name="C:\Users\chwangteng\Downloads\SSMByMaven\src\main\webapp" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\chwangteng\Documents\GitHub\Report\src\main\webapp\plugins\bower_components" />
+      <recent name="C:\Users\chwangteng\Documents\GitHub\Report\src\main\webapp\report" />
+      <recent name="C:\Users\chwangteng\Documents\GitHub\Report\src\main\webapp\report\avatar" />
+      <recent name="C:\Users\chwangteng\Documents\GitHub\Report\src\main\webapp\report\particleground" />
+      <recent name="C:\Users\chwangteng\Documents\GitHub\Report\src\main\webapp\report\video" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -591,7 +1279,7 @@
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="UserTest.testInsertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.getreport" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Report" />
       <extension name="coverage">
         <pattern>
@@ -603,30 +1291,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="mapper" />
       <option name="MAIN_CLASS_NAME" value="mapper.UserTest" />
-      <option name="METHOD_NAME" value="testInsertUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="UserTest.testSelectUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Report" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="mapper" />
-      <option name="MAIN_CLASS_NAME" value="mapper.UserTest" />
-      <option name="METHOD_NAME" value="testSelectUser" />
+      <option name="METHOD_NAME" value="getreport" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -673,6 +1338,29 @@
       <option name="PACKAGE_NAME" value="mapper" />
       <option name="MAIN_CLASS_NAME" value="mapper.UserTest" />
       <option name="METHOD_NAME" value="testdeletenotfound" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="UserTest.testnoti" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Report" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="mapper" />
+      <option name="MAIN_CLASS_NAME" value="mapper.UserTest" />
+      <option name="METHOD_NAME" value="testnoti" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -745,7 +1433,7 @@
       <listeners />
     </configuration>
     <configuration name="ssm" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.33" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <deployment>
         <artifact name="Report:war exploded">
           <settings>
@@ -817,19 +1505,19 @@
     </configuration>
     <list>
       <item itemvalue="Tomcat Server.ssm" />
-      <item itemvalue="JUnit.UserTest.testSelectUser" />
-      <item itemvalue="JUnit.UserTest.testInsertUser" />
       <item itemvalue="JUnit.UserTest.testdeletenotfound" />
       <item itemvalue="JUnit.UserTest.testselectbyprimarykey" />
       <item itemvalue="JUnit.UserTest.testceratecriteria" />
+      <item itemvalue="JUnit.UserTest.getreport" />
+      <item itemvalue="JUnit.UserTest.testnoti" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.testnoti" />
+        <item itemvalue="JUnit.UserTest.getreport" />
         <item itemvalue="JUnit.UserTest.testselectbyprimarykey" />
         <item itemvalue="JUnit.UserTest.testceratecriteria" />
         <item itemvalue="JUnit.UserTest.testdeletenotfound" />
-        <item itemvalue="JUnit.UserTest.testInsertUser" />
-        <item itemvalue="JUnit.UserTest.testSelectUser" />
       </list>
     </recent_temporary>
   </component>
@@ -876,7 +1564,22 @@
       <workItem from="1543805293055" duration="4341000" />
       <workItem from="1543811643412" duration="19018000" />
       <workItem from="1543908279330" duration="15000" />
-      <workItem from="1543916985473" duration="240000" />
+      <workItem from="1543916985473" duration="5166000" />
+      <workItem from="1543926200464" duration="34000" />
+      <workItem from="1543926629540" duration="3268000" />
+      <workItem from="1543934334036" duration="6160000" />
+      <workItem from="1543974975309" duration="11152000" />
+      <workItem from="1543988699869" duration="3000" />
+      <workItem from="1543988750068" duration="6747000" />
+      <workItem from="1543995606789" duration="7211000" />
+      <workItem from="1544007850988" duration="11489000" />
+      <workItem from="1544022261191" duration="3978000" />
+      <workItem from="1544026470213" duration="1961000" />
+      <workItem from="1544072322580" duration="9614000" />
+      <workItem from="1544086797580" duration="191000" />
+      <workItem from="1544087017272" duration="23241000" />
+      <workItem from="1544154811098" duration="25838000" />
+      <workItem from="1544241454768" duration="15026000" />
     </task>
     <task id="LOCAL-00001" summary="。。。。">
       <created>1540894628937</created>
@@ -955,43 +1658,57 @@
       <option name="project" value="LOCAL" />
       <updated>1543903986065</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="后台接口全部完成&#10;融合一包糖的前端">
+      <created>1543917249784</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1543917249784</updated>
+    </task>
+    <task id="LOCAL-00013" summary="后台接口全部完成&#10;融合一包糖的前端">
+      <created>1543926069611</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1543926069611</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserTest_testselectbyprimarykey - 2018.11.01 at 14h 08m 34s.xml">
-      <configuration name="UserTest.testselectbyprimarykey" configurationId="JUnit" />
+    <history-entry file="UserTest_testnoti - 2018.12.06 at 00h 00m 58s.xml">
+      <configuration name="UserTest.testnoti" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testceratecriteria - 2018.12.03 at 12h 29m 00s.xml">
-      <configuration name="UserTest.testceratecriteria" configurationId="JUnit" />
+    <history-entry file="UserTest_testnoti - 2018.12.06 at 00h 04m 58s.xml">
+      <configuration name="UserTest.testnoti" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testceratecriteria - 2018.12.03 at 12h 34m 23s.xml">
-      <configuration name="UserTest.testceratecriteria" configurationId="JUnit" />
+    <history-entry file="UserTest_testnoti - 2018.12.06 at 00h 05m 30s.xml">
+      <configuration name="UserTest.testnoti" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testselectbyprimarykey - 2018.12.03 at 12h 34m 47s.xml">
-      <configuration name="UserTest.testselectbyprimarykey" configurationId="JUnit" />
+    <history-entry file="UserTest_testnoti - 2018.12.06 at 00h 05m 41s.xml">
+      <configuration name="UserTest.testnoti" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testdeletenotfound - 2018.12.03 at 12h 38m 50s.xml">
-      <configuration name="UserTest.testdeletenotfound" configurationId="JUnit" />
+    <history-entry file="UserTest_testnoti - 2018.12.06 at 00h 06m 23s.xml">
+      <configuration name="UserTest.testnoti" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testdeletenotfound - 2018.12.03 at 12h 41m 03s.xml">
-      <configuration name="UserTest.testdeletenotfound" configurationId="JUnit" />
+    <history-entry file="UserTest_testnoti - 2018.12.06 at 00h 10m 38s.xml">
+      <configuration name="UserTest.testnoti" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testdeletenotfound - 2018.12.03 at 12h 41m 24s.xml">
-      <configuration name="UserTest.testdeletenotfound" configurationId="JUnit" />
+    <history-entry file="UserTest_testnoti - 2018.12.06 at 00h 16m 08s.xml">
+      <configuration name="UserTest.testnoti" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testceratecriteria - 2018.12.03 at 12h 48m 33s.xml">
-      <configuration name="UserTest.testceratecriteria" configurationId="JUnit" />
+    <history-entry file="UserTest_testnoti - 2018.12.06 at 00h 27m 12s.xml">
+      <configuration name="UserTest.testnoti" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testceratecriteria - 2018.12.03 at 12h 57m 32s.xml">
-      <configuration name="UserTest.testceratecriteria" configurationId="JUnit" />
+    <history-entry file="UserTest_testnoti - 2018.12.06 at 00h 30m 05s.xml">
+      <configuration name="UserTest.testnoti" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_testselectbyprimarykey - 2018.12.03 at 13h 03m 41s.xml">
-      <configuration name="UserTest.testselectbyprimarykey" configurationId="JUnit" />
+    <history-entry file="UserTest_testnoti - 2018.12.06 at 00h 35m 12s.xml">
+      <configuration name="UserTest.testnoti" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220776000" />
+    <option name="totallyTimeSpent" value="351615000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1006,41 +1723,42 @@
     <frame x="-6" y="-6" width="1933" height="1063" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49706668" weight="0.32976446" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.496" weight="0.32976446" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.118933335" side_tool="true" visible="true" weight="0.13504823" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.1264" side_tool="true" visible="true" weight="0.18649517" />
       <window_info anchor="bottom" id="Application Servers" order="12" sideWeight="0.48533332" weight="0.20364416" />
-      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.4985591" weight="0.2736" />
+      <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.4985591" weight="0.13973333" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="CDI" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8810667" weight="0.29903537" />
-      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.496" weight="0.32976446" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49546668" weight="0.32976446" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" side_tool="true" visible="true" weight="0.2256" />
-      <window_info anchor="right" id="Bean Validation" order="8" />
-      <window_info id="Web" order="5" sideWeight="0.50167227" side_tool="true" weight="0.20426667" />
       <window_info anchor="right" id="Database" order="6" weight="0.3296" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="JSF" order="4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49493334" weight="0.39871383" />
-      <window_info anchor="right" id="Capture Analysis" order="8" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49706668" weight="0.32976446" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4912" weight="0.32583067" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.496" weight="0.32976446" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8736" visible="true" weight="0.18649517" />
+      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.496" weight="0.32976446" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49546668" weight="0.32976446" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" side_tool="true" visible="true" weight="0.21173333" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info id="Web" order="5" sideWeight="0.50167227" side_tool="true" weight="0.20426667" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Statistic" order="13" sideWeight="0.65173334" visible="true" weight="0.63772774" />
+      <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" x="0" y="0" width="433" height="863" id="Documentation" order="10" sideWeight="0.50144094" side_tool="true" visible="true" weight="0.2736" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49173334" weight="0.32583067" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Image Layers" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4992" weight="0.3290461" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1058,244 +1776,209 @@
     <MESSAGE value="1101" />
     <MESSAGE value="二期" />
     <MESSAGE value="后台接口全部完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="后台接口全部完成" />
+    <MESSAGE value="后台接口全部完成&#10;融合一包糖的前端" />
+    <option name="LAST_COMMIT_MESSAGE" value="后台接口全部完成&#10;融合一包糖的前端" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java</url>
-          <line>64</line>
+          <line>71</line>
           <properties class="mapper.UserTest" method="testselectbyprimarykey">
             <option name="EMULATED" value="true" />
           </properties>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java</url>
+          <line>94</line>
+          <properties class="mapper.UserTest" method="testnoti">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java</url>
-          <line>65</line>
+          <line>72</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Teacher.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/avatar/female.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateStudentRequestParam.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="25" selection-end-column="28" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SelectTeacherRequestParam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddStudentRequestParam.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+        <state relative-caret-position="192">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SelectLabRequestParam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/LeftSlidebarStudent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" selection-start-line="4" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="501">
+          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SelectStudentRequestParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/ReportMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/RightSidebar.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/ReportWithBLOBs.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/share_tome_report.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="451">
+          <caret line="275" column="4" selection-start-line="275" selection-start-column="4" selection-end-line="275" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/ReportExample.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/student_excellent_report.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="611">
+          <caret line="274" column="5" selection-start-line="274" selection-start-column="5" selection-end-line="274" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/mapper/ReportMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/student_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="16">
+          <caret line="71" column="22" lean-forward="true" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewStudentsReportParam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/student_peers_report.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="611">
+          <caret line="275" column="5" selection-start-line="275" selection-start-column="5" selection-end-line="275" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewPeersReportParam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/teacher_update_password.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="5" selection-end-column="29" />
+        <state relative-caret-position="635">
+          <caret line="267" column="38" lean-forward="true" selection-start-line="267" selection-start-column="38" selection-end-line="267" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateTeacherRequestParam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="285">
+          <caret line="170" column="34" lean-forward="true" selection-start-line="170" selection-start-column="34" selection-end-line="170" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateReportParam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/TopNavigationStudent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="389">
+          <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateLabRequestParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateDeadlineParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/StudentUpdateMyPasswordParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ReplyStudentsReportParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/TeacherUpdateMyPasswordParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/Utils/ConstVar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generator.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generator-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="59" column="72" lean-forward="true" selection-start-line="59" selection-start-column="72" selection-end-line="59" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AdminMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/AuthorityMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/NotificationMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/TeacherService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" selection-start-line="9" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/ReportService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/LaboratoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/AuthorityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/NotificationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/AuthorityServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/DeleteStudentParam.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/DeleteReportParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/ReportController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5088">
+          <caret line="333" column="22" selection-start-line="333" selection-start-column="22" selection-end-line="333" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ShareToPersonParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/Utils/DeadlineConvertor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/teacher_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="162" column="36" lean-forward="true" selection-end-line="182" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/documentation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/documentationTeacher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/documentationAdmin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="169" column="50" selection-start-line="169" selection-start-column="50" selection-end-line="169" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/student_update_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="220" column="44" lean-forward="true" selection-end-line="288" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/AdminServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ResetPasswordRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/admin_reset_password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="237" column="18" lean-forward="true" selection-start-line="237" selection-start-column="18" selection-end-line="237" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1306,126 +1989,191 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/LoginServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/LeftSlidebarTeacher.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="581">
+          <caret line="39" column="8" lean-forward="true" selection-end-line="45" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/ReportServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="71" column="81" lean-forward="true" selection-start-line="71" selection-start-column="81" selection-end-line="71" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/AdminServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/LeftSlidebarAdmin.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/NotificationServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/admin_index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="416">
+          <caret line="145" lean-forward="true" selection-end-line="181" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/pojo/Notification.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/teacher_manage_deadline.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="729">
+          <caret line="85" column="65" selection-start-line="85" selection-start-column="65" selection-end-line="85" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/SetReadFlagParam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="96">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ShareToPersonParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <element signature="e#188#189#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/test.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="63" column="6" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/ViewSharedReports.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddLabRequestParam.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/admin_manage_lab_copy_todelete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="208" lean-forward="true" selection-start-line="208" selection-end-line="208" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateLabRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/LaboratoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="109" column="20" lean-forward="true" selection-start-line="109" selection-start-column="20" selection-end-line="109" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/DeleteLabRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/GetthislabteacherParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="35" />
+          <folding>
+            <element signature="e#117#118#0" expanded="true" />
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/student_history_report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="447" selection-start-line="447" selection-end-line="456" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/teacher_manage_student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="92" column="34" lean-forward="true" selection-start-line="92" selection-start-column="34" selection-end-line="92" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/student_new_report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="75" column="18" lean-forward="true" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/TeacherServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/service/impl/StudentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="26" column="73" selection-start-line="26" selection-start-column="73" selection-end-line="26" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/DeleteTeacherRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddTeacherRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/my_student_report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="124" selection-start-line="124" selection-end-line="127" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateTeacherRequestParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/TeacherController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3120">
-          <caret line="216" column="49" selection-start-line="216" selection-start-column="49" selection-end-line="216" selection-end-column="49" />
+        <state relative-caret-position="468">
+          <caret line="203" column="33" lean-forward="true" selection-start-line="203" selection-start-column="33" selection-end-line="203" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#4050#4065#0" expanded="true" />
+            <element signature="e#9603#9618#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/StudentController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/admin_manage_lab.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1552">
-          <caret line="117" column="49" selection-start-line="117" selection-start-column="49" selection-end-line="117" selection-end-column="49" />
+        <state relative-caret-position="16">
+          <caret line="543" selection-start-line="543" selection-end-line="547" selection-end-column="67" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="43" column="44" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+        <state relative-caret-position="417">
+          <caret line="87" column="28" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddReportRequestParam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/report/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/ReportController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4656">
-          <caret line="291" selection-start-line="291" selection-end-line="291" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="386">
+          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
         </state>
       </provider>
     </entry>
@@ -1435,7 +2183,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>Report:war exploded</last-edited>
+          <last-edited>Report:war archive</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1488,6 +2236,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

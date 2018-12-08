@@ -1,14 +1,15 @@
 package mapper;
 
 import com.chwangteng.www.mapper.*;
-import com.chwangteng.www.pojo.Laboratory;
-import com.chwangteng.www.pojo.LaboratoryExample;
+import com.chwangteng.www.pojo.*;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
 
 // 加载spring配置文件
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -19,6 +20,12 @@ public class UserTest {
 
     @Autowired
     private LaboratoryMapper labMapper;
+
+    @Autowired
+    private ReportMapper reportMapper;
+
+    @Autowired
+    private MotificationMapper motificationMapper;
 
     //test want will return if the insetion was not success
     @Test
@@ -74,4 +81,23 @@ public class UserTest {
         laboratoryExample.createCriteria();
         System.out.println(labMapper.selectByExample(laboratoryExample));
     }
+
+
+    @Test
+    @Transactional
+    public  void getreport(){
+        ReportWithBLOBs reportWithBLOBs =  reportMapper.selectByPrimaryKey(1);
+    }
+
+
+    @Test
+    @Transactional
+    public  void testnoti(){
+        MotificationExample motificationExample = new MotificationExample();
+        motificationExample.createCriteria();
+
+        List records = motificationMapper.selectByExample(motificationExample);
+    }
+
+;
 }

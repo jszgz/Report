@@ -2,13 +2,10 @@ package com.chwangteng.www.controller;
 
 
 import com.chwangteng.www.Utils.ConstVar;
-import com.chwangteng.www.mapper.AuthorityMapper;
-import com.chwangteng.www.mapper.NotificationMapper;
-import com.chwangteng.www.mapper.TeacherMapper;
+import com.chwangteng.www.mapper.*;
 import com.chwangteng.www.param.*;
 import com.chwangteng.www.pojo.*;
 import com.chwangteng.www.service.ReportService;
-import com.chwangteng.www.mapper.ReportMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,25 +27,44 @@ public class ReportController {
     @Autowired
     private ReportService reportService;
     @Autowired
-    private NotificationMapper notificationMapper;
+    private MotificationMapper motificationMapper;
     @Autowired
     private AuthorityMapper authorityMapper;
     @Autowired
     private TeacherMapper teacherMapper;
+    @Autowired
+    private StudentMapper studentMapper;
 
     //新增周报
     @RequestMapping("/addReport.action")
     public ModelAndView addReport(@RequestBody AddReportRequestParam addReportRequestParam, HttpSession session)   {
 
-        Report report = new ReportWithBLOBs();
+        ReportWithBLOBs report = new ReportWithBLOBs();
+
+        //生成标题
         int currentstudent = Integer.parseInt(session.getAttribute(ConstVar._SESSION_USER_ID_).toString());
-        report.setTitle("周报");
+        String studentname = null;
+        Student  student = studentMapper.selectByPrimaryKey(currentstudent);
+        if(student!=null){
+            studentname =  student.getName();
+        }
+        String finaltitle = "";
+        finaltitle+=studentname+"的周报-";
+        Date date = new Date();
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        finaltitle+= calendar.get(Calendar.MONTH)+"月";
+        finaltitle+= calendar.get(Calendar.DAY_OF_MONTH)+"日";
+        //设置生成的标题
+        report.setTitle(finaltitle);
+
+        report.setPv(0);
         report.setStudentId(currentstudent);
         report.setSubmitTime(new Date());
-        ((ReportWithBLOBs) report).setThisWeek(addReportRequestParam.getThisWeek());
-        ((ReportWithBLOBs) report).setBugMeet(addReportRequestParam.getBugMeet());
-        ((ReportWithBLOBs) report).setNextWeek(addReportRequestParam.getNextWeek());
-        int rows = reportMapper.insert((ReportWithBLOBs) report);
+        report.setThisWeek(addReportRequestParam.getThisWeek());
+        report.setBugMeet(addReportRequestParam.getBugMeet());
+        report.setNextWeek(addReportRequestParam.getNextWeek());
+        int rows = reportMapper.insertSelective(report);
         if(rows==1){
             Map<String,Object> map = new HashMap<String,Object>();
             map.put(ConstVar._KEY_MESSAGE_, "周报提交成功");
@@ -146,13 +162,42 @@ public class ReportController {
         }
     }
 
+    //查看自己所有的周报
+    @RequestMapping("/viewMyAllReport.action")
+    public ModelAndView viewMyAllReport( HttpSession session){
+        int currentstudent = Integer.parseInt(session.getAttribute(ConstVar._SESSION_USER_ID_).toString());
+        int usertype = Integer.parseInt(session.getAttribute(ConstVar._SESSION_USER_TYPE_).toString());
+        if(usertype==ConstVar._STUDENT_){
+            ReportExample reportExample = new ReportExample();
+            reportExample.createCriteria().andStudentIdEqualTo(currentstudent);
+            List<ReportWithBLOBs> reports = (List<ReportWithBLOBs>) reportMapper.selectByExampleWithBLOBs(reportExample);
+            if(reports!=null){
+                ModelAndView mv = new ModelAndView();
+                mv.addObject(ConstVar._KEY_DATA_,reports);
+                mv.setView(new MappingJackson2JsonView());
+                return mv;
+            }else{
+                Map<String,Object> map = new HashMap<String,Object>();
+                map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+                map.put(ConstVar._KEY_MESSAGE_, "内部错误");
+                return new ModelAndView(new MappingJackson2JsonView(),map);
+            }
+        }else{
+            Map<String,Object> map = new HashMap<String,Object>();
+            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_NOTFOUND);
+            map.put(ConstVar._KEY_MESSAGE_, "不是学生，没有权限");
+            return new ModelAndView(new MappingJackson2JsonView(),map);
+        }
+    }
+
+
     //查看自己学生的周报
     @RequestMapping("/viewStudentsReport.action")
-    public ModelAndView viewStudentsReport(@RequestBody ViewStudentsReportParam viewStudentsReportParam, HttpSession session){
+    public ModelAndView viewStudentsReport(HttpSession session){
         int currentteacher = Integer.parseInt(session.getAttribute(ConstVar._SESSION_USER_ID_).toString());
         int usertype = Integer.parseInt(session.getAttribute(ConstVar._SESSION_USER_TYPE_).toString());
         if(usertype==ConstVar._TEACHER_){
-            List<ReportWithBLOBs> reports = (List<ReportWithBLOBs>) reportService.viewStudentsReport(currentteacher, viewStudentsReportParam);
+            List<ReportWithBLOBs> reports = (List<ReportWithBLOBs>) reportService.viewStudentsReport(currentteacher, null);
             if(reports!=null){
                 ModelAndView mv = new ModelAndView();
                 mv.addObject(ConstVar._KEY_DATA_,reports);
@@ -203,15 +248,15 @@ public class ReportController {
     }
 
     //检查自己的通知
-    @RequestMapping("/checkMyNotification.action")
-    public ModelAndView checkMyNotification(HttpSession session){
+    @RequestMapping("/checkMyMotification.action")
+    public ModelAndView checkMyMotification(HttpSession session){
         int currentuser = Integer.parseInt(session.getAttribute(ConstVar._SESSION_USER_ID_).toString());
         int usertype = Integer.parseInt(session.getAttribute(ConstVar._SESSION_USER_TYPE_).toString());
 
-        NotificationExample notificationExample = new NotificationExample();
-        notificationExample.createCriteria().andUserIdEqualTo(currentuser).andUserTypeEqualTo(usertype);
+        MotificationExample motificationExample = new MotificationExample();
+        motificationExample.createCriteria().andUserIdMoEqualTo(currentuser).andUserTypeMoEqualTo(usertype);
 
-        List records = notificationMapper.selectByExample(notificationExample);
+        List records = motificationMapper.selectByExample(motificationExample);
 
         if(records!=null){
             ModelAndView mv = new ModelAndView();
@@ -226,13 +271,13 @@ public class ReportController {
         }
     }
 
-    //将通知设未已读
+    //将通知设为已读
     @RequestMapping("/setReadFlag")
     public ModelAndView setReadFlag(@RequestBody SetReadFlagParam setReadFlagParam, HttpSession session){
-        Notification notification =  new Notification();
-        notification.setRead(1);
+        Motification motification =  new Motification();
+        motification.setReadMo(1);
 
-        int rows = notificationMapper.updateByPrimaryKeySelective(notification);
+        int rows = motificationMapper.updateByPrimaryKeySelective(motification);
 
         if(rows==1){
             Map<String,Object> map = new HashMap<String,Object>();
@@ -255,19 +300,33 @@ public class ReportController {
         int usertype = Integer.parseInt(session.getAttribute(ConstVar._SESSION_USER_TYPE_).toString());
 
         if(usertype==ConstVar._TEACHER_){
+
+            StudentExample studentExample = new StudentExample();
+            studentExample.createCriteria().andUsernameEqualTo(shareToPersonParam.getUser_name());
+            List<Student> s = studentMapper.selectByExample(studentExample);
+
+            if(s.size()!=1){
+                Map<String,Object> map = new HashMap<String,Object>();
+                map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+                map.put(ConstVar._KEY_MESSAGE_, "不存在这个学号/工号，请确认类型");
+                return new ModelAndView(new MappingJackson2JsonView(),map);
+            }
+
             Authority authority = new Authority();
             authority.setReportId(shareToPersonParam.getReport_id());
             authority.setTeacherId(currentuser);
-            authority.setUserId(shareToPersonParam.getUser_id());
+            authority.setUserId(s.get(0).getId());
+            authority.setUserType(shareToPersonParam.getUser_type());
 
             int rows = authorityMapper.insertSelective(authority);
             if(rows==1){
-                Notification notification = new Notification();
-                notification.setUserId(shareToPersonParam.getUser_id());
-                notification.setUserType(shareToPersonParam.getUser_type());
-                notification.setTitle("您收到一篇新的周报推荐");
-                notification.setContent(teacherMapper.selectByPrimaryKey(currentuser).getName()+"给您分享了一篇周报，请在分享周报中查阅");
-                int rows_noti = notificationMapper.insert(notification);
+                Motification motification = new Motification();
+                motification.setUserIdMo(s.get(0).getId());
+                motification.setUserTypeMo(shareToPersonParam.getUser_type());
+                motification.setTitleMo("您收到一篇新的周报推荐");
+                motification.setContentMo(teacherMapper.selectByPrimaryKey(currentuser).getName()+"给您分享了一篇周报，请在分享周报中查阅");
+                motification.setReadMo(-1);
+                int rows_noti = motificationMapper.insert(motification);
                 if(rows_noti==1){
                     Map<String,Object> map = new HashMap<String,Object>();
                     map.put(ConstVar._KEY_MESSAGE_, "分享成功");
@@ -304,6 +363,17 @@ public class ReportController {
 
         List<Authority> auths = authorityMapper.selectByExample(authorityExample);
 
+        if(auths.size()==0||auths==null){
+/*            Map<String,Object> map = new HashMap<String,Object>();
+            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+            map.put(ConstVar._KEY_MESSAGE_, "没有分享给你的周报");
+            return new ModelAndView(new MappingJackson2JsonView(),map);*/
+            ModelAndView mv = new ModelAndView();
+            mv.addObject(ConstVar._KEY_DATA_,new ArrayList<ReportWithBLOBs>());
+            mv.setView(new MappingJackson2JsonView());
+            return mv;
+        }
+
         if(auths!=null){
             List<Integer> auths_int = new ArrayList<Integer>();
             for (int i=0;i<auths.size();i++){
@@ -326,5 +396,23 @@ public class ReportController {
         map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
         map.put(ConstVar._KEY_MESSAGE_, "内部错误");
         return new ModelAndView(new MappingJackson2JsonView(),map);
+    }
+
+    //删除某个周报
+    @RequestMapping("/deleteReport.action")
+    public ModelAndView deleteReport(@RequestBody DeleteReportParam deleteReportParam){
+
+        int rows = reportMapper.deleteByPrimaryKey(deleteReportParam.getId());
+
+        if(rows==1){
+            Map<String,Object> map = new HashMap<String,Object>();
+            map.put(ConstVar._KEY_MESSAGE_, "删除成功");
+            return new ModelAndView(new MappingJackson2JsonView(),map);
+        }else{
+            Map<String,Object> map = new HashMap<String,Object>();
+            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+            map.put(ConstVar._KEY_MESSAGE_, "内部错误");
+            return new ModelAndView(new MappingJackson2JsonView(),map);
+        }
     }
 }

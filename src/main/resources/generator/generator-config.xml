@@ -54,10 +54,10 @@
             <generatedKey column="id" sqlStatement="JDBC"></generatedKey>
         </table>-->
 
-        <table tableName="authority" domainObjectName="Authority">
+<!--        <table tableName="authority" domainObjectName="Authority">
             <generatedKey column="id" sqlStatement="JDBC"></generatedKey>
-        </table>
-        <table tableName="notification" domainObjectName="Notification">
+        </table>-->
+        <table tableName="motification" domainObjectName="Motification">
             <generatedKey column="id" sqlStatement="JDBC"></generatedKey>
         </table>
     </context>

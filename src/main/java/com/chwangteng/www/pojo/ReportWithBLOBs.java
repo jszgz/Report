@@ -1,6 +1,7 @@
 package com.chwangteng.www.pojo;
 
-import java.sql.Date;
+
+import java.util.Date;
 
 public class ReportWithBLOBs extends Report {
     private String thisWeek;

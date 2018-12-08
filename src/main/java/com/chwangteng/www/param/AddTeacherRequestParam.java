@@ -1,6 +1,7 @@
 package com.chwangteng.www.param;
 
 public class AddTeacherRequestParam {
+
     private int is_supervisor;
     private String about;
     private String sex;

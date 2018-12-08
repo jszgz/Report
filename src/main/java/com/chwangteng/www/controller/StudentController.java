@@ -2,15 +2,13 @@ package com.chwangteng.www.controller;
 
 
 import com.chwangteng.www.Utils.ConstVar;
-import com.chwangteng.www.param.AddStudentRequestParam;
-import com.chwangteng.www.param.SelectStudentRequestParam;
-import com.chwangteng.www.param.SelectTeacherRequestParam;
+import com.chwangteng.www.param.*;
 import com.chwangteng.www.pojo.StudentExample;
 import com.chwangteng.www.pojo.TeacherExample;
 import com.chwangteng.www.service.StudentService;
 import com.chwangteng.www.mapper.StudentMapper;
-import com.chwangteng.www.param.StudentUpdateMyPasswordParam;
 import com.chwangteng.www.pojo.Student;
+import org.apache.tools.ant.taskdefs.condition.Http;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -32,16 +30,25 @@ public class StudentController {
     @Autowired
     private StudentService studentService;
 
-    //新增学生
+    //老师新增学生，从session获取teacherid
     @RequestMapping("/addStudent.action")
-    public ModelAndView addStudent(@RequestBody AddStudentRequestParam addStudentRequestParam)   {
+    public ModelAndView addStudent(@RequestBody AddStudentRequestParam addStudentRequestParam, HttpSession session)   {
+
+        int userid = Integer.parseInt(session.getAttribute(ConstVar._SESSION_USER_ID_).toString());
+
         Student student = new Student();
         student.setSex(addStudentRequestParam.getSex());
         student.setTelephone(addStudentRequestParam.getTelephone());
         student.setMail(addStudentRequestParam.getMail());
         student.setName(addStudentRequestParam.getName());
-        student.setTeacherId(addStudentRequestParam.getTeacherId());
-        student.setPassword(addStudentRequestParam.getPassword());
+        student.setUsername(addStudentRequestParam.getUsername());
+        student.setTeacherId(userid);
+        int size = addStudentRequestParam.getUsername().length();
+
+        String last6 = addStudentRequestParam.getUsername().substring(size-6);
+
+        student.setPassword(last6);
+
         int rows = studentMapper.insertSelective(student);
         if(rows==1){
             Map<String,Object> map = new HashMap<String,Object>();
@@ -57,16 +64,16 @@ public class StudentController {
 
     //删除学生
     @RequestMapping("/deleStudent.action")
-    public ModelAndView deleteStudent(@RequestBody int id){
-        int rows = studentMapper.deleteByPrimaryKey(id);
+    public ModelAndView deleteStudent(@RequestBody DeleteStudentParam deleteStudentParam){
+        int rows = studentMapper.deleteByPrimaryKey(deleteStudentParam.getId());
         if(rows==1){
             Map<String,Object> map = new HashMap<String,Object>();
-            map.put(ConstVar._KEY_MESSAGE_, "新增学生成功");
+            map.put(ConstVar._KEY_MESSAGE_, "删除学生成功");
             return new ModelAndView(new MappingJackson2JsonView(),map);
         }else{
             Map<String,Object> map = new HashMap<String,Object>();
             map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
-            map.put(ConstVar._KEY_MESSAGE_, "未知错误，新增学生失败");
+            map.put(ConstVar._KEY_MESSAGE_, "未知错误，删除学生失败");
             return new ModelAndView(new MappingJackson2JsonView(),map);
         }
     }
@@ -105,7 +112,7 @@ public class StudentController {
     }
 
     //查找学生信息
-    @RequestMapping("selectTeacher.action")
+    @RequestMapping("/selectTeacher.action")
     public ModelAndView selectTeacher(@RequestBody SelectStudentRequestParam selectStudentRequestParam){
 
         StudentExample studentExample = new StudentExample();
@@ -123,6 +130,30 @@ public class StudentController {
             Map<String,Object> map = new HashMap<String,Object>();
             map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_NOTFOUND);
             map.put(ConstVar._KEY_MESSAGE_, "没有找到学生");
+            return new ModelAndView(new MappingJackson2JsonView(),map);
+        }
+    }
+
+    //更新学生信息
+    @RequestMapping("/updateStudentInfo.action")
+    public ModelAndView updateStudentInfo(@RequestBody UpdateStudentRequestParam updateStudentRequestParam, HttpSession session){
+
+        Student student = new Student();
+        student.setId(updateStudentRequestParam.getId());
+        student.setMail(updateStudentRequestParam.getMail());
+        student.setName(updateStudentRequestParam.getName());
+        student.setSex(updateStudentRequestParam.getSex());
+        student.setTelephone(updateStudentRequestParam.getTelephone());
+
+        int rows = studentMapper.updateByPrimaryKeySelective(student);
+        if(rows==1){
+            Map<String,Object> map = new HashMap<String,Object>();
+            map.put(ConstVar._KEY_MESSAGE_, "更新成功");
+            return new ModelAndView(new MappingJackson2JsonView(),map);
+        }else{
+            Map<String,Object> map = new HashMap<String,Object>();
+            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_NOTFOUND);
+            map.put(ConstVar._KEY_MESSAGE_, "更新失败");
             return new ModelAndView(new MappingJackson2JsonView(),map);
         }
     }

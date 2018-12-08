@@ -3,16 +3,15 @@ package com.chwangteng.www.controller;
 
 import com.chwangteng.www.Utils.ConstVar;
 import com.chwangteng.www.mapper.LaboratoryMapper;
+import com.chwangteng.www.mapper.StudentMapper;
 import com.chwangteng.www.mapper.TeacherMapper;
 import com.chwangteng.www.param.*;
-import com.chwangteng.www.pojo.Laboratory;
-import com.chwangteng.www.pojo.LaboratoryExample;
-import com.chwangteng.www.pojo.Teacher;
-import com.chwangteng.www.pojo.TeacherExample;
+import com.chwangteng.www.pojo.*;
 import com.chwangteng.www.service.TeacherService;
 import com.chwangteng.www.Utils.DeadlineConvertor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -34,8 +33,11 @@ public class TeacherController {
     private LaboratoryMapper laboratoryMapper;
     @Autowired
     private TeacherService teacherService;
+    @Autowired
+    private StudentMapper studentMapper;
 
     //新增老师
+    @Transactional
     @RequestMapping("/addTeacher.action")
     public ModelAndView addTeacher(@RequestBody AddTeacherRequestParam addTeacherRequestParam)   {
         Teacher teacher = new Teacher();
@@ -46,20 +48,55 @@ public class TeacherController {
         teacher.setMail(addTeacherRequestParam.getMail());
         teacher.setName(addTeacherRequestParam.getName());
         teacher.setLabId(addTeacherRequestParam.getLab_id());
-        teacher.setDeadline(addTeacherRequestParam.getDeadline());
+        //teacher.setDeadline(addTeacherRequestParam.getDeadline());
         teacher.setUsername(addTeacherRequestParam.getUsername());
-        teacher.setPassword(addTeacherRequestParam.getPassword());
+        //teacher.setPassword(addTeacherRequestParam.getPassword());
         int rows = teacherMapper.insertSelective(teacher);
         if(rows==1) {
-            //如果没有设置密码，就重置老师的密码，密码是后六位
-            if (addTeacherRequestParam.getPassword()==""||addTeacherRequestParam.getPassword()==null){
-                teacherService.resetPassword(teacher.getUsername());
+            int resetrows = teacherService.resetPassword(teacher.getUsername());
+
+            if(resetrows!=1){
+                Map<String,Object> map = new HashMap<String,Object>();
+                map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+                map.put(ConstVar._KEY_MESSAGE_, "为老师初始化密码时发生错误");
+                return new ModelAndView(new MappingJackson2JsonView(),map);
             }
-            //如果是主管老师,去更新实验室表
+
+            //如果是主管老师,去更新同一个实验室以确保其他老师都不再是主管老师
             if(teacher.getIsSupervisor()==ConstVar._SUPER_YES_){
-                //再去更新实验室表
-                Laboratory lab= laboratoryMapper.selectByPrimaryKey(addTeacherRequestParam.getLab_id());
-                if(lab!=null){
+
+                TeacherExample teacherExample = new TeacherExample();
+                teacherExample.createCriteria().andLabIdEqualTo(addTeacherRequestParam.getLab_id());
+
+                List<Teacher> labteachers = teacherMapper.selectByExample(teacherExample);
+
+                int meet = 0;
+                int modify = 0;
+
+                for (int index = 0;index<labteachers.size();index++){
+                    Teacher currentteacher = labteachers.get(index);
+                    if(currentteacher.getIsSupervisor()==1&&currentteacher.getId()!=teacher.getId()){
+                        meet++;
+                        currentteacher.setIsSupervisor(-1);
+                        int modirows = teacherMapper.updateByPrimaryKeySelective(currentteacher);
+                        if(modirows==1)
+                            modify++;
+                    }
+                }
+
+                if(meet==modify){
+                    Map<String,Object> map = new HashMap<String,Object>();
+                    map.put(ConstVar._KEY_MESSAGE_, "新增老师成功，并成为了责任老师");
+                    return new ModelAndView(new MappingJackson2JsonView(),map);
+                }else {
+                    Map<String,Object> map = new HashMap<String,Object>();
+                    map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+                    map.put(ConstVar._KEY_MESSAGE_, "设置为责任老师时发生错误");
+                    return new ModelAndView(new MappingJackson2JsonView(),map);
+                }
+
+
+/*                if(lab!=null){
                     lab.setTeacherId(teacher.getId());
                     int labrows = laboratoryMapper.updateByPrimaryKeySelective(lab);
                     if(labrows==1){
@@ -77,8 +114,9 @@ public class TeacherController {
                     map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_NOTFOUND);
                     map.put(ConstVar._KEY_MESSAGE_, "没有找到该老师主管的实验室");
                     return new ModelAndView(new MappingJackson2JsonView(),map);
-                }
-            }else{//不需要更新实验室表，直接成功
+                }*/
+
+            }else{//不需要更新其他老师，直接成功
                 Map<String,Object> map = new HashMap<String,Object>();
                 map.put(ConstVar._KEY_MESSAGE_, "新增老师成功");
                 return new ModelAndView(new MappingJackson2JsonView(),map);
@@ -115,28 +153,78 @@ public class TeacherController {
     public ModelAndView updateTeacher(@RequestBody UpdateTeacherRequestParam updateTeacherRequestParam){
 
         Teacher teacher = new Teacher();
+        teacher.setId(updateTeacherRequestParam.getId());
         teacher.setIsSupervisor(updateTeacherRequestParam.getIs_supervisor());
         teacher.setAbout(updateTeacherRequestParam.getAbout());
         teacher.setSex(updateTeacherRequestParam.getSex());
         teacher.setTelephone(updateTeacherRequestParam.getTelephone());
         teacher.setMail(updateTeacherRequestParam.getMail());
         teacher.setName(updateTeacherRequestParam.getName());
-        teacher.setLabId(updateTeacherRequestParam.getLab_id());//还需要更新实验室表中的内容！！！！！！！！！！
-        teacher.setDeadline(updateTeacherRequestParam.getDeadline());
+        //teacher.setLabId(updateTeacherRequestParam.getLab_id());不需要
+        //teacher.setDeadline(updateTeacherRequestParam.getDeadline());
         teacher.setUsername(updateTeacherRequestParam.getUsername());
-        teacher.setPassword(updateTeacherRequestParam.getPassword());
+        //teacher.setPassword(updateTeacherRequestParam.getPassword());
         int rows = teacherMapper.updateByPrimaryKeySelective(teacher);
-        Map<String,Object> map = new HashMap<String,Object>();
+
         if(rows==1){
-            map.put(ConstVar._KEY_MESSAGE_, "更新成功");
-        }else if(rows==0) {
-            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_NOTFOUND);
-            map.put(ConstVar._KEY_MESSAGE_, "不存在该老师");
+
+            int resetrows = teacherService.resetPassword(teacher.getUsername());
+
+            if(resetrows!=1){
+                Map<String,Object> map = new HashMap<String,Object>();
+                map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+                map.put(ConstVar._KEY_MESSAGE_, "为老师更新密码时发生错误");
+                return new ModelAndView(new MappingJackson2JsonView(),map);
+            }
+
+            //如果更新后是主管老师,去更新同一个实验室以确保其他老师都不再是主管老师
+            if(teacher.getIsSupervisor()==ConstVar._SUPER_YES_){
+
+                Teacher thisteacher = teacherMapper.selectByPrimaryKey(updateTeacherRequestParam.getId());
+
+                TeacherExample teacherExample = new TeacherExample();
+                teacherExample.createCriteria().andLabIdEqualTo(thisteacher.getLabId());
+
+                List<Teacher> labteachers = teacherMapper.selectByExample(teacherExample);
+
+                int meet = 0;
+                int modify = 0;
+
+                for (int index = 0;index<labteachers.size();index++){
+                    Teacher currentteacher = labteachers.get(index);
+                    if(currentteacher.getIsSupervisor()==1&&currentteacher.getId()!=teacher.getId()){
+                        meet++;
+                        currentteacher.setIsSupervisor(-1);
+                        int modirows = teacherMapper.updateByPrimaryKeySelective(currentteacher);
+                        if(modirows==1)
+                            modify++;
+                    }
+                }
+
+                if(meet==modify){
+                    Map<String,Object> map = new HashMap<String,Object>();
+                    map.put(ConstVar._KEY_MESSAGE_, "更新老师成功，并成为了责任老师");
+                    return new ModelAndView(new MappingJackson2JsonView(),map);
+                }else {
+                    Map<String,Object> map = new HashMap<String,Object>();
+                    map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+                    map.put(ConstVar._KEY_MESSAGE_, "更新为责任老师时发生错误");
+                    return new ModelAndView(new MappingJackson2JsonView(),map);
+                }
+
+            }else{//不需要更新其他老师，直接成功
+                Map<String,Object> map = new HashMap<String,Object>();
+                map.put(ConstVar._KEY_MESSAGE_, "更新老师成功");
+                return new ModelAndView(new MappingJackson2JsonView(),map);
+            }
+
         }else {
+            Map<String,Object> map = new HashMap<String,Object>();
             map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
             map.put(ConstVar._KEY_MESSAGE_, "未知错误，更新老师失败");
+            return new ModelAndView(new MappingJackson2JsonView(),map);
         }
-        return new ModelAndView(new MappingJackson2JsonView(),map);
+
     }
 
 
@@ -204,7 +292,7 @@ public class TeacherController {
     }
 
     //查找老师信息
-    @RequestMapping("selectTeacher.action")
+    @RequestMapping("/selectTeacher.action")
     public ModelAndView selectTeacher(@RequestBody  SelectTeacherRequestParam selectTeacherRequestParam){
 
         TeacherExample teacherExample = new TeacherExample();
@@ -213,7 +301,7 @@ public class TeacherController {
         //需要返回resultList和itemsCount
         List records = teacherMapper.selectByExample(teacherExample);
 
-        if(records.size()!=0){
+        if(records!=null){
             ModelAndView mv = new ModelAndView();
             mv.addObject(ConstVar._KEY_DATA_,records);
             mv.setView(new MappingJackson2JsonView());
@@ -221,7 +309,31 @@ public class TeacherController {
         }else{
             Map<String,Object> map = new HashMap<String,Object>();
             map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_NOTFOUND);
-            map.put(ConstVar._KEY_MESSAGE_, "没有找到老师");
+            map.put(ConstVar._KEY_MESSAGE_, "发生错误");
+            return new ModelAndView(new MappingJackson2JsonView(),map);
+        }
+    }
+
+    //查看自己的学生
+    @RequestMapping("/selectMyStudents.action")
+    public ModelAndView selectMyStudents(HttpSession session){
+        int userid = Integer.parseInt(session.getAttribute(ConstVar._SESSION_USER_ID_).toString());
+        int usertype = Integer.parseInt(session.getAttribute(ConstVar._SESSION_USER_TYPE_).toString());
+        if(usertype==ConstVar._TEACHER_){
+
+            StudentExample studentExample=new StudentExample();
+            studentExample.createCriteria().andTeacherIdEqualTo(userid);
+
+            List<Student> students = studentMapper.selectByExample(studentExample);
+            ModelAndView mv = new ModelAndView();
+            mv.addObject(ConstVar._KEY_DATA_,students);
+            mv.setView(new MappingJackson2JsonView());
+            return mv;
+        }
+        else{
+            Map<String,Object> map = new HashMap<String,Object>();
+            map.put(ConstVar._KEY_CODE_, ConstVar._ERROR_COMMON_);
+            map.put(ConstVar._KEY_MESSAGE_, "不是老师");
             return new ModelAndView(new MappingJackson2JsonView(),map);
         }
     }

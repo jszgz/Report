@@ -21,7 +21,7 @@ public class AdminController {
     @Autowired
     private AdminService adminService;
 
-    //管理员重置学生和老师的密码，学生的还没做
+    //管理员重置学生和老师的密码
     @RequestMapping("/resetPassword.action")
     public ModelAndView resetPassword(@RequestBody ResetPasswordRequestParam resetPasswordRequestParam)   {
         int rows = adminService.resetPassword(resetPasswordRequestParam.getUsername(),
