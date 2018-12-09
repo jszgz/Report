@@ -6,10 +6,17 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="791c34d1-eeb6-4af9-9993-3d36ab6baa38" name="Default" comment="更新readme">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/BackupDatabase.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/BackupDatabase.sql" afterDir="false" />
+    <list default="true" id="791c34d1-eeb6-4af9-9993-3d36ab6baa38" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/screenshots/屏幕截图(74).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/screenshots/屏幕截图(75).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/screenshots/屏幕截图(76).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/screenshots/屏幕截图(77).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/screenshots/屏幕截图(78).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/screenshots/屏幕截图(79).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/screenshots/屏幕截图(80).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/screenshots/屏幕截图(81).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/screenshots/屏幕截图(82).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/screenshots/屏幕截图(83).png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -400,35 +407,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Report" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Report" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Report" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Report" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="screenshots" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -786,7 +765,7 @@
       <workItem from="1544265701615" duration="8483000" />
       <workItem from="1544330160010" duration="352000" />
       <workItem from="1544346152278" duration="1161000" />
-      <workItem from="1544347789682" duration="257000" />
+      <workItem from="1544347789682" duration="1163000" />
     </task>
     <task id="LOCAL-00001" summary="。。。。">
       <created>1540894628937</created>
@@ -914,7 +893,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544346864556</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="更新readme">
+      <created>1544348056620</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1544348056621</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -950,7 +936,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="364843000" />
+    <option name="totallyTimeSpent" value="365749000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -965,29 +951,30 @@
     <frame x="-6" y="-6" width="1933" height="1063" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49706668" weight="0.32976446" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.496" weight="0.32976446" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.12746666" side_tool="true" visible="true" weight="0.18649517" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.128" side_tool="true" visible="true" weight="0.18649517" />
       <window_info anchor="bottom" id="Application Servers" order="12" sideWeight="0.48533332" weight="0.20364416" />
       <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.4985591" weight="0.13973333" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="CDI" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8725333" weight="0.18649517" />
-      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.496" weight="0.32976446" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49546668" weight="0.32976446" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" side_tool="true" visible="true" weight="0.22453333" />
-      <window_info anchor="right" id="Bean Validation" order="8" />
-      <window_info id="Web" order="5" sideWeight="0.50167227" side_tool="true" weight="0.20426667" />
       <window_info anchor="right" id="Database" order="6" weight="0.3296" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="JSF" order="4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49493334" weight="0.39871383" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49706668" weight="0.32976446" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4912" weight="0.32583067" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" sideWeight="0.496" weight="0.32976446" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.872" visible="true" weight="0.18649517" />
+      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.496" weight="0.32976446" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49546668" weight="0.32976446" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" side_tool="true" visible="true" weight="0.22453333" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info id="Web" order="5" sideWeight="0.50167227" side_tool="true" weight="0.20426667" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Statistic" order="13" sideWeight="0.65173334" visible="true" weight="0.63772774" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" x="0" y="0" width="433" height="863" id="Documentation" order="10" sideWeight="0.50144094" side_tool="true" visible="true" weight="0.2736" />
@@ -996,7 +983,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4912" weight="0.32583067" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4992" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />

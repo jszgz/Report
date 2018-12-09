@@ -9,6 +9,17 @@ Github版本中login.html,admin_index.html,teacher_index.html,student_index.html
 default-character-set=utf8     
 character-set-server=utf8   
 数据库名称report  
-数据库转储文件在sql/BackupDatabase.sql
+数据库转储文件在sql/BackupDatabase.sql  
+**界面**
 
+![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(74).png)  
+![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(75).png)  
+![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(76).png)  
+![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(77).png)  
+![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(78).png)  
+![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(79).png)  
+![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(80).png)  
+![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(81).png)  
+![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(82).png)  
+![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(83).png)  
 
