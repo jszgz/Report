@@ -67,15 +67,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/report/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2320">
-              <caret line="145" column="10" selection-start-line="145" selection-start-column="10" selection-end-line="145" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="documentation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/report/documentation.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -103,7 +94,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="student_index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="student_index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/report/student_index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="596">
@@ -131,6 +122,27 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UserTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-350">
+              <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="144">
+                <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="documentationAdmin.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/report/documentationAdmin.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -145,15 +157,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1728">
               <caret line="108" column="36" selection-start-line="108" selection-start-column="36" selection-end-line="108" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="87" column="28" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -227,7 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/report/TopNavigation.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/report/LeftSlidebar.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/report/RightSidebar.html" />
         <option value="$PROJECT_DIR$/src/main/resources/properties/jdbc.properties" />
@@ -278,6 +280,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/report/admin_index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/report/teacher_index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/report/student_index.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -344,7 +347,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -414,11 +417,32 @@
               <item name="report" type="462c0819:PsiDirectoryNode" />
               <item name="video" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Report" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Report" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -770,6 +794,7 @@
       <workItem from="1544261493979" duration="1438000" />
       <workItem from="1544265701615" duration="8483000" />
       <workItem from="1544330160010" duration="352000" />
+      <workItem from="1544346152278" duration="617000" />
     </task>
     <task id="LOCAL-00001" summary="。。。。">
       <created>1540894628937</created>
@@ -876,7 +901,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544275483239</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="github中没有使用视频和图片外链">
+      <created>1544346234905</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1544346234905</updated>
+    </task>
+    <task id="LOCAL-00017" summary="更新readme">
+      <created>1544346754421</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1544346754421</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -912,7 +951,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363425000" />
+    <option name="totallyTimeSpent" value="364042000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -924,7 +963,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1933" height="1063" extended-state="6" />
+    <frame x="-6" y="-6" width="1933" height="1063" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49706668" weight="0.32976446" />
@@ -940,7 +980,7 @@
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.496" weight="0.32976446" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49546668" weight="0.32976446" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" side_tool="true" visible="true" weight="0.22026667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49832776" side_tool="true" visible="true" weight="0.2224" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="5" sideWeight="0.50167227" side_tool="true" weight="0.20426667" />
       <window_info anchor="right" id="Database" order="6" weight="0.3296" />
@@ -958,9 +998,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4912" weight="0.32583067" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4992" weight="0.3290461" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.4912" weight="0.32583067" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="8" />
     </layout>
@@ -984,7 +1024,9 @@
     <MESSAGE value="后台接口全部完成&#10;融合一包糖的前端" />
     <MESSAGE value="大功告成，还有一些功能有待完善" />
     <MESSAGE value="更新了首页" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新了首页" />
+    <MESSAGE value="github中没有使用视频和图片外链" />
+    <MESSAGE value="更新readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1015,20 +1057,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/UpdateStudentRequestParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chwangteng/www/param/AddStudentRequestParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/report/LeftSlidebarStudent.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
@@ -1372,6 +1400,23 @@
             <element signature="n#style#0;n#div#0;n#div#4;n#div#1;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#4;n#div#1;n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mapper/UserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="144">
+            <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
