@@ -34,6 +34,7 @@
     <!-- 全局异常处理-->
     <bean id="exceptionHandler" class="com.chwangteng.www.resolver.MyExceptionHandler"/>
 
+
     <!-- 注册拦截器 -->
     <mvc:interceptors>
         <mvc:interceptor>

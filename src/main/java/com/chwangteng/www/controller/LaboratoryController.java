@@ -54,7 +54,6 @@ public class LaboratoryController {
             leaderid = teachers.get(0).getId();
         }
 
-
         Laboratory lab = new Laboratory();
         lab.setAbout(addLabRequestParam.getAbout());
         lab.setAddress(addLabRequestParam.getAddress());

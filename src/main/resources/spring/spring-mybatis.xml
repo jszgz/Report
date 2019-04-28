@@ -9,8 +9,23 @@
                         http://www.springframework.org/schema/context/spring-context-3.1.xsd
                         http://www.springframework.org/schema/mvc
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="studentStrategyConcrete" class="com.chwangteng.www.pattern.strategy.StudentStrategy">
+    </bean>
+    <bean id="teacherStrategyConcrete" class="com.chwangteng.www.pattern.strategy.TeacherStrategy">
+    </bean>
+
+    <bean id="strategyFactoryConcrete" class="com.chwangteng.www.pattern.strategy.StrategyFactory">
+        <property name="strategyMap">
+            <map>
+                <entry key="3" value-ref="studentStrategyConcrete"/>
+                <entry key="2" value-ref="teacherStrategyConcrete"/>
+            </map>
+        </property>
+    </bean>
+
     <!--Spring 自动扫描 自动注入-->
-    <context:component-scan base-package="com.chwangteng.www"/>
+    <context:component-scan base-package="com.chwangteng.www" />
 
     <!-- 引入配置文件 -->
     <bean id="propertyConfigurer"

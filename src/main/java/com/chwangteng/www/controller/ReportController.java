@@ -4,6 +4,9 @@ package com.chwangteng.www.controller;
 import com.chwangteng.www.Utils.ConstVar;
 import com.chwangteng.www.mapper.*;
 import com.chwangteng.www.param.*;
+import com.chwangteng.www.pattern.builder.Director;
+import com.chwangteng.www.pattern.builder.StandardBuilder;
+import com.chwangteng.www.pattern.builder.Title;
 import com.chwangteng.www.pojo.*;
 import com.chwangteng.www.service.ReportService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
-
+import com.chwangteng.www.pattern.builder.Builder;
 import javax.servlet.http.HttpSession;
 import java.util.*;
 
@@ -48,13 +51,28 @@ public class ReportController {
         if(student!=null){
             studentname =  student.getName();
         }
-        String finaltitle = "";
+
+
+
+        Builder builder=new StandardBuilder(studentname);
+        Director director=new Director(builder);
+        Title title=director.construct();
+        String finaltitle = title.toString();
+
+
+
+
+/*        String finaltitle = "";
         finaltitle+=studentname+"的周报-";
         Date date = new Date();
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
         finaltitle+= calendar.get(Calendar.MONTH)+"月";
-        finaltitle+= calendar.get(Calendar.DAY_OF_MONTH)+"日";
+        finaltitle+= calendar.get(Calendar.DAY_OF_MONTH)+"日";*/
+
+
+
+
         //设置生成的标题
         report.setTitle(finaltitle);
 
