@@ -1,14 +1,14 @@
 # Report
-周报管理系统  
+周报管理系统（老师：谢波）    
 **注意：**    
-推荐使用chrome浏览器，不支持IE10以下的浏览器；服务器网络带宽很低，首次加载请耐心等待。    
+推荐使用chrome浏览器，不支持IE10以下的浏览器；服务器网络带宽只有1Mbps，首次加载请耐心等待。     
 **其他：**    
 Github版本中login.html,admin_index.html,teacher_index.html,student_index.html中背景没有使用外链视频，实际部署到服务器后使用了腾讯云对象存储。  
 **部署：**    
 注意配置mysql的my.ini    
 default-character-set=utf8     
 character-set-server=utf8   
-数据库名称report  
+如果建立数据库名称report，root密码123456就不需要修改配置文件。
 数据库转储文件在sql/BackupDatabase.sql  
 **界面**
 
