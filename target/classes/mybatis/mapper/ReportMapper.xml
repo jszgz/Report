@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.chwangteng.www.mapper.ReportMapper" >
+  <resultMap id="BaseResultMap" type="com.chwangteng.www.pojo.Report" >
+    <constructor >
+      <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="title" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="student_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="pv" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="score" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="submit_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="reply_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+    </constructor>
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.chwangteng.www.pojo.ReportWithBLOBs" >
+    <constructor >
+      <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="title" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="student_id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="pv" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="score" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="submit_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="reply_time" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="this_week" jdbcType="LONGVARCHAR" javaType="java.lang.String" />
+      <arg column="bug_meet" jdbcType="LONGVARCHAR" javaType="java.lang.String" />
+      <arg column="next_week" jdbcType="LONGVARCHAR" javaType="java.lang.String" />
+      <arg column="reply" jdbcType="LONGVARCHAR" javaType="java.lang.String" />
+    </constructor>
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, title, student_id, pv, score, submit_time, reply_time
+  </sql>
+  <sql id="Blob_Column_List" >
+    this_week, bug_meet, next_week, reply
+  </sql>
+  <select id="selectByExampleWithBLOBs" resultMap="ResultMapWithBLOBs" parameterType="com.chwangteng.www.pojo.ReportExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from report
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.chwangteng.www.pojo.ReportExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from report
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from report
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from report
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.chwangteng.www.pojo.ReportExample" >
+    delete from report
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.chwangteng.www.pojo.ReportWithBLOBs" useGeneratedKeys="true" keyProperty="id" >
+    insert into report (title, student_id, pv, 
+      score, submit_time, reply_time, 
+      this_week, bug_meet, next_week, 
+      reply)
+    values (#{title,jdbcType=VARCHAR}, #{studentId,jdbcType=INTEGER}, #{pv,jdbcType=INTEGER}, 
+      #{score,jdbcType=INTEGER}, #{submitTime,jdbcType=TIMESTAMP}, #{replyTime,jdbcType=TIMESTAMP}, 
+      #{thisWeek,jdbcType=LONGVARCHAR}, #{bugMeet,jdbcType=LONGVARCHAR}, #{nextWeek,jdbcType=LONGVARCHAR}, 
+      #{reply,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.chwangteng.www.pojo.ReportWithBLOBs" useGeneratedKeys="true" keyProperty="id" >
+    insert into report
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="title != null" >
+        title,
+      </if>
+      <if test="studentId != null" >
+        student_id,
+      </if>
+      <if test="pv != null" >
+        pv,
+      </if>
+      <if test="score != null" >
+        score,
+      </if>
+      <if test="submitTime != null" >
+        submit_time,
+      </if>
+      <if test="replyTime != null" >
+        reply_time,
+      </if>
+      <if test="thisWeek != null" >
+        this_week,
+      </if>
+      <if test="bugMeet != null" >
+        bug_meet,
+      </if>
+      <if test="nextWeek != null" >
+        next_week,
+      </if>
+      <if test="reply != null" >
+        reply,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="title != null" >
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="studentId != null" >
+        #{studentId,jdbcType=INTEGER},
+      </if>
+      <if test="pv != null" >
+        #{pv,jdbcType=INTEGER},
+      </if>
+      <if test="score != null" >
+        #{score,jdbcType=INTEGER},
+      </if>
+      <if test="submitTime != null" >
+        #{submitTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="replyTime != null" >
+        #{replyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="thisWeek != null" >
+        #{thisWeek,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="bugMeet != null" >
+        #{bugMeet,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="nextWeek != null" >
+        #{nextWeek,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="reply != null" >
+        #{reply,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.chwangteng.www.pojo.ReportExample" resultType="java.lang.Integer" >
+    select count(*) from report
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update report
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.title != null" >
+        title = #{record.title,jdbcType=VARCHAR},
+      </if>
+      <if test="record.studentId != null" >
+        student_id = #{record.studentId,jdbcType=INTEGER},
+      </if>
+      <if test="record.pv != null" >
+        pv = #{record.pv,jdbcType=INTEGER},
+      </if>
+      <if test="record.score != null" >
+        score = #{record.score,jdbcType=INTEGER},
+      </if>
+      <if test="record.submitTime != null" >
+        submit_time = #{record.submitTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.replyTime != null" >
+        reply_time = #{record.replyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.thisWeek != null" >
+        this_week = #{record.thisWeek,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="record.bugMeet != null" >
+        bug_meet = #{record.bugMeet,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="record.nextWeek != null" >
+        next_week = #{record.nextWeek,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="record.reply != null" >
+        reply = #{record.reply,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map" >
+    update report
+    set id = #{record.id,jdbcType=INTEGER},
+      title = #{record.title,jdbcType=VARCHAR},
+      student_id = #{record.studentId,jdbcType=INTEGER},
+      pv = #{record.pv,jdbcType=INTEGER},
+      score = #{record.score,jdbcType=INTEGER},
+      submit_time = #{record.submitTime,jdbcType=TIMESTAMP},
+      reply_time = #{record.replyTime,jdbcType=TIMESTAMP},
+      this_week = #{record.thisWeek,jdbcType=LONGVARCHAR},
+      bug_meet = #{record.bugMeet,jdbcType=LONGVARCHAR},
+      next_week = #{record.nextWeek,jdbcType=LONGVARCHAR},
+      reply = #{record.reply,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update report
+    set id = #{record.id,jdbcType=INTEGER},
+      title = #{record.title,jdbcType=VARCHAR},
+      student_id = #{record.studentId,jdbcType=INTEGER},
+      pv = #{record.pv,jdbcType=INTEGER},
+      score = #{record.score,jdbcType=INTEGER},
+      submit_time = #{record.submitTime,jdbcType=TIMESTAMP},
+      reply_time = #{record.replyTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.chwangteng.www.pojo.ReportWithBLOBs" >
+    update report
+    <set >
+      <if test="title != null" >
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="studentId != null" >
+        student_id = #{studentId,jdbcType=INTEGER},
+      </if>
+      <if test="pv != null" >
+        pv = #{pv,jdbcType=INTEGER},
+      </if>
+      <if test="score != null" >
+        score = #{score,jdbcType=INTEGER},
+      </if>
+      <if test="submitTime != null" >
+        submit_time = #{submitTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="replyTime != null" >
+        reply_time = #{replyTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="thisWeek != null" >
+        this_week = #{thisWeek,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="bugMeet != null" >
+        bug_meet = #{bugMeet,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="nextWeek != null" >
+        next_week = #{nextWeek,jdbcType=LONGVARCHAR},
+      </if>
+      <if test="reply != null" >
+        reply = #{reply,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.chwangteng.www.pojo.ReportWithBLOBs" >
+    update report
+    set title = #{title,jdbcType=VARCHAR},
+      student_id = #{studentId,jdbcType=INTEGER},
+      pv = #{pv,jdbcType=INTEGER},
+      score = #{score,jdbcType=INTEGER},
+      submit_time = #{submitTime,jdbcType=TIMESTAMP},
+      reply_time = #{replyTime,jdbcType=TIMESTAMP},
+      this_week = #{thisWeek,jdbcType=LONGVARCHAR},
+      bug_meet = #{bugMeet,jdbcType=LONGVARCHAR},
+      next_week = #{nextWeek,jdbcType=LONGVARCHAR},
+      reply = #{reply,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.chwangteng.www.pojo.Report" >
+    update report
+    set title = #{title,jdbcType=VARCHAR},
+      student_id = #{studentId,jdbcType=INTEGER},
+      pv = #{pv,jdbcType=INTEGER},
+      score = #{score,jdbcType=INTEGER},
+      submit_time = #{submitTime,jdbcType=TIMESTAMP},
+      reply_time = #{replyTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

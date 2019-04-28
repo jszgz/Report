@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>页面跳转中</title>
+
+
+<!--    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js\jquery.cookie.js"></script>-->
+
+    <!--遮罩-->
+    <link href="report/css/busy-load/dist/app.min.css" rel="stylesheet">
+
+</head>
+
+
+    <body style="margin: 0">
+    <div id="wrapper" style="width: 100%;height: 100%;position:fixed;">
+
+    </div>
+<!--        <a href="weeklyreport/login2.html" >前往登录</a>
+        <a href="report/login.html" >前往王腾的登录</a>
+        <h2>测试页面21-登录</h2>
+        <input type="text" id="username">
+        <input type="text" id="password">
+        <select name="type" id="type">
+            <option value = 1>管理员</option>
+            <option value = 2>老师</option>
+            <option value = 3>学生</option>
+        </select>
+        <button id="testbutton">test</button>
+        <div id="cook"></div>
+        <div id="content"></div>-->
+    </body>
+
+
+<!--    <script>
+        $(document).ready(function () {
+
+            //ajax请求样例，data部分改成你要提交的data，key名和comparam
+            $("#testbutton").click(function () {
+                //发送请求
+                $.ajax({
+                    type : "POST",
+                    url : "http://127.0.0.1:8080/login/login.action",
+                    dataType : "json",
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    contentType: "application/json",
+                    data : JSON.stringify({
+                        username: $("#username").val(),
+                        password: $("#password").val(),
+                        type: $("#type").val()
+                    })
+                }).done(function (response) {
+                    if(undefined === response.code){
+                        $("#content").text(JSON.stringify(response))
+                        localStorage.setItem("name",response.name)
+                    }
+                    else{
+                        //失败，给出提示信息
+                        alert(response.message)
+                    }
+                }).fail(function () {
+                    //无
+                }).always(function () {
+                    //隐藏加载中遮罩
+                })
+            })
+        })
+
+    </script>-->
+<!-- jQuery -->
+<script src="plugins/bower_components/jquery/dist/jquery.min.js"></script>
+<!--遮罩插件-->
+<script src="report/js/busy-load/dist/app.min.js"></script>
+<script>
+    // 显示加载中遮罩
+    $("#wrapper").busyLoad("show", {
+        text:"加载中...",
+        animation: "fade",
+        background: "rgba(0, 0, 0, 0.86)",
+        spinner: "pump"
+    });
+
+    setTimeout(function () {
+        window.location.assign("report/login.html")
+    },800)
+
+</script>
+</html>

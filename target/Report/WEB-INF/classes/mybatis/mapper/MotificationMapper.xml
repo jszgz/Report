@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.chwangteng.www.mapper.MotificationMapper" >
+  <resultMap id="BaseResultMap" type="com.chwangteng.www.pojo.Motification" >
+    <constructor >
+      <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_id_mo" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="user_type_mo" jdbcType="INTEGER" javaType="java.lang.Integer" />
+      <arg column="generate_time_mo" jdbcType="TIMESTAMP" javaType="java.util.Date" />
+      <arg column="title_mo" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="content_mo" jdbcType="VARCHAR" javaType="java.lang.String" />
+      <arg column="read_mo" jdbcType="INTEGER" javaType="java.lang.Integer" />
+    </constructor>
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, user_id_mo, user_type_mo, generate_time_mo, title_mo, content_mo, read_mo
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.chwangteng.www.pojo.MotificationExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from motification
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from motification
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from motification
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.chwangteng.www.pojo.MotificationExample" >
+    delete from motification
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.chwangteng.www.pojo.Motification" useGeneratedKeys="true" keyProperty="id" >
+    insert into motification (user_id_mo, user_type_mo, generate_time_mo, 
+      title_mo, content_mo, read_mo
+      )
+    values (#{userIdMo,jdbcType=INTEGER}, #{userTypeMo,jdbcType=INTEGER}, #{generateTimeMo,jdbcType=TIMESTAMP}, 
+      #{titleMo,jdbcType=VARCHAR}, #{contentMo,jdbcType=VARCHAR}, #{readMo,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.chwangteng.www.pojo.Motification" useGeneratedKeys="true" keyProperty="id" >
+    insert into motification
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="userIdMo != null" >
+        user_id_mo,
+      </if>
+      <if test="userTypeMo != null" >
+        user_type_mo,
+      </if>
+      <if test="generateTimeMo != null" >
+        generate_time_mo,
+      </if>
+      <if test="titleMo != null" >
+        title_mo,
+      </if>
+      <if test="contentMo != null" >
+        content_mo,
+      </if>
+      <if test="readMo != null" >
+        read_mo,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="userIdMo != null" >
+        #{userIdMo,jdbcType=INTEGER},
+      </if>
+      <if test="userTypeMo != null" >
+        #{userTypeMo,jdbcType=INTEGER},
+      </if>
+      <if test="generateTimeMo != null" >
+        #{generateTimeMo,jdbcType=TIMESTAMP},
+      </if>
+      <if test="titleMo != null" >
+        #{titleMo,jdbcType=VARCHAR},
+      </if>
+      <if test="contentMo != null" >
+        #{contentMo,jdbcType=VARCHAR},
+      </if>
+      <if test="readMo != null" >
+        #{readMo,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.chwangteng.www.pojo.MotificationExample" resultType="java.lang.Integer" >
+    select count(*) from motification
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update motification
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.userIdMo != null" >
+        user_id_mo = #{record.userIdMo,jdbcType=INTEGER},
+      </if>
+      <if test="record.userTypeMo != null" >
+        user_type_mo = #{record.userTypeMo,jdbcType=INTEGER},
+      </if>
+      <if test="record.generateTimeMo != null" >
+        generate_time_mo = #{record.generateTimeMo,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.titleMo != null" >
+        title_mo = #{record.titleMo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.contentMo != null" >
+        content_mo = #{record.contentMo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.readMo != null" >
+        read_mo = #{record.readMo,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update motification
+    set id = #{record.id,jdbcType=INTEGER},
+      user_id_mo = #{record.userIdMo,jdbcType=INTEGER},
+      user_type_mo = #{record.userTypeMo,jdbcType=INTEGER},
+      generate_time_mo = #{record.generateTimeMo,jdbcType=TIMESTAMP},
+      title_mo = #{record.titleMo,jdbcType=VARCHAR},
+      content_mo = #{record.contentMo,jdbcType=VARCHAR},
+      read_mo = #{record.readMo,jdbcType=INTEGER}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.chwangteng.www.pojo.Motification" >
+    update motification
+    <set >
+      <if test="userIdMo != null" >
+        user_id_mo = #{userIdMo,jdbcType=INTEGER},
+      </if>
+      <if test="userTypeMo != null" >
+        user_type_mo = #{userTypeMo,jdbcType=INTEGER},
+      </if>
+      <if test="generateTimeMo != null" >
+        generate_time_mo = #{generateTimeMo,jdbcType=TIMESTAMP},
+      </if>
+      <if test="titleMo != null" >
+        title_mo = #{titleMo,jdbcType=VARCHAR},
+      </if>
+      <if test="contentMo != null" >
+        content_mo = #{contentMo,jdbcType=VARCHAR},
+      </if>
+      <if test="readMo != null" >
+        read_mo = #{readMo,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.chwangteng.www.pojo.Motification" >
+    update motification
+    set user_id_mo = #{userIdMo,jdbcType=INTEGER},
+      user_type_mo = #{userTypeMo,jdbcType=INTEGER},
+      generate_time_mo = #{generateTimeMo,jdbcType=TIMESTAMP},
+      title_mo = #{titleMo,jdbcType=VARCHAR},
+      content_mo = #{contentMo,jdbcType=VARCHAR},
+      read_mo = #{readMo,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

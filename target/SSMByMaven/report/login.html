@@ -1,0 +1,241 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+<title>登录周报系统</title>
+<!-- Bootstrap Core CSS -->
+<link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- animation CSS -->
+<link href="css/animate.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/style.css" rel="stylesheet">
+<!-- color CSS -->
+<link href="css/colors/default.css" id="theme"  rel="stylesheet">
+<!--遮罩-->
+<link href="css/busy-load/dist/app.min.css" rel="stylesheet">
+<!--alerts CSS -->
+<link href="../plugins/bower_components/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+<video autoplay="autoplay" muted loop src="video/bgm.mp4">您的浏览器不支持 video 标签。请不要使用老旧的浏览器</video>
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="cssload-speeding-wheel"></div>
+</div>
+<section id="wrapper" class="new-login-register">
+
+      <div class="lg-info-panel">
+              <div class="inner-panel">
+                  <a href="javascript:void(0)" class="p-20 di"><img src="../plugins/images/favicon.png"></a>
+                  <div class="lg-content">
+                      <h2>指导老师：谢满德</h2>
+                      <p class="text-muted"></p>
+                      <a href="http://wpa.qq.com/msgrd?v=3&uin=452128995&site=qq&menu=yes" class="btn btn-rounded btn-danger p-l-20 p-r-20">联系开发者</a>
+                  </div>
+              </div>
+      </div>
+      <div class="new-login-box">
+                <div class="white-box" style="background:#fffd">
+                    <h2 class="box-title m-b-0">登录</h2>
+                    <small>在下方输入您的信息</small>
+                  <form class="form-horizontal new-lg-form" id="loginform" >
+                    <div class="form-group  m-t-20">
+                      <div class="col-xs-12">
+                          <label>身份</label>
+                          <select name="type" id="type" class="form-control">
+                              <option value = 1>管理员</option>
+                              <option value = 2>老师</option>
+                              <option value = 3>学生</option>
+                          </select>
+                      </div>
+                    </div>
+                    <div class="form-group  m-t-20">
+                      <div class="col-xs-12">
+                        <label>工号/学号</label>
+                        <input class="form-control" type="text" required="" placeholder="管理员请输入用户名" id="username">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <label>密码</label>
+                        <input class="form-control" type="password" required="" placeholder="默认密码为工号/学号后6位" id="password">
+                      </div>
+                    </div>
+                    <div class="form-group text-center m-t-20" >
+                      <div class="col-xs-12">
+                        <button class="btn btn-info btn-lg btn-block btn-rounded text-uppercase waves-effect waves-light" type="button" id="loginbutton">登录</button>
+                      </div>
+                    </div>
+                  </form>
+
+                </div>
+      </div>            
+  
+  
+</section>
+<!-- jQuery -->
+<script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Menu Plugin JavaScript -->
+<script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+
+<!--slimscroll JavaScript -->
+<script src="js/jquery.slimscroll.js"></script>
+<!--Wave Effects -->
+<script src="js/waves.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="js/custom.min.js"></script>
+<!--Style Switcher -->
+<script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+<!--遮罩插件-->
+<script src="js/busy-load/dist/app.min.js"></script>
+<!-- Sweet-Alert  -->
+<script src="../plugins/bower_components/sweetalert/sweetalert.min.js"></script>
+<script src="../plugins/bower_components/sweetalert/jquery.sweet-alert.custom.js"></script>
+<!--particle-->
+<script type="text/javascript" src="js/canvas-particle.js"></script>
+<script>
+
+/*    window.onload = function(){
+        //配置
+        var config = {
+            vx: 6,//点x轴速度,正为右，负为左
+            vy:  2,//点y轴速度
+            height: 4,//点高宽，其实为正方形，所以不宜太大
+            width: 4,
+            count: 50,//点个数
+            color: "121, 162, 185",//点颜色
+            stroke: "130,255,255",//线条颜色
+            dist: 600,//点吸附距离
+            e_dist: 20000,//鼠标吸附加速距离
+            max_conn: 10//点到点最大连接数
+        }
+        //调用
+        CanvasParticle(config);
+    };*/
+
+
+    $(document).ready(function () {
+
+
+        localStorage.setItem("name","未登录")
+
+        $.ajax({
+            type : "POST",
+            url : "/login/logout.action",
+            dataType : "json",
+            contentType: "application/json",
+            data : JSON.stringify({
+            })
+        })
+
+
+
+
+        //ajax请求样例，data部分改成你要提交的data，key名和comparam
+        $("#loginbutton").click(function () {
+
+            // 显示加载中遮罩
+            $("#wrapper").busyLoad("show", {
+                text: "加载中 ...",
+                animation: "fade",
+                background: "rgba(0, 0, 0, 0.86)",
+                spinner: "cube-grid"
+            });
+
+            //发送请求
+            $.ajax({
+                type : "POST",
+                url : "/login/login.action",
+                dataType : "json",
+                contentType: "application/json",
+                data : JSON.stringify({
+                    username: $("#username").val(),
+                    password: $("#password").val(),
+                    type: $("#type").val()
+                })
+            }).always(function () {
+                //隐藏加载中遮罩
+                $("#wrapper").busyLoad("hide");
+
+            }).done(function (response) {
+
+                if(undefined === response.code){
+                    localStorage.setItem("name",response.name)
+                    swal({
+                        title: "登录成功",
+                        text: response.message,
+                        type: "success",
+                        timer: 1000,
+                    })
+                    if($("#type").val()=="1")
+                        window.location.assign("admin_index.html")
+                    if($("#type").val()=="2")
+                        window.location.assign("teacher_index.html")
+                    if($("#type").val()=="3")
+                        window.location.assign("student_index.html")
+                }
+                else{
+                    swal({
+                        title: "登录失败",
+                        text: response.message,
+                        type: "error",
+                        timer: 1000,
+                        showConfirmButton: false
+                    })
+                }
+            }).fail(function () {
+                swal({
+                    title: "通信失败",
+                    text: "请检查网络",
+                    type: "error",
+                    showConfirmButton: true,
+                    confirmButtonText: "重新登录",
+                })
+            })
+        })
+    })
+
+</script>
+<style type="text/css">
+
+
+    video{
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        width: auto;
+        /*加滤镜*/
+        /*-webkit-filter: grayscale(100%);*/
+        /*filter:grayscale(100%);*/
+        z-index:-11
+    }
+    source{
+        min-width: 100%;
+        min-height: 100%;
+        height: auto;
+        width: auto;
+    }
+
+</style>
+</body>
+</html>

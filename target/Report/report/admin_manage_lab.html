@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/favicon.png">
+    <title>管理实验室</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="css/colors/default.css" id="theme" rel="stylesheet">
+    <!--遮罩-->
+    <link href="css/busy-load/dist/app.min.css" rel="stylesheet">
+    <!--alerts CSS -->
+    <link href="../plugins/bower_components/sweetalert/sweetalert.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="fix-header">
+
+
+<!-- ============================================================== -->
+<!-- Preloader -->
+<!-- ============================================================== -->
+<div class="preloader">
+    <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+    </svg>
+</div>
+<!-- ============================================================== -->
+<!-- Wrapper -->
+<!-- ============================================================== -->
+<div id="wrapper">
+    <!-- ============================================================== -->
+    <!-- Topbar header - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="TopNavigation"></div>
+    <!-- End Top Navigation -->
+    <!-- ============================================================== -->
+    <!-- Left Sidebar - style you can find in sidebar.scss  -->
+    <!-- ============================================================== -->
+    <div id="LeftSlidebar"></div>
+    <!-- ============================================================== -->
+    <!-- End Left Sidebar -->
+    <!-- ============================================================== -->
+
+    <!-- ============================================================== -->
+    <!-- Page Content -->
+    <!-- ============================================================== -->
+    <div id="page-wrapper">
+        <div class="container-fluid">
+
+            <div id = "insertlabmodal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="insertmyLargeModalLabel" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="insertmyLargeModalLabel"><span >新增实验室</span></h4> </div>
+                        <div class="modal-body">
+<!--                            <div class="form-group">
+                                <label for="insert_lab_username" class="control-label">主管老师工号</label>
+                                <input type="number" class="form-control" id="insert_lab_username">
+                            </div>-->
+                            <div class="form-group">
+                                <label for="insert_lab_name" class="control-label">实验室名称(20字内)</label>
+                                <input type="text" class="form-control" id="insert_lab_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="insert_lab_address" class="control-label">地址(40字内)</label>
+                                <input type="text" class="form-control" id="insert_lab_address">
+                            </div>
+                            <div class="form-group">
+                                <label for="insert_lab_about" class="control-label">简介(255字内)</label>
+                                <textarea class="form-control" id="insert_lab_about"></textarea>
+                            </div>
+                            <button class="btn btn-success waves-effect waves-light" type="button" id="insert_lab_button">
+                                    <span class="btn-label">
+                                        <i class="fa fa-check"></i>
+                                    </span>提交
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+
+            <div id = "updatelabmodal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="updatemyLargeModalLabel" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="updatemyLargeModalLabel"><span >编辑实验室</span></h4> </div>
+                        <div class="modal-body">
+                            <input type="hidden" id="update_lab_id">
+<!--                            <div class="form-group">
+                                <label for="update_lab_username" class="control-label">主管老师工号</label>
+                                <input type="number" class="form-control" id="update_lab_username" disabled>
+                            </div>-->
+                            <div class="form-group">
+                                <label for="update_lab_name" class="control-label">实验室名称(20字内)</label>
+                                <input type="text" class="form-control" id="update_lab_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="update_lab_address" class="control-label">地址(40字内)</label>
+                                <input type="text" class="form-control" id="update_lab_address">
+                            </div>
+                            <div class="form-group">
+                                <label for="update_lab_about" class="control-label">简介(255字内)</label>
+                                <textarea class="form-control" id="update_lab_about"></textarea>
+                            </div>
+                            <button class="btn btn-success waves-effect waves-light" type="button" id="update_lab_button">
+                                    <span class="btn-label">
+                                        <i class="fa fa-refresh fa-spin"></i>
+                                    </span>更新
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+
+
+            <div id = "insertteachermodal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="insertmyLargeModalLabelTeacher" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="insertmyLargeModalLabelTeacher"><span >为该实验室增加老师</span></h4> </div>
+                        <div class="modal-body">
+                            <input type="hidden" id="teacherhiddenlabid">
+                            <input type="hidden" id="hiddenlabindextorefresh">
+                            <div class="form-group">
+                                <label for="insert_teacher_name" class="control-label">姓名</label>
+                                <input type="text" class="form-control" id="insert_teacher_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="insert_teacher_super" class="control-label">作为责任老师</label>
+                                <select name="type" id="insert_teacher_super" class="form-control">
+                                    <option value = -1>否</option>
+                                    <option value = 1>是</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="insert_teacher_username" class="control-label">工号</label>
+                                <input type="number" class="form-control" id="insert_teacher_username">
+                            </div>
+                            <div class="form-group">
+                                <label for="insert_teacher_telephone" class="control-label">电话</label>
+                                <input type="number" class="form-control" id="insert_teacher_telephone">
+                            </div>
+                            <div class="form-group">
+                                <label for="insert_teacher_mail" class="control-label">邮箱</label>
+                                <input type="email" class="form-control" id="insert_teacher_mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="insert_teacher_sex" class="control-label">性别</label>
+                                <select name="type" id="insert_teacher_sex" class="form-control">
+                                    <option value = "男">男</option>
+                                    <option value = "女">女</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="insert_teacher_about" class="control-label">简介</label>
+                                <textarea class="form-control" id="insert_teacher_about"></textarea>
+                            </div>
+                            <button class="btn btn-success waves-effect waves-light" type="button" id="insert_teacher_button">
+                                    <span class="btn-label">
+                                        <i class="fa fa-check"></i>
+                                    </span>提交
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+
+
+            <div id = "updateteachermodal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="updatemyLargeModalLabelTeacher" aria-hidden="true" style="display: none;">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h4 class="modal-title" id="updatemyLargeModalLabelTeacher"><span >编辑老师</span></h4> </div>
+                        <div class="modal-body">
+                            <input type="hidden" id="teacherhiddenlabidforteacherupdate">
+                            <input type="hidden" id="hiddenlabindextorefreshforteacherupdate">
+                            <div class="form-group">
+                                <label for="update_teacher_name" class="control-label">姓名</label>
+                                <input type="text" class="form-control" id="update_teacher_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="update_teacher_super" class="control-label">作为责任老师</label>
+                                <select name="type" id="update_teacher_super" class="form-control">
+                                    <option value = -1>否</option>
+                                    <option value = 1>是</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="update_teacher_username" class="control-label">工号</label>
+                                <input type="number" class="form-control" id="update_teacher_username">
+                            </div>
+                            <div class="form-group">
+                                <label for="update_teacher_telephone" class="control-label">电话</label>
+                                <input type="number" class="form-control" id="update_teacher_telephone">
+                            </div>
+                            <div class="form-group">
+                                <label for="update_teacher_mail" class="control-label">邮箱</label>
+                                <input type="email" class="form-control" id="update_teacher_mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="update_teacher_sex" class="control-label">性别</label>
+                                <select name="type" id="update_teacher_sex" class="form-control">
+                                    <option value = "男">男</option>
+                                    <option value = "女">女</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="update_teacher_about" class="control-label">简介</label>
+                                <textarea class="form-control" id="update_teacher_about"></textarea>
+                            </div>
+                            <button class="btn btn-success waves-effect waves-light" type="button" id="update_teacher_button">
+                                    <span class="btn-label">
+                                        <i class="fa fa-refresh fa-spin"></i>
+                                    </span>更新
+                            </button>
+                            <button class="btn btn-danger waves-effect waves-light" type="button" id="delete_teacher_button">
+                                    <span class="btn-label">
+                                        <i class="fa fa-trash-o"></i>
+                                    </span>删除
+                            </button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger waves-effect text-left" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+
+
+
+            <div class="row bg-title">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                    <h4 class="page-title">实验室</h4>
+                </div>
+                <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                    <button class="btn btn-success waves-effect waves-light " type="button" id="new_lab">
+                                    <span class="btn-label">
+                                        <i class="fa fa-plus"></i>
+                                    </span>新增实验室
+                    </button>
+                    <button class="right-side-toggle waves-effect waves-light btn-info btn-circle pull-right m-l-20"><i class="ti-settings text-white"></i></button>
+
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <div class="row" id="rowtoinsertlab">
+
+
+
+
+                <!--<div class="col-lg-6 col-sm-6 col-xs-12" id="divwrapper_index">
+                    <div class="white-box">
+                        <h3 class="box-title m-b-20">实验室名称</h3>
+
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#detailindex" aria-controls="detailindex" role="tab" data-toggle="tab" aria-expanded="true"><span class="visible-xs"><i class="ti-home"></i></span><span class="hidden-xs">介绍</span></a></li>
+                            <li role="presentation" class=""><a id="laba_index" onclick="loadTeachers(this)"  href="#teacherindex" aria-controls="teacherindex" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-user"></i></span> <span class="hidden-xs">老师</span></a></li>
+                            <li role="presentation" class=""><a href="#action_index" aria-controls="action_index" role="tab" data-toggle="tab" aria-expanded="false"><span class="visible-xs"><i class="ti-more"></i></span> <span class="hidden-xs">操作</span></a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="detailindex">
+                                <div class="col-md-12">
+                                    <p>实验室地址：信息楼</p>
+                                    <p>实验室简介：为信息化而努力啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="teacherindex">
+                                <button class="btn btn-info waves-effect waves-light m-b-20" type="button" id="new_teacher_index" onclick="addteachertolab(this)">
+                                    <span class="btn-label">
+                                        <i class="fa fa-plus"></i>
+                                    </span>新增老师
+                                </button>
+                                <div class="col-md-12"  id="toinsertteacher_index">
+
+                                    <div class="col-md-6 col-sm-6">
+                                        <a href="javascript:void(0)" onclick="renderteacher(this)" id="labindex_teacherindex">
+                                        <div class="white-box">
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-4 text-center">
+                                                    <img src="avatar/male.png" alt="user" class="img-circle img-responsive">
+                                                </div>
+                                                <div class="col-md-8 col-sm-8">
+                                                    <h3 class="box-title m-b-0">华景<span class="label label-info m-l-5">责任老师</span></h3>
+                                                    <p>
+                                                        简介：XXXXXXXXX
+                                                    </p>
+                                                    <p>
+                                                        性别：XXXXXXXXX
+                                                    </p>
+                                                    <p>
+                                                        手机：1781687157
+                                                    </p>
+                                                    <p>
+                                                        邮箱：chwangteng@126.com
+                                                    </p>
+                                                    <p>
+                                                        工号：18020100028
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="action_index">
+                                <div class="col-md-12">
+                                    <button class="btn btn-primary waves-effect waves-light " type="button" id="edit_lab_index" onclick="updatelab(this)">
+                                    <span class="btn-label">
+                                        <i class="fa fa-edit"></i>
+                                    </span>编辑实验室
+                                    </button>
+                                    <button class="btn btn-danger waves-effect waves-light " type="button" id="delete_lab_index" onclick="deletelab(this)">
+                                    <span class="btn-label">
+                                        <i class="fa fa-trash-o"></i>
+                                    </span>删除实验室
+                                    </button>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- Right sidebar -->
+            <!-- ============================================================== -->
+            <!-- .right-sidebar -->
+            <div class="right-sidebar">
+                <div class="slimscrollright">
+                    <div class="rpanel-title">更换主题和颜色<span><i class="ti-close right-side-toggle"></i></span> </div>
+                    <div class="r-panel-body">
+                        <ul id="themecolors" class="m-t-20">
+                            <li><b>浅色</b></li>
+                            <li><a href="javascript:void(0)" data-theme="default" class="default-theme">1</a></li>
+                            <li><a href="javascript:void(0)" data-theme="green" class="green-theme">2</a></li>
+                            <li><a href="javascript:void(0)" data-theme="gray" class="yellow-theme">3</a></li>
+                            <li><a href="javascript:void(0)" data-theme="blue" class="blue-theme">4</a></li>
+                            <li><a href="javascript:void(0)" data-theme="purple" class="purple-theme">5</a></li>
+                            <li><a href="javascript:void(0)" data-theme="megna" class="megna-theme">6</a></li>
+                            <li><b>深色</b></li>
+                            <br/>
+                            <li><a href="javascript:void(0)" data-theme="default-dark" class="default-dark-theme">7</a></li>
+                            <li><a href="javascript:void(0)" data-theme="green-dark" class="green-dark-theme">8</a></li>
+                            <li><a href="javascript:void(0)" data-theme="gray-dark" class="yellow-dark-theme">9</a></li>
+                            <li><a href="javascript:void(0)" data-theme="blue-dark" class="blue-dark-theme">10</a></li>
+                            <li><a href="javascript:void(0)" data-theme="purple-dark" class="purple-dark-theme">11</a></li>
+                            <li><a href="javascript:void(0)" data-theme="megna-dark" class="megna-dark-theme working">12</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Right sidebar -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- /.container-fluid -->
+
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Page Content -->
+    <!-- ============================================================== -->
+</div>
+<!-- /#wrapper -->
+<!-- jQuery -->
+<script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#LeftSlidebar").load("LeftSlidebarAdmin.html", function () {
+            <!-- Menu Plugin JavaScript -->
+            $.getScript("../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js",function () {
+                <!-- Custom Theme JavaScript -->
+                $.getScript("js/custom.min.js");
+
+                //获取各个项目的数量
+                /*                $.ajax({
+                                    type : "POST",
+                                    url : "/admin/getNeedCheck",
+                                    data : "",
+                                    dataType : "json",
+                                    contentType: "application/json",
+                                }).done(function (res) {
+                                    //左侧菜单栏数量
+                                    $("#totalneedcheckspan").text(res.data.mlxysspneedcheck.itemsCounts+res.data.wgxwjsgneedcheck.itemsCounts+res.data.wwgdtjyneedcheck.itemsCounts+res.data.zyqcneedcheck.itemsCounts);
+                                    $("#mlxysspneedcheckspan").text(res.data.mlxysspneedcheck.itemsCounts);
+                                    $("#wgxwjsgneedcheckspan").text(res.data.wgxwjsgneedcheck.itemsCounts);
+                                    $("#wwgdtjyneedcheckspan").text(res.data.wwgdtjyneedcheck.itemsCounts);
+                                    $("#zyqcneedcheckspan").text(res.data.zyqcneedcheck.itemsCounts);
+                                }).fail(function () {
+                                });*/
+
+
+            });//<!-- Menu Plugin JavaScript -->
+
+        });
+        $("#TopNavigation").load("TopNavigationStudent.html" , function () {
+
+
+
+            // $.ajax({
+            //     type : "GET",
+            //     url : "/admin/queryCurrentAdmin",
+            //     data : "",
+            //     dataType : "json",
+            //     contentType: "application/json",
+            // }).done(function (res) {
+            //     $("#adminname1").text(res.data.adminuser.name);
+            //     $("#adminname2").text(res.data.adminuser.name);
+            //     $("#adminusername").text(res.data.adminuser.username);
+            // }).fail(function () {
+            // });
+        });
+
+
+    });
+</script>
+<!-- Bootstrap Core JavaScript -->
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!--slimscroll JavaScript -->
+<script src="js/jquery.slimscroll.js"></script>
+<!--Wave Effects -->
+<script src="js/waves.js"></script>
+<!--Style Switcher -->
+<script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+<!-- Sweet-Alert  -->
+<script src="../plugins/bower_components/sweetalert/sweetalert.min.js"></script>
+<script src="../plugins/bower_components/sweetalert/jquery.sweet-alert.custom.js"></script>
+<!--遮罩插件-->
+<script src="js/busy-load/dist/app.min.js"></script>
+
+</body>
+<script>
+
+    var externallabresponse;
+
+    //点击老师之后显示的模态框，用来更新和删除
+    function renderteacher(inparam) {
+        //sample 0_0
+
+        var toupdateid = $(inparam).attr("id")
+        var teacherindex =  parseInt(toupdateid.substring(toupdateid.lastIndexOf("_")+1)) //获取到实际的index
+        var labindex = parseInt(toupdateid.substring(0,toupdateid.indexOf("_")))
+
+        var teacheridindatabase = externallabresponse.data[labindex].teachers.data[teacherindex].id
+
+
+        $("#update_teacher_name").val(externallabresponse.data[labindex].teachers.data[teacherindex].name)
+        $("#update_teacher_super").val(externallabresponse.data[labindex].teachers.data[teacherindex].isSupervisor)
+        $("#update_teacher_username").val(externallabresponse.data[labindex].teachers.data[teacherindex].username)
+        $("#update_teacher_telephone").val(externallabresponse.data[labindex].teachers.data[teacherindex].telephone)
+        $("#update_teacher_about").val(externallabresponse.data[labindex].teachers.data[teacherindex].about)
+        $("#update_teacher_sex").val(externallabresponse.data[labindex].teachers.data[teacherindex].sex)
+        $("#update_teacher_mail").val(externallabresponse.data[labindex].teachers.data[teacherindex].mail)
+
+
+        //用来提交数据库的主键
+        $("#teacherhiddenlabidforteacherupdate").val(teacheridindatabase)
+
+        //用来保存labid，就是编辑后提交之后显示重新加载老师的遮罩，发现好像不需要，因为是模态框在前面
+        $("#hiddenlabindextorefreshforteacherupdate").val(labindex)
+
+        $("#updateteachermodal").modal()
+    }
+
+
+
+    //addteachertolab, 为实验室新增老师
+    function addteachertolab(inparam) {
+        //sample:new_teacher_0
+        var toupdateid = $(inparam).attr("id")
+        var arrayindex =  parseInt(toupdateid.substring(toupdateid.lastIndexOf("_")+1)) //获取到实际的index
+
+        var idindatabase = externallabresponse.data[arrayindex].id;//labid
+
+        $("#insert_teacher_name").val("")
+        $("#insert_teacher_super").val(-1)
+        $("#insert_teacher_username").val("")
+        $("#insert_teacher_telephone").val("")
+        $("#insert_teacher_about").val("")
+        $("#insert_teacher_sex").val("男")
+        $("#insert_teacher_mail").val("")
+
+        $("#teacherhiddenlabid").val(idindatabase)
+
+        $("#hiddenlabindextorefresh").val(arrayindex)
+
+        $("#insertteachermodal").modal()
+
+    }
+
+
+    //imparam=this
+    function updatelab(inparam) {
+        //sample：edit_lab_0
+        var toupdateid = $(inparam).attr("id")
+        var arrayindex =  parseInt(toupdateid.substring(toupdateid.lastIndexOf("_")+1)) //获取到实际的index
+
+
+        var idindatabase = externallabresponse.data[arrayindex].id;
+
+
+        $("#update_lab_id").val(idindatabase)
+
+
+        $("#update_lab_name").val(externallabresponse.data[arrayindex].name)
+        $("#update_lab_address").val(externallabresponse.data[arrayindex].address)
+        $("#update_lab_about").val(externallabresponse.data[arrayindex].about)
+
+
+
+        $("#updatelabmodal").modal();
+
+    }
+
+    //imparam=this
+    function deletelab(inparam) {
+
+
+        swal({
+            title: "确定删除实验室吗?",
+            text: "删除后一切数据无法恢复!",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "删除",
+            cancelButtonText:"取消",
+            closeOnConfirm: false
+        }, function(){
+
+            //do delete
+
+            //sample:delete_lab_0
+            var todeleteid = $(inparam).attr("id")
+            var arrayindex =  parseInt(todeleteid.substring(todeleteid.lastIndexOf("_")+1)) //获取到实际的index
+
+
+            var idindatabase = externallabresponse.data[arrayindex].id;
+
+
+
+            var maskid = "divwrapper_"+arrayindex;
+
+            $("#"+maskid).busyLoad("show", {
+                text: "删除中 ...",
+                animation: "fade",
+                background: "rgba(0, 0, 0, 0.86)",
+                spinner: "cube-grid"
+            });
+            //发送请求
+            $.ajax({
+                type: "POST",
+                url: "/lab/deleteLab.action",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    id:idindatabase
+                })
+            }).always(function () {
+                //隐藏加载中遮罩
+                $("#"+maskid).busyLoad("hide");
+
+            }).done(function (response) {
+
+                if (undefined === response.code) {
+                    swal({
+                        title: "删除成功",
+                        text: response.message,
+                        type: "success",
+                        timer: 1000,
+                    })
+                    location.reload()
+
+                }else {
+                    swal({
+                        title: "删除失败",
+                        text: response.message,
+                        type: "error",
+                        timer: 1000,
+                        showConfirmButton: false
+                    })
+                }
+
+            }).fail(function () {
+                swal({
+                    title: "通信失败",
+                    text: "请检查网络",
+                    type: "error",
+                    showConfirmButton: true,
+                    confirmButtonText: "确定",
+                })
+            })
+
+
+
+        });
+
+
+
+    }
+
+    //加载实验室老师
+    function loadTeachers(inparam){
+        //inparam sample：laba_0
+
+        var toloadid = $(inparam).attr("id")
+
+        var arrayindex =  parseInt(toloadid.substring(toloadid.lastIndexOf("_")+1)) //获取到实际的index
+
+        var idindatabase = externallabresponse.data[arrayindex].id; //这就是实验室的id
+
+        //根据实验室id获取该实验室的老师
+
+        //sample：toinsertteacher_0
+
+        var divnameid = "toinsertteacher_"+arrayindex
+
+
+        //改成遮罩整个白块
+        var masknameid = "divwrapper_"+arrayindex;
+
+
+        // 显示加载中遮罩
+        $("#"+masknameid).busyLoad("show", {
+            text: "获取中 ...",
+            animation: "fade",
+            background: "rgba(0, 0, 0, 0.86)",
+            spinner: "cube-grid"
+        });
+
+        //发送请求
+        $.ajax({
+            type: "POST",
+            url: "/lab/getthislabteacher.action",
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify({
+                id:idindatabase
+            })
+        }).always(function () {
+            //隐藏加载中遮罩
+            $("#"+masknameid).busyLoad("hide");
+
+        }).done(function (response) {
+
+            if (undefined === response.code) {
+
+                if(undefined ===externallabresponse.data[arrayindex].teachers)
+                    externallabresponse.data[arrayindex].newParam ='teachers';
+
+                externallabresponse.data[arrayindex].teachers = response
+
+                $("#"+divnameid).empty()
+
+                if (response.data == null || response.data.length == 0) {
+                    $("#"+divnameid).append(
+                        "没有老师"
+                    )
+                    return
+                }
+
+
+
+
+
+                for (var i = 0; i < response.data.length; i++) {
+
+                    var maleimg = $("<img>").addClass("img-circle img-responsive").attr("src", "avatar/male.png")
+                    var femaleimg = $("<img>").addClass("img-circle img-responsive").attr("src", "avatar/female.png")
+
+                    var imgnode = maleimg;
+
+                    if (response.data[i].sex == "女")
+                        imgnode = femaleimg
+
+                    var issupernode = null;
+
+                    if(response.data[i].isSupervisor == 1)
+                        issupernode = $("<span>").addClass("label label-info m-l-5").append("责任老师")
+
+                    $("#"+divnameid).append(
+/*                    <div class="col-md-6 col-sm-6">
+                        <a href="javascript:void(0)" onclick="renderteacher(this)" id="labindex_teacherindex">
+                        <div class="white-box">
+                        <div class="row">
+                        <div class="col-md-4 col-sm-4 text-center">
+                        <img src="avatar/male.png" alt="user" class="img-circle img-responsive">
+                        </div>
+                        <div class="col-md-8 col-sm-8">
+                        <h3 class="box-title m-b-0">华景<span class="label label-info m-l-5">责任老师</span></h3>
+                    <p>
+                    简介：XXXXXXXXX
+                    </p>
+                    <p>
+                    性别：XXXXXXXXX
+                    </p>
+                    <p>
+                    手机：1781687157
+                    </p>
+                    <p>
+                    邮箱：chwangteng@126.com
+                    </p>
+                    <p>
+                    工号：18020100028
+                    </p>
+                    </div>
+                    </div>
+                    </div>
+                    </a>
+                    </div>*/
+                        $("<div>").addClass("col-md-4 col-sm-4").append(
+                            $("<a>").attr("id", arrayindex+"_"+i).attr("href", "javascript:void(0)").attr("onClick", "renderteacher(this)").append(
+                                $("<div>").addClass("white-box").append(
+                                    $("<div>").addClass("row").append(
+                                        $("<div>").addClass("col-md-4 col-sm-4 text-center").append(
+                                            imgnode
+                                        )
+                                    ).append(
+                                        $("<div>").addClass("col-md-8 col-sm-8").append(
+                                            $("<h3>").addClass("box-title m-b-0").append(
+                                                response.data[i].name
+                                            ).append(
+                                                issupernode
+                                            )
+                                        ).append(
+                                            $("<p>").append(
+                                                "简介：" + response.data[i].about
+                                            )
+                                        ).append(
+                                            $("<p>").append(
+                                                "性别：" + response.data[i].sex
+                                            )
+                                        ).append(
+                                            $("<p>").append(
+                                                "手机：" + response.data[i].telephone
+                                            )
+                                        ).append(
+                                            $("<p>").append(
+                                                "邮箱：" + response.data[i].mail
+                                            )
+                                        ).append(
+                                            $("<p>").append(
+                                                "工号：" + response.data[i].username
+                                            )
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
+                }
+
+
+            } else {
+                swal({
+                    title: "获取老师失败",
+                    text: response.message,
+                    type: "error",
+                    timer: 1000,
+                    showConfirmButton: false
+                })
+            }
+        }).fail(function () {
+            swal({
+                title: "通信失败",
+                text: "请检查网络",
+                type: "error",
+                showConfirmButton: true,
+                confirmButtonText: "确定",
+            })
+        })
+
+    }
+
+    $(document).ready(function () {
+
+        //从实验室删除老师
+        $("#delete_teacher_button").click(function () {
+
+
+
+            swal({
+                title: "确定删除老师吗?",
+                text: "删除后无法恢复!",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "删除",
+                cancelButtonText:"取消",
+                closeOnConfirm: false
+            }, function(){
+
+                var teachidtodelete = $("#teacherhiddenlabidforteacherupdate").val()
+
+                var tomaskdivid = "divwrapper_" + $("#hiddenlabindextorefreshforteacherupdate").val()
+
+                $("#updateteachermodal").modal("hide")
+
+                // 显示加载中遮罩
+                $("#"+tomaskdivid).busyLoad("show", {
+                    text: "删除老师中 ...",
+                    animation: "fade",
+                    background: "rgba(0, 0, 0, 0.86)",
+                    spinner: "cube-grid"
+                });
+                //发送请求
+                $.ajax({
+                    type: "POST",
+                    url: "/teacher/deleteTeacher.action",
+                    dataType: "json",
+                    contentType: "application/json",
+                    data: JSON.stringify({
+                        id:teachidtodelete
+                    })
+                }).always(function () {
+                    //隐藏加载中遮罩
+                    $("#"+tomaskdivid).busyLoad("hide");
+
+                }).done(function (response) {
+
+                    if (undefined === response.code) {
+                        swal({
+                            title: "删除老师成功",
+                            text: response.message,
+                            type: "success",
+                            timer: 1000,
+                        })
+
+                        //重新加载这个实验室的老师
+                        $("#"+"laba_"+$("#hiddenlabindextorefreshforteacherupdate").val()).click()
+
+                    }else {
+                        swal({
+                            title: "删除老师失败",
+                            text: response.message,
+                            type: "error",
+                            timer: 1000,
+                            showConfirmButton: false
+                        })
+                    }
+
+                }).fail(function () {
+                    swal({
+                        title: "通信失败",
+                        text: "请检查网络",
+                        type: "error",
+                        showConfirmButton: true,
+                        confirmButtonText: "确定",
+                    })
+                })
+            })
+
+
+
+
+
+
+        })
+
+        //更新老师信息
+        $("#update_teacher_button").click(function () {
+
+            var teachidtoupdate = $("#teacherhiddenlabidforteacherupdate").val()
+
+            var tomaskdivid = "divwrapper_" + $("#hiddenlabindextorefreshforteacherupdate").val()
+
+            $("#updateteachermodal").modal("hide")
+
+            // 显示加载中遮罩
+            $("#"+tomaskdivid).busyLoad("show", {
+                text: "更新老师中 ...",
+                animation: "fade",
+                background: "rgba(0, 0, 0, 0.86)",
+                spinner: "cube-grid"
+            });
+            //发送请求
+            $.ajax({
+                type: "POST",
+                url: "/teacher/updateTeacher.action",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    id:teachidtoupdate,
+                    name:$("#update_teacher_name").val(),
+                    is_supervisor:parseInt($("#update_teacher_super").val()),
+                    username:$("#update_teacher_username").val().toString(),
+                    telephone:$("#update_teacher_telephone").val().toString(),
+                    about:$("#update_teacher_about").val(),
+                    sex:$("#update_teacher_sex").val(),
+                    mail:$("#update_teacher_mail").val(),
+                })
+            }).always(function () {
+                //隐藏加载中遮罩
+                $("#"+tomaskdivid).busyLoad("hide");
+
+            }).done(function (response) {
+
+                if (undefined === response.code) {
+                    swal({
+                        title: "更新老师成功",
+                        text: response.message,
+                        type: "success",
+                        timer: 1000,
+                    })
+
+                    //重新加载这个实验室的老师
+                    $("#"+"laba_"+$("#hiddenlabindextorefreshforteacherupdate").val()).click()
+
+                }else {
+                    swal({
+                        title: "更新老师失败",
+                        text: response.message,
+                        type: "error",
+                        timer: 1000,
+                        showConfirmButton: false
+                    })
+                }
+
+            }).fail(function () {
+                swal({
+                    title: "通信失败",
+                    text: "请检查网络",
+                    type: "error",
+                    showConfirmButton: true,
+                    confirmButtonText: "确定",
+                })
+            })
+        })
+
+
+        //提交新的老师
+        $("#insert_teacher_button").click(function () {
+
+            $("#insertteachermodal").modal("hide")
+
+            var tomaskdivid = "divwrapper_"+$("#hiddenlabindextorefresh").val()
+
+
+
+            // 显示加载中遮罩
+            $("#"+tomaskdivid).busyLoad("show", {
+                text: "增加老师中 ...",
+                animation: "fade",
+                background: "rgba(0, 0, 0, 0.86)",
+                spinner: "cube-grid"
+            });
+            //发送请求
+            $.ajax({
+                type: "POST",
+                url: "/teacher/addTeacher.action",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    name:$("#insert_teacher_name").val(),
+                    is_supervisor:parseInt($("#insert_teacher_super").val()),
+                    username:$("#insert_teacher_username").val().toString(),
+                    telephone:$("#insert_teacher_telephone").val().toString(),
+                    about:$("#insert_teacher_about").val(),
+                    sex:$("#insert_teacher_sex").val(),
+                    mail:$("#insert_teacher_mail").val(),
+                    lab_id:$("#teacherhiddenlabid").val(),
+                })
+            }).always(function () {
+                //隐藏加载中遮罩
+                $("#"+tomaskdivid).busyLoad("hide");
+
+            }).done(function (response) {
+
+                if (undefined === response.code) {
+                    swal({
+                        title: "添加老师成功",
+                        text: response.message,
+                        type: "success",
+                        timer: 1000,
+                    })
+
+                    //重新加载这个实验室的老师
+                    $("#"+"laba_"+$("#hiddenlabindextorefresh").val()).click()
+
+                }else {
+                    swal({
+                        title: "添加老师失败",
+                        text: response.message,
+                        type: "error",
+                        timer: 1000,
+                        showConfirmButton: false
+                    })
+                }
+
+            }).fail(function () {
+                swal({
+                    title: "通信失败",
+                    text: "请检查网络",
+                    type: "error",
+                    showConfirmButton: true,
+                    confirmButtonText: "确定",
+                })
+            })
+
+        })
+
+
+        //打开新增实验室
+        $("#new_lab").click(function () {
+
+/*            $("#insert_lab_username").val("")*/
+            $("#insert_lab_name").val("")
+            $("#insert_lab_address").val("")
+            $("#insert_lab_about").val("")
+
+            $("#insertlabmodal").modal()
+        })
+
+        //新增实验室
+        $("#insert_lab_button").click(function () {
+
+            $("#insertlabmodal").modal("hide")
+
+            //新增
+            // 显示加载中遮罩
+            $("#page-wrapper").busyLoad("show", {
+                text: "新增实验室中 ...",
+                animation: "fade",
+                background: "rgba(0, 0, 0, 0.86)",
+                spinner: "cube-grid"
+            });
+            //发送请求
+            $.ajax({
+                type: "POST",
+                url: "/lab/addLab.action",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+/*                    username:$("#insert_lab_username").val(),*/
+                    name:$("#insert_lab_name").val(),
+                    address:$("#insert_lab_address").val(),
+                    about:$("#insert_lab_about").val(),
+                })
+            }).always(function () {
+                //隐藏加载中遮罩
+                $("#page-wrapper").busyLoad("hide");
+
+            }).done(function (response) {
+
+                if (undefined === response.code) {
+                    swal({
+                        title: "添加实验室成功",
+                        text: response.message,
+                        type: "success",
+                        timer: 1000,
+                    })
+                    location.reload()
+
+                }else {
+                    swal({
+                        title: "添加实验室失败",
+                        text: response.message,
+                        type: "error",
+                        timer: 1000,
+                        showConfirmButton: false
+                    })
+                }
+
+            }).fail(function () {
+                swal({
+                    title: "通信失败",
+                    text: "请检查网络",
+                    type: "error",
+                    showConfirmButton: true,
+                    confirmButtonText: "确定",
+                })
+            })
+        })
+
+
+
+
+        //打开就加载所有实验室的列表
+        // 显示加载中遮罩
+        $("#page-wrapper").busyLoad("show", {
+            text: "加载中 ...",
+            animation: "fade",
+            background: "rgba(0, 0, 0, 0.86)",
+            spinner: "cube-grid"
+        });
+
+        //发送请求
+        $.ajax({
+            type: "POST",
+            url: "/lab/selectLab.action",
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify({})
+        }).always(function () {
+            //隐藏加载中遮罩
+            $("#page-wrapper").busyLoad("hide");
+
+        }).done(function (response) {
+
+            if (undefined === response.code) {
+
+                externallabresponse = response
+
+                if (response.data == null || response.data.length == 0) {
+                    $("#rowtoinsertlab").append(
+                        "没有实验室"
+                    )
+                    return
+                }
+
+                for (var i = 0; i < response.data.length; i++) {
+
+
+                    $("#rowtoinsertlab").append(
+
+                        $("<div>").addClass("col-lg-12 col-sm-12 col-xs-12").append(
+
+
+                        $("<div>").addClass("white-box").attr("id","divwrapper_"+i).append(
+                            $("<h3>").addClass("box-title m-b-20").append(
+                                response.data[i].name
+                            )
+                        ).append(
+                            $("<ul>").addClass("nav nav-tabs").attr("role","tablist").append(
+                                $("<li>").addClass("active").attr("role","presentation").append(
+                                    $("<a>").attr("href","#detail"+i).attr("aria-controls","detail"+i).attr("role","tab").attr("data-toggle","tab").attr("aria-expanded","true").append(
+                                        $("<span>").addClass("visible-xs").append(
+                                            $("<i>").addClass("ti-home")
+                                        )
+                                    ).append(
+                                        $("<span>").addClass("hidden-xs").append(
+                                            "介绍"
+                                        )
+                                    )
+                                )
+                            ).append(
+                                $("<li>").addClass("").attr("role","presentation").append(
+                                    $("<a>").attr("id","laba_"+i).attr("onClick","loadTeachers(this)").attr("href","#teacher"+i).attr("aria-controls","teacher"+i).attr("role","tab").attr("data-toggle","tab").attr("aria-expanded","false").append(
+                                        $("<span>").addClass("visible-xs").append(
+                                            $("<i>").addClass("ti-user")
+                                        )
+                                    ).append(
+                                        $("<span>").addClass("hidden-xs").append(
+                                            "教师"
+                                        )
+                                    )
+                                )
+                            ).append(
+                                $("<li>").addClass("").attr("role","presentation").append(
+                                    $("<a>").attr("href","#action"+i).attr("aria-controls","action"+i).attr("role","tab").attr("data-toggle","tab").attr("aria-expanded","false").append(
+                                        $("<span>").addClass("visible-xs").append(
+                                            $("<i>").addClass("ti-more")
+                                        )
+                                    ).append(
+                                        $("<span>").addClass("hidden-xs").append(
+                                            "操作"
+                                        )
+                                    )
+                                )
+                            )
+                        ).append(
+                            $("<div>").addClass("tab-content").append(
+                                $("<div>").addClass("tab-pane active").attr("role","tabpanel").attr("id","detail"+i).append(
+                                    $("<div>").addClass("col-md-12").append(
+                                        $("<p>").append(
+                                            "地址:"+response.data[i].address
+                                        )
+                                    ).append(
+                                        $("<p>").append(
+                                            "简介:"+response.data[i].about
+                                        )
+                                    )
+                                ).append(
+                                    $("<div>").addClass("clearfix")
+                                )
+                            ).append(
+                                $("<div>").addClass("tab-pane").attr("role","tabpanel").attr("id","teacher"+i).append(
+                                    $("<button>").addClass("btn btn-info waves-effect waves-light m-b-20").attr("id","new_teacher_"+i).attr("type","button").attr("onClick","addteachertolab(this)").append(
+                                        $("<span>").addClass("btn-label").append(
+                                            $("<i>").addClass("fa fa-plus")
+                                        )
+                                    ).append(
+                                        "新增老师"
+                                    )
+                                ).append(
+                                    $("<div>").addClass("col-md-12").attr("id","toinsertteacher_"+i)
+                                ).append(
+                                    $("<div>").addClass("clearfix")
+                                )
+
+                            ).append(
+                                $("<div>").addClass("tab-pane").attr("role","tabpanel").attr("id","action"+i).append(
+                                    $("<div>").addClass("col-md-12").append(
+                                        $("<button>").addClass("btn btn-primary waves-effect waves-light m-r-20").attr("id","edit_lab_"+i).attr("type","button").attr("onClick","updatelab(this)").append(
+                                            $("<span>").addClass("btn-label").append(
+                                                $("<i>").addClass("fa fa-edit")
+                                            )
+                                        ).append(
+                                            "编辑实验室"
+                                        )
+                                    ).append(
+                                        $("<button>").addClass("btn btn-danger waves-effect waves-light").attr("id","delete_lab_"+i).attr("type","button").attr("onClick","deletelab(this)").append(
+                                            $("<span>").addClass("btn-label").append(
+                                                $("<i>").addClass("fa fa-trash-o")
+                                            )
+                                        ).append(
+                                            "删除实验室"
+                                        )
+                                    )
+                                ).append(
+                                    $("<div>").addClass("clearfix")
+                                )
+                            )
+                        )
+
+                        )
+
+                    )
+
+                }
+
+
+            } else {
+                swal({
+                    title: "获取实验室失败",
+                    text: response.message,
+                    type: "error",
+                    timer: 1000,
+                    showConfirmButton: false
+                })
+            }
+        }).fail(function () {
+            swal({
+                title: "通信失败",
+                text: "请检查网络",
+                type: "error",
+                showConfirmButton: true,
+                confirmButtonText: "确定",
+            })
+        })
+
+        $("#update_lab_button").click(function () {
+            // 显示加载中遮罩
+            $("#page-wrapper").busyLoad("show", {
+                text: "更新中 ...",
+                animation: "fade",
+                background: "rgba(0, 0, 0, 0.86)",
+                spinner: "cube-grid"
+            });
+            //发送请求
+            $.ajax({
+                type: "POST",
+                url: "/lab/updateLab.action",
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify({
+                    id:parseInt($("#update_lab_id").val()),
+/*                    username:$("#update_lab_username").val(),*/
+                    name:$("#update_lab_name").val(),
+                    address:$("#update_lab_address").val(),
+                    about:$("#update_lab_about").val(),
+                })
+            }).always(function () {
+                //隐藏加载中遮罩
+                $("#page-wrapper").busyLoad("hide");
+
+            }).done(function (response) {
+
+                if (undefined === response.code) {
+                    swal({
+                        title: "更新成功",
+                        text: response.message,
+                        type: "success",
+                        timer: 1000,
+                    })
+                    location.reload()
+
+                }else {
+                    swal({
+                        title: "更新失败",
+                        text: response.message,
+                        type: "error",
+                        timer: 1000,
+                        showConfirmButton: false
+                    })
+                }
+
+            }).fail(function () {
+                swal({
+                    title: "通信失败",
+                    text: "请检查网络",
+                    type: "error",
+                    showConfirmButton: true,
+                    confirmButtonText: "确定",
+                })
+            })
+        })
+
+    })
+
+</script>
+</html>

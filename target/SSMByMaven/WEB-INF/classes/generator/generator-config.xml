@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!--导入属性配置 -->
+    <properties resource="generator/generator.properties"/>
+    <!-- classPathEntry:数据库的JDBC驱动的jar包地址-->
+    <classPathEntry
+            location="${jdbc.driverLocation}"/>
+    <context id="default" targetRuntime="MyBatis3">
+        <!-- optional，旨在创建class时，对注释进行控制 -->
+        <commentGenerator>
+            <property name="suppressDate" value="true"/>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <!-- 数据库的相关配置 -->
+        <jdbcConnection driverClass="${jdbc.driverClass}" connectionURL="${jdbc.connectionURL}" userId="${jdbc.userId}"
+                        password="${jdbc.password}"/>
+        <!-- 非必需，类型处理器，在数据库类型和java类型之间的转换控制-->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+        <!-- 实体类生成的位置 -->
+        <javaModelGenerator targetPackage="com.chwangteng.www.pojo" targetProject="src/main/java">
+            <!-- 是否对model添加 构造函数 -->
+            <property name="constructorBased" value="true"/>
+            <!-- 是否允许子包，即targetPackage.schemaName.tableName -->
+            <property name="enableSubPackages" value="false"/>
+        </javaModelGenerator>
+        <!-- *Mapper.xml 文件的位置 -->
+        <sqlMapGenerator targetPackage="mybatis.mapper" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="false"/>
+        </sqlMapGenerator>
+        <!-- Mapper 接口文件的位置 -->
+        <javaClientGenerator targetPackage="com.chwangteng.www.mapper" targetProject="src/main/java" type="XMLMAPPER">
+            <property name="enableSubPackages" value="false"/>
+        </javaClientGenerator>
+        <!-- 要生成的表: tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
+
+<!--        <table tableName="admin" domainObjectName="Admin">
+            <generatedKey column="id" sqlStatement="JDBC"></generatedKey>
+        </table>
+        <table tableName="laboratory" domainObjectName="Laboratory">
+            <generatedKey column="id" sqlStatement="JDBC"></generatedKey>
+        </table>
+        <table tableName="teacher" domainObjectName="Teacher">
+            <generatedKey column="id" sqlStatement="JDBC"></generatedKey>
+        </table>
+        <table tableName="student" domainObjectName="Student">
+            <generatedKey column="id" sqlStatement="JDBC"></generatedKey>
+        </table>
+        <table tableName="report" domainObjectName="Report">
+            <generatedKey column="id" sqlStatement="JDBC"></generatedKey>
+        </table>-->
+
+<!--        <table tableName="authority" domainObjectName="Authority">
+            <generatedKey column="id" sqlStatement="JDBC"></generatedKey>
+        </table>-->
+        <table tableName="motification" domainObjectName="Motification">
+            <generatedKey column="id" sqlStatement="JDBC"></generatedKey>
+        </table>
+    </context>
+</generatorConfiguration>
+
