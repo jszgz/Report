@@ -10,10 +10,10 @@ default-character-set=utf8
 character-set-server=utf8   
 如果建立数据库名称report，root密码123456就不需要修改配置文件。
 数据库转储文件在sql/BackupDatabase.sql  
-**界面**
-登录页背景视频+图片，图片可以换成与你相关的图，开发者名字、logo都可以轻易替换。
-欢迎页视差滚动效果，所有控件Bootstrap现代风格。
-AJAX通讯，带通讯时黑色动画遮罩（该插件预定义动画样式和颜色都可以自由替换），通讯结果弹出式提示。
+**界面**  
+登录页背景视频+图片，图片可以换成与你相关的图，开发者名字、logo都可以轻易替换。  
+欢迎页视差滚动效果，所有控件Bootstrap现代风格。  
+AJAX通讯，带通讯时黑色动画遮罩（该插件预定义动画样式和颜色都可以自由替换），通讯结果弹出式提示。  
 ![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(74).png)  
 ![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(75).png)  
 ![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(76).png)  
