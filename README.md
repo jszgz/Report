@@ -1,9 +1,9 @@
-# Report
-周报管理系统（老师：谢波）    
+# Report   
 **注意：**    
-推荐使用chrome浏览器，不支持IE10以下的浏览器；服务器网络带宽只有1Mbps，首次加载请耐心等待。     
+推荐使用chrome浏览器，不支持IE10以下的浏览器；由于引用的插件较多且没有优化，若部署的服务器网络带宽小，首次加载请耐心等待。     
 **其他：**    
-Github版本中login.html,admin_index.html,teacher_index.html,student_index.html中背景没有使用外链视频，实际部署到服务器后使用了腾讯云对象存储。  
+Github版本中login.html,admin_index.html,teacher_index.html,student_index.html中背景没有使用外链视频，但本人实际部署到服务器后使用了腾讯云对象存储加快CDN速度。  
+教师修改周报截止时间的功能没有做完。  
 **部署：**    
 注意配置mysql的my.ini    
 default-character-set=utf8     
