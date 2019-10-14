@@ -23,8 +23,6 @@ character-set-server=utf8
 AJAX通讯，带通讯时黑色动画遮罩（该插件预定义动画样式和颜色都可以自由替换），通讯结果弹出式提示。  
 ![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(74).png)  
 ![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(75).png)  
-![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(76).png)  
-![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(77).png)  
 ![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(78).png)  
 ![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(79).png)  
 ![图片无法加载](https://raw.githubusercontent.com/chwangteng/Report/master/src/main/resources/screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(80).png)  
